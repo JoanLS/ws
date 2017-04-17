@@ -1,43 +1,7 @@
+{% extends "base_site.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Our wedding website</title>
-
-    <!-- Bootstrap -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    
-    <!-- Custom links -->
-    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <!-- Fixed navbar -->
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#wedding">Wedding Info</a></li>
-            <li><a href="#practical">Practical Info</a></li>
-            <li><a href="#registry">Registry</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">FR</a></li>
-            <li class="active"><a href="#">ENG</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+  {% block contents %}
     <div class="jumbotron">
         <div class="container">
             <h1 class="h1-jumbotron">Bastien & Joan</h1>
@@ -97,9 +61,6 @@
         </div>
 
     </section>
-    
-
-    
 
     <div id="contact">
         <h1>Contact info</h1>
@@ -107,19 +68,11 @@
         <p>If you cannot find your answer, you can send us an e-mail at : bastien.et.joan {at} gmail {dot} com</p>
         
     </div>
+    {% endblock %}
 
-    <footer class="footer">
-      <div class="container">
-        <h3><a href="rsvp.html">RSVP</a></h3>
-      </div>
-    </footer>
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="{% static 'vendor/jquery.countdown-2.2.0/jquery.countdown.min.js' %}"></script>
-
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-
+    {% block extrajs %}
+    {{ block.super }}
     <script type="text/javascript">
       $("#countdown").countdown("2017/08/19 14:00:00", function(event) {
         $(this).children("#countdown-days").text(event.strftime('%D'));
@@ -128,5 +81,6 @@
         $(this).children("#countdown-seconds").text(event.strftime('%S'));
       });
     </script>
+    {% endblock %}
   </body>
 </html>
