@@ -20,7 +20,7 @@ class RSVPLogin(FormView):
 
     def form_valid(self, form):
         if (GuestCode.validate(form.cleaned_data["code"])):
-            RSVPLogin.success_url = reverse('rsvp', kwargs={'code': str(form.cleaned_data["code"])})
+            RSVPLogin.success_url = reverse('rsvp', kwargs={'code': form.cleaned_data["code"].lower()})
         else:
             RSVPLogin.success_url = '/rsvp/'
         return super(RSVPLogin, self).form_valid(form)
