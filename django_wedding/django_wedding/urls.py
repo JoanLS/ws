@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from main.views import Homepage, RSVPLogin
+from main.views import Homepage, RSVPLogin, RSVP
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', Homepage.as_view(), name="home"),
-    url(r'^rsvp/$', RSVPLogin.as_view(), name="rsvp"),
+    url(r'^rsvp/$', RSVPLogin.as_view(), name="rsvp_login"),
+    url(r'^rsvp/(?P<code>[0-9]{6})/$', RSVP.as_view(), name="rsvp")
 ]

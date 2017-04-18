@@ -1,9 +1,24 @@
 {% extends "base_site.html" %}
+{% load static %}
+
+{% block header_includes %}
+{{ block.super }}
+<link href="{% static 'css/signin.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
 
 {% block navbar %}{% endblock %}
 
 {% block contents %}
-WELP
+    <div class="container">
+
+      <form class="form-signin" action="/rsvp/" method="post">
+        {% csrf_token %}
+        <h2 class="form-signin-heading">Reply to invitation</h2>
+        {{ form }}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      </form>
+
+    </div> <!-- /container -->
 {% endblock %}
 
 {% block footer %}{% endblock %}

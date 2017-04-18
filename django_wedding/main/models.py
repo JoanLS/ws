@@ -11,6 +11,10 @@ class GuestCode(models.Model):
     def __str__(self):
         return self.code
 
+    @staticmethod
+    def validate(code):
+        return GuestCode.objects.filter(code=code).count() > 0
+
 
 class Guest(models.Model):
     first_name = models.CharField(max_length=30)
