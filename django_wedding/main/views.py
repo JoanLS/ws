@@ -36,11 +36,11 @@ class RSVP(FormView):
         print("Code : %s (%s)" % (code, type(code)))
         print(code.guests.all())
 
-        contact_form = ContactForm()
+        contact_form = GuestRSVPForm()
         contact_form.prefix = 'contact_form'
-        social_form = SocialForm()
+        social_form = GuestRSVPForm()
         social_form.prefix = 'social_form'
-        return self.render_to_response(self.get_context_data({'contact_form':contact_form, 'social_form':social_form}))
+        return self.render_to_response(self.get_context_data(woot={'contact_form':contact_form, 'social_form':social_form}))
 
     def post(self, request, *args, **kwargs):
         contact_form = ContactForm(self.request.POST, prefix='contact_form')
