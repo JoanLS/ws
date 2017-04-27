@@ -3,15 +3,39 @@
 {% block navbar %}{% endblock %}
 
 {% block contents %}
- <div>
-     
- {{ contact_form }}
- </div>
 
- <div>
- {{ social_form }}
-     
- </div>
+<table>
+<thead>
+    <th>Name</th>
+    <th>Private ceremony</th>
+    <th>Public ceremony</th>
+    <th>Reception</th>
+    <th>Dinner</th>
+    <th>Party</th>
+</thead>
+<tbody>    
+{% for guest in guests %}
+<form>
+    
+<tr>
+    <td>
+        {{ guest.first_name }} {{ guest.last_name }}
+    </td>
+            {% with forloop.counter as i %}
+                {% for guest_form in guest_forms %}
+                    {% if i == forloop.counter %}
+                      {% for field in guest_form.visible_fields %}
+                        <td>{{ field }}</td>
+                      {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            {% endwith %}
+    
+</tr>
+</form>
+{% endfor %}
+</tbody>
+</table>
 {% endblock %}
 
 {% block footer %}{% endblock %}

@@ -36,10 +36,14 @@ class RSVP(TemplateView):
         print("Code : %s (%s)" % (code, type(code)))
         print(code.guests.all())
 
-        contact_form = GuestRSVPForm(auto_id=False)
-        social_form = GuestRSVPForm(auto_id=False)
+        guest_forms = []
+        guests = []
+        for guest in code.guests.all():
+            guests.append(guest)
+            guest_forms.append(GuestRSVPForm())
+
         context = self.get_context_data(**kwargs)
-        context['contact_form'] = contact_form.as_table()
-        context['social_form'] = social_form.as_table()
+        context['guests'] = guests
+        context['guest_forms'] = guest_forms
 
         return self.render_to_response(context)
