@@ -26,7 +26,7 @@ class RSVPLogin(FormView):
         return super(RSVPLogin, self).form_valid(form)
 
 
-class RSVP(FormView):
+class RSVP(TemplateView):
     template_name = 'rsvp.html'
 
     def get(self, request, *args, **kwargs):
@@ -36,25 +36,10 @@ class RSVP(FormView):
         print("Code : %s (%s)" % (code, type(code)))
         print(code.guests.all())
 
-        contact_form = GuestRSVPForm()
-        contact_form.prefix = 'contact_form'
-        social_form = GuestRSVPForm()
-        social_form.prefix = 'social_form'
-        return self.render_to_response(self.get_context_data(woot={'contact_form':contact_form, 'social_form':social_form}))
+        contact_form = GuestRSVPForm(auto_id=False)
+        social_form = GuestRSVPForm(auto_id=False)
+        context = self.get_context_data(**kwargs)
+        context['contact_form'] = contact_form.as_table()
+        context['social_form'] = social_form.as_table()
 
-    def post(self, request, *args, **kwargs):
-        contact_form = ContactForm(self.request.POST, prefix='contact_form')
-        social_form = SocialForm(self.request.POST, prefix='social_form ')
-
-        if contact_form.is_valid() and social_form.is_valid():
-            ### do something
-            return HttpResponseRedirect("/thanks/")
-        else:
-            return self.form_invalid(contact_form,social_form , **kwargs)
-
-
-    def form_invalid(self, contact_form, social_form, **kwargs):
-        contact_form.prefix='contact_form'
-        social_form.prefix='social_form'
-        return self.render_to_response(self.get_context_data({'contact_form':contact_form,
-                                                             'social_form':social_form }))
+        return self.render_to_response(context)
