@@ -24,9 +24,11 @@
             {% with forloop.counter as i %}
                 {% for guest_form in guest_forms %}
                     {% if i == forloop.counter %}
-                      {% for field in guest_form.visible_fields %}
-                        <td>{{ field }}</td>
-                      {% endfor %}
+                        <td>{{ guest_form.coming_private_ceremony }}</td>
+                        <td>{{ guest_form.coming_public_ceremony }}</td>
+                        <td>{{ guest_form.coming_reception }}</td>
+                        <td>{{ guest_form.coming_dinner }}</td>
+                        <td>{{ guest_form.coming_party }}</td>
                     {% endif %}
                 {% endfor %}
             {% endwith %}
@@ -36,6 +38,15 @@
 {% endfor %}
 </tbody>
 </table>
+
+<div>
+    {{ children_form }}    
+</div>
+
+<div>
+    {{ comments_form }}    
+</div>
+
 {% endblock %}
 
 {% block footer %}{% endblock %}
