@@ -39,3 +39,10 @@ class Guest(models.Model):
 class GuestChildren(models.Model):
     children_menus = models.IntegerField(default=0)
     code = models.ForeignKey(GuestCode, related_name='children')
+
+
+class GuestComments(models.Model):
+    dietary_restrictions = models.CharField(max_length=500, blank=True)
+    music_request = models.CharField(max_length=500, blank=True)
+    comments = models.CharField(max_length=500, blank=True)
+    code = models.ForeignKey(GuestCode, related_name='comments')

@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.generic.edit import FormView
-from main.forms import RSVPLoginForm, GuestRSVPForm
+from main.forms import RSVPLoginForm, GuestRSVPForm, GuestCommentsForm, GuestChildrenForm
 from django.urls import reverse
 from main.models import GuestCode
 
@@ -26,7 +26,7 @@ class RSVPLogin(FormView):
         return super(RSVPLogin, self).form_valid(form)
 
 
-class RSVP(FormView):
+class RSVP(TemplateView):
     template_name = 'rsvp.html'
 
     def get(self, request, *args, **kwargs):
@@ -36,25 +36,17 @@ class RSVP(FormView):
         print("Code : %s (%s)" % (code, type(code)))
         print(code.guests.all())
 
-        contact_form = GuestRSVPForm()
-        contact_form.prefix = 'contact_form'
-        social_form = GuestRSVPForm()
-        social_form.prefix = 'social_form'
-        return self.render_to_response(self.get_context_data(woot={'contact_form':contact_form, 'social_form':social_form}))
+        guest_forms = []
+        guests = []
+        for guest in code.guests.all():
+            guests.append(guest)
+            guest_forms.append(GuestRSVPForm(instance=guest))
 
-    def post(self, request, *args, **kwargs):
-        contact_form = ContactForm(self.request.POST, prefix='contact_form')
-        social_form = SocialForm(self.request.POST, prefix='social_form ')
-
-        if contact_form.is_valid() and social_form.is_valid():
-            ### do something
-            return HttpResponseRedirect("/thanks/")
-        else:
-            return self.form_invalid(contact_form,social_form , **kwargs)
+        context = self.get_context_data(**kwargs)
+        context['guests'] = guests
+        context['guest_forms'] = guest_forms
+        context['comments_form'] = GuestCommentsForm(instance=code.comments.first())
+        context['children_form'] = GuestChildrenForm(instance=code.children.first())
 
 
-    def form_invalid(self, contact_form, social_form, **kwargs):
-        contact_form.prefix='contact_form'
-        social_form.prefix='social_form'
-        return self.render_to_response(self.get_context_data({'contact_form':contact_form,
-                                                             'social_form':social_form }))
+        return self.render_to_response(context)

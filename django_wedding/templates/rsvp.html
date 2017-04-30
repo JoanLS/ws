@@ -3,7 +3,50 @@
 {% block navbar %}{% endblock %}
 
 {% block contents %}
-THIS IS THE RSVP
+
+<table>
+<thead>
+    <th>Name</th>
+    <th>Private ceremony</th>
+    <th>Public ceremony</th>
+    <th>Reception</th>
+    <th>Dinner</th>
+    <th>Party</th>
+</thead>
+<tbody>    
+{% for guest in guests %}
+<form>
+    
+<tr>
+    <td>
+        {{ guest.first_name }} {{ guest.last_name }}
+    </td>
+            {% with forloop.counter as i %}
+                {% for guest_form in guest_forms %}
+                    {% if i == forloop.counter %}
+                        <td>{{ guest_form.coming_private_ceremony }}</td>
+                        <td>{{ guest_form.coming_public_ceremony }}</td>
+                        <td>{{ guest_form.coming_reception }}</td>
+                        <td>{{ guest_form.coming_dinner }}</td>
+                        <td>{{ guest_form.coming_party }}</td>
+                    {% endif %}
+                {% endfor %}
+            {% endwith %}
+    
+</tr>
+</form>
+{% endfor %}
+</tbody>
+</table>
+
+<div>
+    {{ children_form }}    
+</div>
+
+<div>
+    {{ comments_form }}    
+</div>
+
 {% endblock %}
 
 {% block footer %}{% endblock %}
