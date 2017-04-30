@@ -2,62 +2,70 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Our wedding website</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Our wedding website</title>
 
-    {% block header_includes %}
-      <!-- Bootstrap -->
-      <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-      
-      <!-- Custom links -->
-      <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
-    {% endblock %}
+  {% block header_includes %}
+  <!-- Bootstrap -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-  </head>
-  <body>
+  <!-- Custom links -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+  {% endblock %}
+
+</head>
+<body>
+<div>
+
     <!-- Fixed navbar -->
     {% block navbar %}
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#wedding">Wedding Info</a></li>
-            <li><a href="#practical">Practical Info</a></li>
-            <li><a href="#registry">Registry</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">FR</a></li>
-            <li class="active"><a href="#">ENG</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <div class="navbar-container">
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#wedding">Wedding Info</a></li>
+              <li><a href="#practical">Practical Info</a></li>
+              <li><a href="#registry">Registry</a></li>
+              <li><a href="#FAQ">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">FR</a></li>
+              <li class="active"><a href="#">ENG</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
     {% endblock %}
 
-    {% block contents %}{% endblock %}
+    {% block contents %}{% endblock %}  
 
-    {% block footer %}
-    <footer class="footer">
-      <div class="container">
-        <h3><a href="{% url 'rsvp_login' %}">RSVP</a></h3>
-      </div>
-    </footer>
-    {% endblock %}
 
-    {% block extrajs %}
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="{% static 'vendor/jquery.countdown-2.2.0/jquery.countdown.min.js' %}"></script>
+  </div>
 
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-    {% endblock %}
-  </body>
+  {% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <h3><a href="{% url 'rsvp_login' %}">RSVP</a></h3>
+    </div>
+  </footer>
+  {% endblock %}
+
+  {% block extrajs %}
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{% static 'vendor/jquery.countdown-2.2.0/jquery.countdown.min.js' %}"></script>
+
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  {% endblock %}
+</body>
 </html>
