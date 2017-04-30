@@ -65,7 +65,7 @@ h1 {
 
 .section-brackets {
     font-size: 2em;
-    background-image : url("../img/bg3.png");
+    background-image : url("../img/bg-title.jpg");
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,6 +75,7 @@ h1 {
 
 h3 {
     text-align: center;
+    font-weight: bold;
 }
 
 p {
@@ -95,6 +96,12 @@ div.page-content {
 }
 
 .navbar {
+    font-family: 'CaviarDreams';
+    font-weight: bold;
+    border-radius: 0px;
+    border:0;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: white;
 }
 
 .navbar-container {
@@ -201,7 +208,9 @@ h1.h1-jumbotron-clip {
     position: fixed;
     align-items: center;
     bottom: 0;
-    width: 100%;
+    width: 76%;
+    font-family: CaviarDreams;
+    font-weight: bold;
     /* Set the fixed height of the footer here */
     background: rgba(255,255,255,0.8);
 }
@@ -236,4 +245,9 @@ h1.h1-jumbotron-clip {
 .countdown-number {
     font-weight: bolder;
     font-size: larger;
+}
+
+.bottom-fade {
+    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0));
+    min-height: 200px;
 }
