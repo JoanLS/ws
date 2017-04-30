@@ -9,20 +9,74 @@ body {
     margin-bottom: 60px;
 }
 
+section {
+    margin: 0px;
+}
+
 h1 {
-    color : black;
+    color: black;
     text-align: center;
     padding-top: 75px;
     padding-bottom: 20px;
 }
 
-h3 {
+h2 {
     text-align: center;
+    padding-top: 20px;
+}
+
+h3 {
+    color : black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 p {
     padding-right: 50px;
     padding-left: 50px;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 16px;
+}
+
+li:before {
+    /*content: "~"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
+
+ul.mylist {
+    list-style: none; /* Remove list bullets */
+    padding: 5px;
+    /*margin: 5px;*/
+}
+
+ul.mylist li:before {
+    content: "~"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
+
+ul.info {
+    padding-left: 100px;
+}
+
+ul.info li{
+    padding-bottom: 10px;
+}
+
+ul.info li:before {
+    content: "-";
+    padding-right: 10px;
 }
 
 img {
@@ -51,13 +105,23 @@ img {
     text-align: center;
 }
 
+.row {
+    width: 100%;
+}
+
 .footer {
     position: fixed;
     align-items: center;
+    padding: 10px 0;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
-    background: rgba(255,255,255,0.8);
+    height: 60px; /* Set the fixed height of the footer here */
+    background: rgba(0,255,255,1);
+}
+
+.footer-text {
+    text-align: center;
+    font-weight: bold;
 }
 
 .parallax-1 {
