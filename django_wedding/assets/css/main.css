@@ -44,11 +44,33 @@ h1 {
     font-weight: bold;
 }
 
+.page-content h1 {
+
+}
+
+.section-title-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-title {
-    background-image : linear-gradient(#967cb3 15%, #97c6c9 60%, #e5c0c5 95%);
+    background-image : linear-gradient(#967cb3 15%, #97c6c9 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;
+}
+
+.section-brackets {
+    font-size: 2em;
+    background-image : url("../img/bg3.png");
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 h3 {
@@ -58,6 +80,7 @@ h3 {
 p {
     padding-right: 50px;
     padding-left: 50px;
+    font-style: italic;
 }
 
 img {
@@ -68,6 +91,7 @@ img {
 
 div.page-content {
     background: white;
+    font-family: 'Merriweather', serif;
 }
 
 .navbar {
@@ -152,6 +176,7 @@ h1.h1-jumbotron-clip {
 #countdown {
     margin-top: 80px;
     text-shadow: 3px 3px 3px #7e7e7e;
+    font-family: 'Merriweather', serif;
 }
 
 .clip-text {
