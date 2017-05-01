@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-01 17:16+0200\n"
+"PO-Revision-Date: 2017-05-01 16:58+0000\n"
+"Last-Translator:   <kadomony@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.13\n"
+
+#: .\templates\base_site.html:35
+msgid "About Us"
+msgstr ""
+
+#: .\templates\base_site.html:36
+msgid "The Wedding"
+msgstr ""
+
+#: .\templates\home.html:10
+msgid "days"
+msgstr ""
+
+#: .\templates\home.html:12
+msgid "hours"
+msgstr ""
+
+#: .\templates\home.html:14
+msgid "minutes"
+msgstr ""
+
+#: .\templates\home.html:16
+msgid "seconds"
+msgstr ""
+
+#: .\templates\home.html:31
+msgid "About us"
+msgstr ""
+
+#: .\templates\home.html:34
+msgid ""
+"They say you meet the most important people in university but for us, even "
+"though we’d been orbiting each other through our circles of friends for some "
+"time, it was only towards the end of our student years that we truly met. "
+"What started as animated discussions between new acquaintances soon "
+"developed into 80 messages long email conversations and impromptu visits… "
+"And just when friends and family began questioning our relationship through "
+"knowing smiles, we finally confirmed their (and our own) suspicions in "
+"August 2010."
+msgstr ""
+
+#: .\templates\home.html:35
+msgid ""
+"Since then, we have lived many memorable moments together, here they are "
+"summarised in arbitrary yet meaningful units :"
+msgstr ""
+
+#: .\templates\home.html:41
+msgid "2 theses"
+msgstr ""
+
+#: .\templates\home.html:42
+msgid "2 cats"
+msgstr ""
+
+#: .\templates\home.html:43
+msgid "2 apartments"
+msgstr ""
+
+#: .\templates\home.html:44
+msgid "15 months apart"
+msgstr ""
+
+#: .\templates\home.html:45
+msgid "1 new bookcase"
+msgstr ""
+
+#: .\templates\home.html:46
+msgid "9 countries visited"
+msgstr ""
+
+#: .\templates\home.html:47
+msgid "1 very slow turtle"
+msgstr ""
+
+#: .\templates\home.html:48
+msgid "5 Magic the Gathering pre-release game events"
+msgstr ""
+
+#: .\templates\home.html:49
+msgid "1 freak hurricane"
+msgstr ""
+
+#: .\templates\home.html:50
+msgid "A ton of post-rock concerts"
+msgstr ""
+
+#: .\templates\home.html:51
+msgid "5 New Year’s cheese fondues"
+msgstr ""
+
+#: .\templates\home.html:52
+msgid "Many weekends spent cracking video games"
+msgstr ""
+
+#: .\templates\home.html:53
+msgid "1 alarming message about hospitals"
+msgstr ""
+
+#: .\templates\home.html:54
+msgid "A million (and counting) decorative birbs"
+msgstr ""
+
+#: .\templates\home.html:55
+msgid "Too many stupid nicknames to count"
+msgstr ""
+
+#: .\templates\home.html:56
+msgid "A (un)reasonable number of newly acquired musical instruments"
+msgstr ""
+
+#: .\templates\home.html:57
+msgid "A thousand evenings wondering what to eat for dinner"
+msgstr ""
+
+#: .\templates\home.html:59
+msgid "1 very important question"
+msgstr ""
+
+#: .\templates\home.html:62
+msgid ""
+"...and in August 2017, we will celebrate 7 years of joy and happiness and of "
+"all the future years to come :)."
+msgstr ""
+
+#: .\templates\home.html:70
+msgid "Wedding Info"
+msgstr ""
+
+#: .\templates\home.html:74
+msgid ""
+"For more information on how to get to the venue sites or travelling from "
+"abroad, please see the <a href=\"practical.html\">Practical Info</a> page."
+msgstr ""
+
+#: .\templates\home.html:75
+msgid "Check the <a href=\"FAQ.html\">FAQ</a> if you have any other questions!"
+msgstr ""
+
+#: .\templates\home.html:77
+msgid "Friday 18 August 2017"
+msgstr ""
+
+#: .\templates\home.html:78
+msgid "Private wedding ceremony"
+msgstr ""
+
+#: .\templates\home.html:79
+msgid "An intimate personal ceremony"
+msgstr ""
+
+#: .\templates\home.html:80
+msgid "19:00"
+msgstr ""
+
+#: .\templates\home.html:81
+msgid "Chapelle de Profondsart"
+msgstr ""
+
+#: .\templates\home.html:82
+msgid "Rue de Grandsart 13, 1300 Limal"
+msgstr ""
+
+#: .\templates\home.html:84
+msgid "Saturday 19 August 2017"
+msgstr ""
+
+#: .\templates\home.html:85
+msgid "Public wedding ceremony"
+msgstr ""
+
+#: .\templates\home.html:86
+msgid "The civil marriage ceremony involving all the legal stuff"
+msgstr ""
+
+#: .\templates\home.html:87
+msgid "14:00 - 14:30"
+msgstr ""
+
+#: .\templates\home.html:88
+msgid "Hôtel de Ville d’Ottignies"
+msgstr ""
+
+#: .\templates\home.html:89
+msgid "Avenue des Combattants 35, 1340"
+msgstr ""
+
+#: .\templates\home.html:91 .\templates\rsvp.html:31
+msgid "Reception"
+msgstr ""
+
+#: .\templates\home.html:92
+msgid "Drinks, snacks, and congratulations"
+msgstr ""
+
+#: .\templates\home.html:93
+msgid "15:00 - 17:00"
+msgstr ""
+
+#: .\templates\home.html:94 .\templates\home.html:100 .\templates\home.html:105
+msgid "Cense d’Almez"
+msgstr ""
+
+#: .\templates\home.html:95
+msgid "Rue d’Almez 5, 1325 Corroy-le-Grand"
+msgstr ""
+
+#: .\templates\home.html:97 .\templates\rsvp.html:32
+msgid "Dinner"
+msgstr ""
+
+#: .\templates\home.html:98
+msgid "Sit-down meal and emotional speeches"
+msgstr ""
+
+#: .\templates\home.html:99
+msgid "18:00 - 20h30"
+msgstr ""
+
+#: .\templates\home.html:102 .\templates\rsvp.html:33
+msgid "Party"
+msgstr ""
+
+#: .\templates\home.html:103
+msgid "A live concert of our favourite songs followed by dancing all night!"
+msgstr ""
+
+#: .\templates\home.html:104
+msgid "21:00 - 03:00"
+msgstr ""
+
+#: .\templates\home.html:124
+msgid "Contact us"
+msgstr ""
+
+#: .\templates\home.html:127
+msgid ""
+"Questions? Please have a look at the <a href=\"FAQ.html\">FAQ</a> first!"
+msgstr ""
+
+#: .\templates\home.html:128
+#, python-brace-format
+msgid ""
+"If you cannot find your answer, you can send us an e-mail at : bastien.et."
+"joan {at} gmail {dot} com"
+msgstr ""
+
+#: .\templates\rsvp.html:15
+msgid "RSVP"
+msgstr ""
+
+#: .\templates\rsvp.html:23
+msgid "Please tell us to which part of the festivities you will be coming."
+msgstr ""
+
+#: .\templates\rsvp.html:29
+msgid "Private ceremony"
+msgstr ""
+
+#: .\templates\rsvp.html:30
+msgid "Public ceremony"
+msgstr ""
+
+#: .\templates\rsvp.html:71
+msgid "How many children menus should we include for the dinner?"
+msgstr ""
+
+#: .\templates\rsvp.html:81
+msgid "Are there any dietary restriction we should take into account?"
+msgstr ""
+
+#: .\templates\rsvp.html:91
+msgid "Any music you would like to request for the party?"
+msgstr ""
+
+#: .\templates\rsvp.html:101
+msgid "Anything else you want to tell us?"
+msgstr ""
+
+#: .\templates\rsvp.html:110 .\templates\rsvp_login.html:19
+msgid "Submit"
+msgstr ""
+
+#: .\templates\rsvp_login.html:13
+msgid "Reply to invitation"
+msgstr ""
+
+#: .\templates\rsvp_login.html:15
+msgid ""
+"The invitation you received had a code written on it. Please enter it below "
+"to access the RSVP form."
+msgstr ""

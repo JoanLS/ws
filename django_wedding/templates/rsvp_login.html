@@ -10,13 +10,13 @@
     <div class="page-content form-container">
       <form class="form-signin" action="/rsvp/" method="post">
         {% csrf_token %}
-        <h2 class="form-signin-heading">Reply to invitation</h2>
+        <h2 class="form-signin-heading">{% trans "Reply to invitation" %}</h2>
         <center>
-        <p>The invitation you received had a code written on it. Please enter it below to access the RSVP form.</p>
+        <p>{% blocktrans %}The invitation you received had a code written on it. Please enter it below to access the RSVP form.{% endblocktrans %}</p>
           <div class="form-fields">
             {{ form.code }}
           </div>
-        <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">Submit</button>
+        <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">{% trans "Submit" %}</button>
         </center>
       </form>
     </div> <!-- /container -->

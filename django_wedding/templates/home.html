@@ -1,5 +1,6 @@
 {% extends "base_site.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block contents %}
 <div class="jumbotron">
@@ -7,13 +8,13 @@
     <h1 class="h1-jumbotron"><span class="jumbotron-name jumbotron-name-left" data-text="Bastien">Bastien</span><span class="jumbotron-name jumbotron-name-right" data-text="Joan">Joan</span></h1>
         <h3 id="countdown">
           <span id="countdown-days" class="countdown-number"></span>
-          days
+          {% trans "days" %}
           <span id="countdown-hours" class="countdown-number"></span>
-          hours
+          {% trans "hours" %}
           <span id="countdown-minutes" class="countdown-number"></span>
-          minutes
+          {% trans "minutes" %}
           <span id="countdown-seconds" class="countdown-number"></span>
-          seconds
+          {% trans "seconds" %}
       </h3>   
 </div>
 
@@ -28,38 +29,38 @@
         <div id="about" class="col-sm-9">
             <h1>
                 <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">About us</span><span class="section-brackets">}</span>
+                <span class="section-brackets">{</span><span class="section-title">{% trans "About us" %}</span><span class="section-brackets">}</span>
                 </span>
             </h1>
-            <p>They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.</p>
-            <p>Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :</p>
+            <p>{% blocktrans %}They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.{% endblocktrans %}</p>
+            <p>{% blocktrans %}Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :{% endblocktrans %}</p>
             <div class="col-sm-5">
                 insert images here
             </div>
             <div class="col-sm-7">
                 <ul class="mylist">
-                    <li>2 theses</li>
-                    <li>2 cats</li>
-                    <li>2 apartments</li>
-                    <li>15 months apart</li>
-                    <li>1 new bookcase</li>
-                    <li>9 countries visited</li>
-                    <li>1 very slow turtle</li>
-                    <li>5 Magic the Gathering pre-release game events</li>
-                    <li>1 freak hurricane</li>
-                    <li>A ton of post-rock concerts</li>
-                    <li>5 New Year’s cheese fondues</li>
-                    <li>Many weekends spent cracking video games</li>
-                    <li>1 alarming message about hospitals</li>
-                    <li>A million (and counting) decorative birbs</li>
-                    <li>Too many stupid nicknames to count</li>
-                    <li>A (un)reasonable number of newly acquired musical instruments</li>
-                    <li>A thousand evenings wondering what to eat for dinner</li>
+                    <li>{% trans "2 theses" %}</li>
+                    <li>{% trans "2 cats" %}</li>
+                    <li>{% trans "2 apartments" %}</li>
+                    <li>{% trans "15 months apart" %}</li>
+                    <li>{% trans "1 new bookcase" %}</li>
+                    <li>{% trans "9 countries visited" %}</li>
+                    <li>{% trans "1 very slow turtle" %}</li>
+                    <li>{% trans "5 Magic the Gathering pre-release game events" %}</li>
+                    <li>{% trans "1 freak hurricane" %}</li>
+                    <li>{% trans "A ton of post-rock concerts" %}</li>
+                    <li>{% trans "5 New Year’s cheese fondues" %}</li>
+                    <li>{% trans "Many weekends spent cracking video games" %}</li>
+                    <li>{% trans "1 alarming message about hospitals" %}</li>
+                    <li>{% trans "A million (and counting) decorative birbs" %}</li>
+                    <li>{% trans "Too many stupid nicknames to count" %}</li>
+                    <li>{% trans "A (un)reasonable number of newly acquired musical instruments" %}</li>
+                    <li>{% trans "A thousand evenings wondering what to eat for dinner" %}</li>
                     <li> </li>
-                    <li>1 very important question</li>
+                    <li>{% trans "1 very important question" %}</li>
                 </ul>
             </div>
-            <p>...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).</p>
+            <p>{% blocktrans %}...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).{% endblocktrans %}</p>
         </div>
     </section>
 
@@ -67,42 +68,42 @@
         <div id="wedding" class="col-sm-9">
             <h1>
                 <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">Wedding Info</span><span class="section-brackets">}</span>
+                <span class="section-brackets">{</span><span class="section-title">{% trans "Wedding Info" %}</span><span class="section-brackets">}</span>
                 </span>
             </h1>
             <center>
-            <p>For more information on how to get to the venue sites or travelling from abroad, please see the <a href="practical.html">Practical Info</a> page.</p>
-            <p>Check the <a href="FAQ.html">FAQ</a> if you have any other questions!</p>
+            <p>{% blocktrans %}For more information on how to get to the venue sites or travelling from abroad, please see the <a href="practical.html">Practical Info</a> page.{% endblocktrans %}</p>
+            <p>{% blocktrans %}Check the <a href="FAQ.html">FAQ</a> if you have any other questions!{% endblocktrans %}</p>
 
-            <h2>Friday 18 August 2017</h2>
-            <h3>Private wedding ceremony</h3>
-            <p>An intimate personal ceremony</p>
-            <p>19:00</p>
-            <p>Chapelle de Profondsart</p>
-            <p>Rue de Grandsart 13, 1300 Limal</p>
+            <h2>{% trans "Friday 18 August 2017" %}</h2>
+            <h3>{% trans "Private wedding ceremony" %}</h3>
+            <p>{% trans "An intimate personal ceremony" %}</p>
+            <p>{% trans "19:00" %}</p>
+            <p>{% trans "Chapelle de Profondsart" %}</p>
+            <p>{% trans "Rue de Grandsart 13, 1300 Limal" %}</p>
 
-            <h2>Saturday 19 August 2017</h2>
-            <h3>Public wedding ceremony</h3>
-            <p>The civil marriage ceremony involving all the legal stuff</p>
-            <p>14:00 - 14:30</p>
-            <p>Hôtel de Ville d’Ottignies</p>
-            <p>Avenue des Combattants 35, 1340 Ottignies-Louvain-la-Neuve</p>
+            <h2>{% trans "Saturday 19 August 2017" %}</h2>
+            <h3>{% trans "Public wedding ceremony" %}</h3>
+            <p>{% trans "The civil marriage ceremony involving all the legal stuff" %}</p>
+            <p>{% trans "14:00 - 14:30" %}</p>
+            <p>{% trans "Hôtel de Ville d’Ottignies" %}</p>
+            <p>{% trans "Avenue des Combattants 35, 1340" %} Ottignies-Louvain-la-Neuve" %}</p>
 
-            <h3>Reception</h3>
-            <p>Drinks, snacks, and congratulations</p>
-            <p>15:00 - 17:00</p>
-            <p>Cense d’Almez</p>
-            <p>Rue d’Almez 5, 1325 Corroy-le-Grand</p>
+            <h3>{% trans "Reception" %}</h3>
+            <p>{% trans "Drinks, snacks, and congratulations" %}</p>
+            <p>{% trans "15:00 - 17:00" %}</p>
+            <p>{% trans "Cense d’Almez" %}</p>
+            <p>{% trans "Rue d’Almez 5, 1325 Corroy-le-Grand" %}</p>
 
-            <h3>Dinner</h3>
-            <p>Sit-down meal and emotional speeches</p>
-            <p>18:00 - 20h30</p>
-            <p>Cense d’Almez</p>
+            <h3>{% trans "Dinner" %}</h3>
+            <p>{% trans "Sit-down meal and emotional speeches" %}</p>
+            <p>{% trans "18:00 - 20h30" %}</p>
+            <p>{% trans "Cense d’Almez" %}</p>
 
-            <h3>Party</h3>
-            <p>A live concert of our favourite songs followed by dancing all night!</p>
-            <p>21:00 - 03:00</p>
-            <p>Cense d’Almez</p>
+            <h3>{% trans "Party" %}</h3>
+            <p>{% trans "A live concert of our favourite songs followed by dancing all night!" %}</p>
+            <p>{% trans "21:00 - 03:00" %}</p>
+            <p>{% trans "Cense d’Almez" %}</p>
             </center>
         </div>
         <div class="col-sm-3">
@@ -121,11 +122,11 @@
         <div  class="col-sm-9">
             <h1>
                 <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">Contact us</span><span class="section-brackets">}</span>
+                <span class="section-brackets">{</span><span class="section-title">{% trans "Contact us" %}</span><span class="section-brackets">}</span>
                 </span>
             </h1>
-            <p>Questions? Please have a look at the <a href="FAQ.html">FAQ</a> first!</p>
-            <p>If you cannot find your answer, you can send us an e-mail at : bastien.et.joan {at} gmail {dot} com</p>
+            <p>{% blocktrans %}Questions? Please have a look at the <a href="FAQ.html">FAQ</a> first!{% endblocktrans %}</p>
+            <p>{% blocktrans %}If you cannot find your answer, you can send us an e-mail at : bastien.et.joan {at} gmail {dot} com{% endblocktrans %}</p>
             
         </div>
 

@@ -10,28 +10,27 @@
 {% block contents %}
 <div class="top-space"></div>
 <div class="page-content">
-          <h1>
-                <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">RSVP</span><span class="section-brackets">}</span>
-                </span>
-            </h1>
+  <h1>
+    <span class="section-title-container">
+    <span class="section-brackets">{</span><span class="section-title">{% trans "RSVP" %}</span><span class="section-brackets">}</span>
+    </span>
+  </h1>
   <form class="form-signin" action="." method="post">
     {% csrf_token %}
     <div class="form-content form-rsvp">
 
-
-        <p>
-          Please tell us to which part of the festivities you will be coming.
-        </p>
+      <p>
+        {% blocktrans %}Please tell us to which part of the festivities you will be coming.{% endblocktrans %}
+      </p>
 
       <table>
         <thead>
           <th></th>
-          <th>Private ceremony</th>
-          <th>Public ceremony</th>
-          <th>Reception</th>
-          <th>Dinner</th>
-          <th>Party</th>
+          <th>{% trans "Private ceremony" %}</th>
+          <th>{% trans "Public ceremony" %}</th>
+          <th>{% trans "Reception" %}</th>
+          <th>{% trans "Dinner" %}</th>
+          <th>{% trans "Party" %}</th>
         </thead>
         <tbody>    
           {% for guest in guests %}
@@ -69,7 +68,7 @@
 
       <div class="comments-field">
         <p>
-          How many children menus should we include for the dinner?
+          {% blocktrans %}How many children menus should we include for the dinner?{% endblocktrans %}
         </p>
 
         <div>
@@ -79,7 +78,7 @@
 
       <div class="comments-field">
         <p>
-          Are there any dietary restriction we should take into account?
+          {% blocktrans %}Are there any dietary restriction we should take into account?{% endblocktrans %}
         </p>
 
         <div>
@@ -89,7 +88,7 @@
 
       <div class="comments-field">
         <p>
-          Any music you would like to request for the party?
+          {% blocktrans %}Any music you would like to request for the party?{% endblocktrans %}
         </p>
 
         <div>
@@ -99,7 +98,7 @@
 
       <div class="comments-field">
         <p>
-          Anything else you want to tell us?
+          {% blocktrans %}Anything else you want to tell us?{% endblocktrans %}
         </p>
 
         <div>
@@ -108,7 +107,7 @@
       </div>
 
     </div>
-    <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">Submit</button>
+    <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">{% trans "Submit" %}</button>
   </form>
 </div>
 <div class="bottom-fade"></div>
