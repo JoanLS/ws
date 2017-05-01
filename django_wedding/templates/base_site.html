@@ -21,7 +21,6 @@
 
 </head>
 <body>
-<div>
 
     <!-- Fixed navbar -->
     {% block navbar %}
@@ -31,14 +30,14 @@
         <div class="container-fluid">
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#wedding">The Wedding</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+              <li><a href="/#about">About Us</a></li>
+              <li><a href="/#wedding">The Wedding</a></li>
+              <li><a href="/#contact">Contact</a></li>
               <li><a href="#practical">Practical</a></li>
               <li><a href="#registry">Registry</a></li>
               <li><a href="#FAQ">FAQ</a></li>
-              <li><a href="{% url 'rsvp_login' %}">RSVP</a></li>
+              <li><a href="{% url 'rsvp_login' %}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> RSVP <span class="glyphicon glyphicon-star" aria-hidden="true"></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">FR</a></li>
@@ -54,8 +53,6 @@
 
     {% block footer %}
     {% endblock %}
-
-  </div>
 
 
   {% block extrajs %}

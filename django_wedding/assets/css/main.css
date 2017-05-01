@@ -27,9 +27,7 @@ html {
     min-height: 100%;
 }
 body {
-    min-height: 2000px;
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
     padding-left: 12%;
     padding-right: 12%;
     background-image: url("../img/bg-big.jpg");
@@ -73,9 +71,25 @@ h1 {
     margin-right: 0.5em;
 }
 
-h3 {
+.page-content h2 {
     text-align: center;
+    padding-top: 20px;
+    font-family: CaviarDreams;
     font-weight: bold;
+    color: #967cb3;
+    font-size: 1.9em;
+}
+
+.page-content h3 {
+    font-family: CaviarDreams;
+    font-style: italic;
+    //font-weight: bold;
+    //color : #97c6c9;
+    color: #6392a9;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -93,6 +107,49 @@ img {
 div.page-content {
     background: white;
     font-family: 'Merriweather', serif;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 16px;
+}
+
+li:before {
+    /*content: "~"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
+
+ul.mylist {
+    list-style: none; /* Remove list bullets */
+    padding: 5px;
+    /*margin: 5px;*/
+}
+
+ul.mylist li:before {
+    content: "~"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
+
+ul.info {
+    padding-left: 100px;
+}
+
+ul.info li{
+    padding-bottom: 10px;
+}
+
+ul.info li:before {
+    content: "-";
+    padding-right: 10px;
 }
 
 .navbar {
@@ -102,6 +159,8 @@ div.page-content {
     border:0;
     border-bottom: 1px solid #e7e7e7;
     background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .navbar-container {
@@ -215,6 +274,16 @@ h1.h1-jumbotron-clip {
     background: rgba(255,255,255,0.8);
 }
 
+.image-left {
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.image-right {
+    margin-top: 45px;
+    margin-right: 45px;
+}
+
 .parallax-1 {
     background-image: url("../img/parallax-bg1.jpg");
     width: 100%;
@@ -250,4 +319,5 @@ h1.h1-jumbotron-clip {
 .bottom-fade {
     background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0));
     min-height: 200px;
+    margin-bottom: 60px;
 }

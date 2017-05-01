@@ -18,8 +18,17 @@ div.form-container {
   min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
+  //flex-direction: column;
   align-items: center;
   background-color: transparent;
+}
+
+div.form-content {
+  background-color: white;
+  border-radius: 25px;
+  padding: 55px;
+  padding-top: 15px;
+  flex: 1 1 auto;
 }
 
 .form-signin .form-signin-heading,
@@ -51,10 +60,9 @@ div.form-container {
   border-radius: 25px;
   font-family: CaviarDreams;
   font-weight: bold;
-  width: 50%;
 }
 
-.form-signin p {
+.form-rsvp p {
     padding-right: 0px;
     padding-left: 0px;
     font-style: italic;
@@ -65,4 +73,17 @@ div.form-container {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.5em;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  padding-top: 10px;
+  text-align: center;
 }
