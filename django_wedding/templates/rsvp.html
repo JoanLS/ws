@@ -8,6 +8,8 @@
 
 {% block contents %}
 <div class="page-content form-container">
+  <form class="form-signin" action="." method="post">
+    {% csrf_token %}
   <div class="form-content form-rsvp">
 
   <h2 class="form-signin-heading">RSVP</h2>
@@ -29,7 +31,6 @@
     </thead>
     <tbody>    
       {% for guest in guests %}
-      <form>
 
         <tr>
           <td>
@@ -48,23 +49,26 @@
           {% endwith %}
 
         </tr>
-      </form>
       {% endfor %}
     </tbody>
   </table>
 
-  <p>
-    How many children menus should we include for the dinner?
-  </p>
+  <center>
+    <p>
+      How many children menus should we include for the dinner?
+    </p>
 
-  <div>
-    {{ children_form.children_menus }}    
-  </div>
+    <div>
+      {{ children_form.children_menus }}    
+    </div>
+  </center>
 
   <div>
     {{ comments_form }}    
   </div>
   </div>
+          <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">Submit</button>
+  </form>
 </div>
 {% endblock %}
 
