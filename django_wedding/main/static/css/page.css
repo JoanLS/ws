@@ -3,7 +3,7 @@
 }
 
 h2.info-title {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 h3.info-title {
@@ -15,4 +15,24 @@ h3.info-title {
 h3.info-subtitle {
     padding-top: 0px;
     padding-bottom: 10px;
+    padding-left: 100px
+}
+
+ul.info {
+    padding-left: 100px;
+    padding-right: 120px;
+}
+
+ul.info li{
+    padding-bottom: 10px;
+}
+
+ul.info li:before {
+    content: "-";
+    padding-right: 10px;
+}
+
+div.map {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

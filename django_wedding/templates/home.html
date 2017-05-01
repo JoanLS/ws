@@ -2,6 +2,10 @@
 {% load static %}
 {% load i18n %}
 
+{% block header_includes %}
+{{ block.super }}
+{% endblock %}
+
 {% block contents %}
 <div class="jumbotron">
     <h1 class="h1-jumbotron-clip clip-text">&</h1>
@@ -32,36 +36,122 @@
                 <span class="section-brackets">{</span><span class="section-title">{% trans "About us" %}</span><span class="section-brackets">}</span>
                 </span>
             </h1>
-            <p>{% blocktrans %}They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.{% endblocktrans %}</p>
-            <p>{% blocktrans %}Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :{% endblocktrans %}</p>
-            <div class="col-sm-5">
-                insert images here
-            </div>
-            <div class="col-sm-7">
-                <ul class="mylist">
-                    <li>{% trans "2 theses" %}</li>
-                    <li>{% trans "2 cats" %}</li>
-                    <li>{% trans "2 apartments" %}</li>
-                    <li>{% trans "15 months apart" %}</li>
-                    <li>{% trans "1 new bookcase" %}</li>
-                    <li>{% trans "9 countries visited" %}</li>
-                    <li>{% trans "1 very slow turtle" %}</li>
-                    <li>{% trans "5 Magic the Gathering pre-release game events" %}</li>
-                    <li>{% trans "1 freak hurricane" %}</li>
-                    <li>{% trans "A ton of post-rock concerts" %}</li>
-                    <li>{% trans "5 New Year’s cheese fondues" %}</li>
-                    <li>{% trans "Many weekends spent cracking video games" %}</li>
-                    <li>{% trans "1 alarming message about hospitals" %}</li>
-                    <li>{% trans "A million (and counting) decorative birbs" %}</li>
-                    <li>{% trans "Too many stupid nicknames to count" %}</li>
-                    <li>{% trans "A (un)reasonable number of newly acquired musical instruments" %}</li>
-                    <li>{% trans "A thousand evenings wondering what to eat for dinner" %}</li>
-                    <li> </li>
-                    <li>{% trans "1 very important question" %}</li>
-                </ul>
-            </div>
-            <p>{% blocktrans %}...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).{% endblocktrans %}</p>
+            <p class="block-text">They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.</p>
+            <p class="block-text">Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :</p>
         </div>
+
+        <div class="col-sm-7 container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <!-- Indicators -->
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <img src="{% static 'img/slide-1.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-2.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-3.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-4.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-5.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-6.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-7.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-8.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-9.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-10.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-11.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-12.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-13.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-14.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-15.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-16.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-17.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-18.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-19.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-20.jpg' %}" class="slide-img">
+              </div>
+              <div class="item">
+                <img src="{% static 'img/slide-21.jpg' %}" class="slide-img">
+              </div>
+              
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+          <ul class="mylist">
+            <li>2 theses</li>
+            <li>2 cats</li>
+            <li>2 apartments</li>
+            <li>15 months apart</li>
+            <li>1 new bookcase</li>
+            <li>9 countries visited</li>
+            <li>1 very slow turtle</li>
+            <li>5 Magic the Gathering pre-release game events</li>
+            <li>1 freak hurricane</li>
+            <li>A ton of post-rock concerts</li>
+            <li>5 New Year’s cheese fondues</li>
+            <li>Many weekends spent cracking video games</li>
+            <li>1 alarming message about hospitals</li>
+            <li>A million (and counting) decorative birbs</li>
+            <li>Too many stupid nicknames to count</li>
+            <li>A (un)reasonable number of newly acquired musical instruments</li>
+            <li>A thousand evenings wondering what to eat for dinner</li>
+            </ul>
+            <p> </p>
+            <p> </p>
+            <ul class="mylist"><li>1 very important question</li></ul>
+          </ul>
+        </div>
+        <div class="col-sm-12"><center><p>...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).</p></center></div>
     </section>
 
     <section class="row">

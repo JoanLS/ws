@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'CaviarDreams';
   src: url('../fonts/CaviarDreams.ttf');
@@ -98,6 +100,10 @@ p {
     font-style: italic;
 }
 
+p.block-text {
+    padding-bottom: 10px;
+}
+
 img {
     width: 100%;
     display: block;
@@ -129,27 +135,47 @@ li:before {
 
 ul.mylist {
     list-style: none; /* Remove list bullets */
-    padding: 5px;
+    padding: 0px;
+    font-size: 0.9em;
+    margin-top: 10px;
     /*margin: 5px;*/
+}
+
+ul.mylist li{
+    margin-bottom: 5px;
+    padding-left: 5px;
 }
 
 ul.mylist li:before {
     content: "~"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: blue; /* Or a color you prefer */
+    color: #ba9dae; /* Or a color you prefer */
+    font-weight: bold;
 }
 
-ul.info {
-    padding-left: 100px;
+.col-sm-12 {
+    margin-top: 20px;
 }
 
-ul.info li{
-    padding-bottom: 10px;
+.carousel {
+    margin-left: 80px;
+    margin-top: 20px;
 }
 
-ul.info li:before {
-    content: "-";
-    padding-right: 10px;
+.slide-img {
+    object-fit: contain;
+    max-height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-inner{
+  height: 400px;
+  background-color: white;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
 .navbar {
