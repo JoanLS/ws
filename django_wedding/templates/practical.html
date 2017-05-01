@@ -1,0 +1,93 @@
+{% extends "base_site.html" %}
+{% load static %}
+
+{% block header_includes %}
+{{ block.super }}
+<link href="{% static 'css/page.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block contents %}
+<div class="top-space"></div>
+<div class="page-content">
+
+   <section  id = "FAQ" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+          <h1>
+                <span class="section-title-container">
+                <span class="section-brackets">{</span><span class="section-title">Practical Information</span><span class="section-brackets">}</span>
+                </span>
+            </h1>
+          
+          <center> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wCYJQekA7Ld-H3LkcWzq0zuXsxs" width="640" height="480"></iframe></center>
+          
+          <h2>Access to the venues</h2>
+            <h3 class="info-title">From Abroad</h3>
+            <p>All the venue sites located in the Walloon Brabant region around 20 min south from Brussels, Belgium’s capital city. We recommend staying in Brussels as it has many more options in terms of lodgings (hotels, hostels, airBnB…) as well as activities for those who wish to do some sight-seeing either before or after the wedding. There are train and bus stations in proximity of both the ceremony and reception venues, from where car-sharing can be arranged.</p>
+
+            <h3 class="info-title">From Belgium</h3>
+            <h3 class="info-subtitle">Private ceremony venue - Chapelle de Profondsart : </h3>
+            <ul class="info">
+                <li>By car : E411, exit 5 towards Rixensart, free parking is available along the street</li>
+                <li>By train from Brussels : stop at Profondsart station on the Brussels - Namur line (S8 omnibus, departing from all Brussels stations), from there it is a 8 minute walk until the chapel or we can pick you by car at the station</li>
+            </ul>
+
+            <h3>Public ceremony venue - Hôtel de Vill d’Ottignies : </h3>
+            <ul class="info">
+                <li>By car : easily accessible from E411 or N4, a parking is available by the city hall (free for 3 hours)</li>
+                <li>By train from Brussels : stop at the Ottignies station on the Brussels - Namur line (S8 omnibus, departing from all Brussels stations, or IC direct, departing from the main Brussels stations), from there it is a 15 min walk to the city hall. Alternatively, it is possible to take a bus from Ottignies station to the city hall (Ottignies Eglise stop on lines 19, 28, 29, 30, please consult <a href="http://www.infotec.be">Info Tec site</a> for specific schedules). </li>
+            </ul>
+
+             <h3>Reception venue - Cense d’Almez : </h3>
+            <ul class="info">
+                <li>By car : easily accessible from E411, N4, or N25, free parking is available by the venue</li>
+                <li>By bus from Brussels : stop at the Ottignies station on the Brussels - Namur line (S8 omnibus, departing from all Brussels stations, or IC direct, departing from the main Brussels stations), from there take bus line 33 heading to Eghezée - Perwez. The venue is near the stop Almez Vicinal. Note that this bus line also departs from the Louvain-la-Neuve campus, with a stop at the Esplanade shopping center and a stop at the bus station (Parking Leclercq).</li>
+                <li>By bus from Wavre : take bus line 24 heading to Corbais-Nil-Chastre from several main Wavre bus stops (e.g. train station, place Bosch…) and stop at Almez Vicinal. </li>
+                <li>By taxi : transport to and from the reception venue can also be arranged by taxi, especially during the early hours after the party. The AZ Taxi company offers 4 to 6 people taxis in the region that can be reserved in advance (see their <a href="http://aztaxi.be">website</a>). For reference, a ride to Brussels costs around 60€. </li>
+            </ul>
+            <p>Note that for if you came to the Public Ceremony via public transport, car-sharing can be arranged to take you to the reception venue!</p>
+
+        <h2 class="info-title">Restaurants near the reception venue</h2>
+        <p>Though we would have loved to have all our guests to join us at all the events of the wedding day, we are unfortunately limited by costs and are not able to invite everyone to the sit-down dinner between the reception and the party. There are several restaurants in the vicinity of the reception venue where you can enjoy a nice meal, here are some of our recommendations. </p>
+            <h3>Wavre :</h3>
+            <ul class="info">
+                <li><a href="www.beirutplaza.be">Beirut Plaza</a> : Lebanese cuisine that can be enjoyed either tapas-style or with main courses (quite copious amounts!)</li>
+                <li><a href="www.ristoranteluppia.be">Luppia</a> : Italian restaurant serving traditional oven pizza and various other classics, including an extremely decadent carbonara</li>   
+                <li><a href="www.gangnam.be">Gangnam</a> : Korean dishes in a cozy atmosphere, with delicious marinated BBQ meats</li>
+                <li><a href="www.lapeniche.be">La Péniche</a> : fresh fish and seafood to be enjoyed in an actual boat(!) </li>
+                <li><a href="www.lafolleepoque.be">La Folle Epoque</a> : high-quality traditional Belgian brasserie-style food</li>
+            </ul>
+
+            <h3>Louvain-la-Neuve</h3>
+            <ul class="info">
+                <li><a href="https://www.facebook.com/La-Galoute-61403954249/">La Galoute</a> : brasserie-style food in an original decor and homey atmosphere</li>
+                <li><a href="www.lecambridge.be/">Le Cambridge</a> : offers a wide range of cuisines, from classic French dishes to Thai curries</li>
+            </ul>
+
+            <h2>Belgian Tourism</h2>
+            <p>For our guests from abroad who wish to discover Belgium, here are some handy resources as well as some of our own favourite spots! Additionally, neighbouring countries are also all very easily accessible from Brussels via high-speed trains (Thalys, Eurostar), offering the opportunity to plan some city-trips to Paris, Amsterdam, Cologne, or London.</p>
+            <h3>To visit in Belgium</h3>
+            <ul class="info">
+                <li><a href="www.belgium-tourism.be">Official Belgium Tourism site</a></li>
+                <li><a href="https://visit.brussels/">Brussels</a> : the Grand-Place is a must-see and the new pedestrian version of the Anspach Boulevard makes for a very nice stroll in the summer months. There is also the <a href="bsf.be/en">Brussels Summer Festival</a> with concerts until the 15th of August for the music lovers.</li>
+                <li><a href="www.wallonia.be/en/visit">Wallonia</a> : visit real medieval castles in <a href="www.bouillon-tourisme.be/en">Bouillon</a> and tour the famous trappist brewery in <a href="chimay.com/en/">Chimay</a>. </li>
+                <li><a href="www.visitflanders.com/">Flanders</a> : take a relaxing sight-seeing walk in Bruges, rightly called the Venice of the North. </li>
+            </ul>
+            <h3>For trips further away </h3>
+            <ul class="info">
+                <li><a href="https://www.thalys.com/be/en/">Thalys</a></li>
+                <li><a href="https://www.izy.com/en/homepage">Low-cost trains between Brussels & Paris</a></li>
+                <li><a href="https://www.eurostar.com">Eurostar</a></li>
+            </ul>
+
+            <p>If you have other questions, check the <a href="FAQ.html">FAQ</a>!</p>
+      </div>
+      <div class="col-sm-2"></div>
+    </section>
+
+</div>
+
+<div class="bottom-fade"></div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
