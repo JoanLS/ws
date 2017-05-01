@@ -87,3 +87,16 @@ td {
   padding-top: 10px;
   text-align: center;
 }
+
+td:first-of-type {
+  text-align: left;
+}
+
+.comments-field {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+}

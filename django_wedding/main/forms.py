@@ -56,6 +56,11 @@ class GuestCommentsForm(forms.ModelForm):
     class Meta:
         model = GuestComments
         fields = ['dietary_restrictions', 'music_request', 'comments']
+        widgets = {
+            'dietary_restrictions': forms.Textarea(attrs={'cols': 60, 'rows': 5}),
+            'music_request': forms.Textarea(attrs={'cols': 60, 'rows': 5}),
+            'comments': forms.Textarea(attrs={'cols': 60, 'rows': 5}),
+        }
 
 class GuestChildrenForm(forms.ModelForm):
 
