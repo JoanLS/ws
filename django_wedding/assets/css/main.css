@@ -171,7 +171,11 @@ ul.mylist li:before {
 
 .carousel-inner{
   height: 400px;
-  background-color: grey;
+  background-color: white;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
 .navbar {
