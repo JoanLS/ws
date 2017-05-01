@@ -1,0 +1,18 @@
+.top-space {
+    margin-top: 100px;
+}
+
+h2.info-title {
+    padding-bottom: 10px;
+}
+
+h3.info-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+h3.info-subtitle {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
