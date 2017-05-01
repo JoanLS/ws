@@ -4,21 +4,25 @@
 {% block header_includes %}
 {{ block.super }}
 <link href="{% static 'css/rsvp.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/page.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block contents %}
-<div class="page-content form-container">
+<div class="top-space"></div>
+<div class="page-content">
+          <h1>
+                <span class="section-title-container">
+                <span class="section-brackets">{</span><span class="section-title">RSVP</span><span class="section-brackets">}</span>
+                </span>
+            </h1>
   <form class="form-signin" action="." method="post">
     {% csrf_token %}
     <div class="form-content form-rsvp">
 
-      <h2 class="form-signin-heading">RSVP</h2>
 
-      <center>
         <p>
           Please tell us to which part of the festivities you will be coming.
         </p>
-      </center>
 
       <table>
         <thead>
@@ -39,11 +43,21 @@
             {% with forloop.counter as i %}
             {% for guest_form in guest_forms %}
             {% if i == forloop.counter %}
-            <td>{{ guest_form.coming_private_ceremony }}</td>
-            <td>{{ guest_form.coming_public_ceremony }}</td>
-            <td>{{ guest_form.coming_reception }}</td>
-            <td>{{ guest_form.coming_dinner }}</td>
-            <td>{{ guest_form.coming_party }}</td>
+            <td>{{ guest_form.coming_private_ceremony }}
+              <label for='{{ guest_form.coming_private_ceremony.id_for_label }}'></label>
+            </td>
+            <td>{{ guest_form.coming_public_ceremony }}
+              <label for='{{ guest_form.coming_public_ceremony.id_for_label }}'></label>
+            </td>
+            <td>{{ guest_form.coming_reception }}
+              <label for='{{ guest_form.coming_reception.id_for_label }}'></label>
+            </td>
+            <td>{{ guest_form.coming_dinner }}
+              <label for='{{ guest_form.coming_dinner.id_for_label }}'></label>
+            </td>
+            <td>{{ guest_form.coming_party }}
+              <label for='{{ guest_form.coming_party.id_for_label }}'></label>
+            </td>
             {% endif %}
             {% endfor %}
             {% endwith %}
@@ -53,50 +67,52 @@
         </tbody>
       </table>
 
-        <div class="comments-field">
-          <p>
-            How many children menus should we include for the dinner?
-          </p>
+      <div class="comments-field">
+        <p>
+          How many children menus should we include for the dinner?
+        </p>
 
-          <div>
-            {{ children_form.children_menus }}    
-          </div>
+        <div>
+          {{ children_form.children_menus }}    
         </div>
+      </div>
 
-        <div class="comments-field">
-          <p>
-            Are there any dietary restriction we should take into account?
-          </p>
+      <div class="comments-field">
+        <p>
+          Are there any dietary restriction we should take into account?
+        </p>
 
-          <div>
-            {{ comments_form.dietary_restrictions }}
-          </div>
+        <div>
+          {{ comments_form.dietary_restrictions }}
         </div>
+      </div>
 
-        <div class="comments-field">
-          <p>
-            Any music you would like to request for the party?
-          </p>
+      <div class="comments-field">
+        <p>
+          Any music you would like to request for the party?
+        </p>
 
-          <div>
-            {{ comments_form.music_request }}
-          </div>
+        <div>
+          {{ comments_form.music_request }}
         </div>
+      </div>
 
-        <div class="comments-field">
-          <p>
-            Anything else you want to tell us?
-          </p>
+      <div class="comments-field">
+        <p>
+          Anything else you want to tell us?
+        </p>
 
-          <div>
-            {{ comments_form.comments }}
-          </div>
+        <div>
+          {{ comments_form.comments }}
         </div>
+      </div>
 
     </div>
     <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">Submit</button>
   </form>
 </div>
+<div class="bottom-fade"></div>
+
 {% endblock %}
 
 {% block footer %}{% endblock %}
