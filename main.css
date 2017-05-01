@@ -1,3 +1,19 @@
+
+.carousel {
+    margin-left: 100px;
+}
+
+.slide-img {
+    object-fit: contain;
+    max-height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-inner{
+  height: 500px;
+}
+
 html {
     position: relative;
     min-height: 100%;
