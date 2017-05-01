@@ -12,6 +12,8 @@ from main.models import GuestCode
 class Homepage(TemplateView):
     template_name = "home.html"
 
+class FAQ(TemplateView):
+    template_name = "faq.html"
 
 class RSVPLogin(FormView):
     template_name = 'rsvp_login.html'
