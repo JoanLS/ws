@@ -8,224 +8,229 @@
 
 {% block contents %}
 <div class="jumbotron">
-    <h1 class="h1-jumbotron-clip clip-text">&</h1>
-    <h1 class="h1-jumbotron"><span class="jumbotron-name jumbotron-name-left" data-text="Bastien">Bastien</span><span class="jumbotron-name jumbotron-name-right" data-text="Joan">Joan</span></h1>
-        <h3 id="countdown">
-          <span id="countdown-days" class="countdown-number"></span>
-          {% trans "days" %}
-          <span id="countdown-hours" class="countdown-number"></span>
-          {% trans "hours" %}
-          <span id="countdown-minutes" class="countdown-number"></span>
-          {% trans "minutes" %}
-          <span id="countdown-seconds" class="countdown-number"></span>
-          {% trans "seconds" %}
-      </h3>   
+  
+  <h1 class="h1-jumbotron-clip clip-text">&</h1>
+  <h1 class="h1-jumbotron"><span class="jumbotron-name jumbotron-name-left" data-text="Bastien">Bastien</span><span class="jumbotron-name jumbotron-name-right" data-text="Joan">Joan</span></h1>
+
+  <h3 id="countdown">
+    <span id="countdown-days" class="countdown-number"></span>
+    {% trans "days" %}
+    <span id="countdown-hours" class="countdown-number"></span>
+    {% trans "hours" %}
+    <span id="countdown-minutes" class="countdown-number"></span>
+    {% trans "minutes" %}
+    <span id="countdown-seconds" class="countdown-number"></span>
+    {% trans "seconds" %}
+  </h3>   
 </div>
 
 <div class="page-content">
 
-    <section class="row">
-        <div class="col-sm-3">
-            <div class="image-left parallax-1">
-                <img src="{% static 'img/origami-1.png' %}">
-            </div> 
-        </div>
-        <div id="about" class="col-sm-9">
-            <h1>
-                <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">{% trans "About us" %}</span><span class="section-brackets">}</span>
-                </span>
-            </h1>
-            <p class="block-text">{% blocktrans %}They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.{% endblocktrans %}</p>
-            <p class="block-text">{% blocktrans %}Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :{% endblocktrans %}</p>
-        </div>
+  <section class="row">
+    <div class="col-sm-3">
+      <div class="image-left parallax-1">
+        <img src="{% static 'img/origami-1.png' %}">
+      </div> 
+    </div>
+    <div id="about" class="col-sm-9">
+      <h1>
+        <span class="section-title-container">
+          <span class="section-brackets">{</span><span class="section-title">{% trans "About us" %}</span><span class="section-brackets">}</span>
+        </span>
+      </h1>
+      <p class="block-text">{% blocktrans %}They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.{% endblocktrans %}</p>
+      <p class="block-text">{% blocktrans %}Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :{% endblocktrans %}</p>
+    </div>
 
-        <div class="col-sm-7 container">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
-            <!-- Indicators -->
+    <div class="col-sm-7 container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+        <!-- Indicators -->
 
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
 
-              <div class="item active">
-                <img src="{% static 'img/slide-1.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-2.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-3.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-4.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-5.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-6.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-7.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-8.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-9.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-10.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-11.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-12.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-13.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-14.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-15.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-16.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-17.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-18.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-19.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-20.jpg' %}" class="slide-img">
-              </div>
-              <div class="item">
-                <img src="{% static 'img/slide-21.jpg' %}" class="slide-img">
-              </div>
-              
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
+          <div class="item active">
+            <img src="{% static 'img/slide-1.jpg' %}" class="slide-img">
           </div>
+          <div class="item">
+            <img src="{% static 'img/slide-2.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-3.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-4.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-5.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-6.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-7.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-8.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-9.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-10.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-11.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-12.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-13.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-14.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-15.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-16.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-17.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-18.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-19.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-20.jpg' %}" class="slide-img">
+          </div>
+          <div class="item">
+            <img src="{% static 'img/slide-21.jpg' %}" class="slide-img">
+          </div>
+
         </div>
 
-        <div class="col-sm-5">
-          <ul class="mylist">
-            <li>{% trans "2 theses" %}</li>
-            <li>{% trans "2 cats" %}</li>
-            <li>{% trans "2 apartments" %}</li>
-            <li>{% trans "15 months apart" %}</li>
-            <li>{% trans "1 new bookcase" %}</li>
-            <li>{% trans "9 countries visited" %}</li>
-            <li>{% trans "1 very slow turtle" %}</li>
-            <li>{% trans "5 Magic the Gathering pre-release game events" %}</li>
-            <li>{% trans "1 freak hurricane" %}</li>
-            <li>{% trans "A ton of post-rock concerts" %}</li>
-            <li>{% trans "5 New Year’s cheese fondues" %}</li>
-            <li>{% trans "Many weekends spent cracking video games" %}</li>
-            <li>{% trans "1 alarming message about hospitals" %}</li>
-            <li>{% trans "A million (and counting) decorative birbs" %}</li>
-            <li>{% trans "Too many stupid nicknames to count" %}</li>
-            <li>{% trans "A (un)reasonable number of newly acquired musical instruments" %}</li>
-            <li>{% trans "A thousand evenings wondering what to eat for dinner" %}</li>
-            </ul>
-            <p> </p>
-            <p> </p>
-            <ul class="mylist"><li>{% trans "1 very important question" %}</li></ul>
-          </ul>
-        </div>
-        <div class="col-sm-12"><center><p>{% blocktrans %}...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).{% endblocktrans %}</p></center></div>
-    </section>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
 
-    <section class="row">
-        <div id="wedding" class="col-sm-9">
-            <h1>
-                <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">{% trans "Wedding Info" %}</span><span class="section-brackets">}</span>
-                </span>
-            </h1>
-            <center>
-            <p>{% blocktrans %}For more information on how to get to the venue sites or travelling from abroad, please see the <a href="practical.html">Practical Info</a> page.{% endblocktrans %}</p>
-            <p>{% blocktrans %}Check the <a href="FAQ.html">FAQ</a> if you have any other questions!{% endblocktrans %}</p>
+    <div class="col-sm-5">
+      <ul class="mylist">
+        <li>{% trans "2 theses" %}</li>
+        <li>{% trans "2 cats" %}</li>
+        <li>{% trans "2 apartments" %}</li>
+        <li>{% trans "15 months apart" %}</li>
+        <li>{% trans "1 new bookcase" %}</li>
+        <li>{% trans "9 countries visited" %}</li>
+        <li>{% trans "1 very slow turtle" %}</li>
+        <li>{% trans "5 Magic the Gathering pre-release game events" %}</li>
+        <li>{% trans "1 freak hurricane" %}</li>
+        <li>{% trans "A ton of post-rock concerts" %}</li>
+        <li>{% trans "5 New Year’s cheese fondues" %}</li>
+        <li>{% trans "Many weekends spent cracking video games" %}</li>
+        <li>{% trans "1 alarming message about hospitals" %}</li>
+        <li>{% trans "A million (and counting) decorative birbs" %}</li>
+        <li>{% trans "Too many stupid nicknames to count" %}</li>
+        <li>{% trans "A (un)reasonable number of newly acquired musical instruments" %}</li>
+        <li>{% trans "A thousand evenings wondering what to eat for dinner" %}</li>
+      </ul>
+      <p> </p>
+      <p> </p>
+      <ul class="mylist"><li>{% trans "1 very important question" %}</li></ul>
+    </ul>
+  </div>
+  <div class="col-sm-12"><center><p>{% blocktrans %}...and in August 2017, we will celebrate 7 years of joy and happiness and of all the future years to come :).{% endblocktrans %}</p></center></div>
+</section>
 
-            <h2>{% trans "Friday 18 August 2017" %}</h2>
-            <h3>{% trans "Private wedding ceremony" %}</h3>
-            <p>{% trans "An intimate personal ceremony" %}</p>
-            <p>{% trans "19:00" %}</p>
-            <p>{% trans "Chapelle de Profondsart" %}</p>
-            <p>{% trans "Rue de Grandsart 13, 1300 Limal" %}</p>
+<section class="row">
+  <div id="wedding" class="col-sm-9">
+    <h1>
+      <span class="section-title-container">
+        <span class="section-brackets">{</span><span class="section-title">{% trans "Wedding Info" %}</span><span class="section-brackets">}</span>
+      </span>
+    </h1>
+    <center>
+      {% url 'practical' as practical_url %}
+      <p>{% blocktrans %}For more information on how to get to the venue sites or travelling from abroad, please see the <a href="{{ practical_url }}">Practical Info</a> page.{% endblocktrans %}</p>
+      {% url 'faq' as faq_url %}
+      <p>{% blocktrans %}Check the <a href="{{ faq_url }}">FAQ</a> if you have any other questions!{% endblocktrans %}</p>
 
-            <h2>{% trans "Saturday 19 August 2017" %}</h2>
-            <h3>{% trans "Public wedding ceremony" %}</h3>
-            <p>{% trans "The civil marriage ceremony involving all the legal stuff" %}</p>
-            <p>{% trans "14:00 - 14:30" %}</p>
-            <p>{% trans "Hôtel de Ville d’Ottignies" %}</p>
-            <p>{% trans "Avenue des Combattants 35, 1340" %} Ottignies-Louvain-la-Neuve" %}</p>
+      <h2>{% trans "Friday 18 August 2017" %}</h2>
+      <h3>{% trans "Private wedding ceremony" %}</h3>
+      <p>{% trans "An intimate personal ceremony" %}</p>
+      <p>{% trans "19:00" %}</p>
+      <p>{% trans "Chapelle de Profondsart" %}</p>
+      <p>{% trans "Rue de Grandsart 13, 1300 Limal" %}</p>
 
-            <h3>{% trans "Reception" %}</h3>
-            <p>{% trans "Drinks, snacks, and congratulations" %}</p>
-            <p>{% trans "15:00 - 17:00" %}</p>
-            <p>{% trans "Cense d’Almez" %}</p>
-            <p>{% trans "Rue d’Almez 5, 1325 Corroy-le-Grand" %}</p>
+      <h2>{% trans "Saturday 19 August 2017" %}</h2>
+      <h3>{% trans "Public wedding ceremony" %}</h3>
+      <p>{% trans "The civil marriage ceremony involving all the legal stuff" %}</p>
+      <p>{% trans "14:00 - 14:30" %}</p>
+      <p>{% trans "Hôtel de Ville d’Ottignies" %}</p>
+      <p>{% trans "Avenue des Combattants 35, 1340" %} Ottignies-Louvain-la-Neuve" %}</p>
 
-            <h3>{% trans "Dinner" %}</h3>
-            <p>{% trans "Sit-down meal and emotional speeches" %}</p>
-            <p>{% trans "18:00 - 20h30" %}</p>
-            <p>{% trans "Cense d’Almez" %}</p>
+      <h3>{% trans "Reception" %}</h3>
+      <p>{% trans "Drinks, snacks, and congratulations" %}</p>
+      <p>{% trans "15:00 - 17:00" %}</p>
+      <p>{% trans "Cense d’Almez" %}</p>
+      <p>{% trans "Rue d’Almez 5, 1325 Corroy-le-Grand" %}</p>
 
-            <h3>{% trans "Party" %}</h3>
-            <p>{% trans "A live concert of our favourite songs followed by dancing all night!" %}</p>
-            <p>{% trans "21:00 - 03:00" %}</p>
-            <p>{% trans "Cense d’Almez" %}</p>
-            </center>
-        </div>
-        <div class="col-sm-3">
-            <div class="image-right parallax-2">
-                <img src="{% static 'img/origami-2.png' %}">
-            </div> 
-        </div>
-    </section>
+      <h3>{% trans "Dinner" %}</h3>
+      <p>{% trans "Sit-down meal and emotional speeches" %}</p>
+      <p>{% trans "18:00 - 20h30" %}</p>
+      <p>{% trans "Cense d’Almez" %}</p>
 
-    <section id="contact" class="row">
-        <div class="col-sm-3">
-            <div class="image-left parallax-3">
-                <img src="{% static 'img/origami-3.png' %}">
-            </div> 
-        </div>
-        <div  class="col-sm-9">
-            <h1>
-                <span class="section-title-container">
-                <span class="section-brackets">{</span><span class="section-title">{% trans "Contact us" %}</span><span class="section-brackets">}</span>
-                </span>
-            </h1>
-            <p>{% blocktrans %}Questions? Please have a look at the <a href="FAQ.html">FAQ</a> first!{% endblocktrans %}</p>
-            <p>{% blocktrans %}If you cannot find your answer, you can send us an e-mail at : bastien.et.joan {at} gmail {dot} com{% endblocktrans %}</p>
-            
-        </div>
+      <h3>{% trans "Party" %}</h3>
+      <p>{% trans "A live concert of our favourite songs followed by dancing all night!" %}</p>
+      <p>{% trans "21:00 - 03:00" %}</p>
+      <p>{% trans "Cense d’Almez" %}</p>
+    </center>
+  </div>
+  <div class="col-sm-3">
+    <div class="image-right parallax-2">
+      <img src="{% static 'img/origami-2.png' %}">
+    </div> 
+  </div>
+</section>
 
-    </section>
+<section id="contact" class="row">
+  <div class="col-sm-3">
+    <div class="image-left parallax-3">
+      <img src="{% static 'img/origami-3.png' %}">
+    </div> 
+  </div>
+  <div  class="col-sm-9">
+    <h1>
+      <span class="section-title-container">
+        <span class="section-brackets">{</span><span class="section-title">{% trans "Contact us" %}</span><span class="section-brackets">}</span>
+      </span>
+    </h1>
+    {% url 'faq' as faq_url %}
+    <p>{% blocktrans %}Questions? Please have a look at the <a href="{{ faq_url }}">FAQ</a> first!{% endblocktrans %}</p>
+    <p>{% blocktrans %}If you cannot find your answer, you can send us an e-mail at : bastien.et.joan {at} gmail {dot} com{% endblocktrans %}</p>
+
+  </div>
+
+</section>
 
 
 
 </div>
-    <div class="bottom-fade"></div>
+<div class="bottom-fade"></div>
 {% endblock %}
 
 
@@ -237,7 +242,7 @@
     $(this).children("#countdown-hours").text(event.strftime('%H'));
     $(this).children("#countdown-minutes").text(event.strftime('%M'));
     $(this).children("#countdown-seconds").text(event.strftime('%S'));
-});
+  });
 </script>
 {% endblock %}
 </body>

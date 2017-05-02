@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 17:54+0200\n"
+"POT-Creation-Date: 2017-05-01 19:22+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,14 +35,14 @@ msgid "Practical"
 msgstr ""
 
 #: .\templates\base_site.html:39
-msgid "Registry"
-msgstr ""
-
-#: .\templates\base_site.html:40
 msgid "FAQ"
 msgstr ""
 
-#: .\templates\base_site.html:41 .\templates\rsvp.html:15
+#: .\templates\base_site.html:40
+msgid "Registry"
+msgstr ""
+
+#: .\templates\base_site.html:41 .\templates\rsvp.html:16
 msgid "RSVP"
 msgstr ""
 
@@ -377,119 +377,123 @@ msgstr ""
 msgid "Wedding Info"
 msgstr ""
 
-#: .\templates\home.html:165
+#: .\templates\home.html:166
+#, python-format
 msgid ""
 "For more information on how to get to the venue sites or travelling from "
-"abroad, please see the <a href=\"practical.html\">Practical Info</a> page."
-msgstr ""
-
-#: .\templates\home.html:166
-msgid "Check the <a href=\"FAQ.html\">FAQ</a> if you have any other questions!"
+"abroad, please see the <a href=\"%(practical_url)s\">Practical Info</a> page."
 msgstr ""
 
 #: .\templates\home.html:168
-msgid "Friday 18 August 2017"
-msgstr ""
-
-#: .\templates\home.html:169
-msgid "Private wedding ceremony"
+#, python-format
+msgid ""
+"Check the <a href=\"%(faq_url)s\">FAQ</a> if you have any other questions!"
 msgstr ""
 
 #: .\templates\home.html:170
-msgid "An intimate personal ceremony"
+msgid "Friday 18 August 2017"
 msgstr ""
 
 #: .\templates\home.html:171
-msgid "19:00"
+msgid "Private wedding ceremony"
 msgstr ""
 
 #: .\templates\home.html:172
-msgid "Chapelle de Profondsart"
+msgid "An intimate personal ceremony"
 msgstr ""
 
 #: .\templates\home.html:173
-msgid "Rue de Grandsart 13, 1300 Limal"
+msgid "19:00"
+msgstr ""
+
+#: .\templates\home.html:174
+msgid "Chapelle de Profondsart"
 msgstr ""
 
 #: .\templates\home.html:175
-msgid "Saturday 19 August 2017"
-msgstr ""
-
-#: .\templates\home.html:176
-msgid "Public wedding ceremony"
+msgid "Rue de Grandsart 13, 1300 Limal"
 msgstr ""
 
 #: .\templates\home.html:177
-msgid "The civil marriage ceremony involving all the legal stuff"
+msgid "Saturday 19 August 2017"
 msgstr ""
 
 #: .\templates\home.html:178
-msgid "14:00 - 14:30"
+msgid "Public wedding ceremony"
 msgstr ""
 
 #: .\templates\home.html:179
-msgid "Hôtel de Ville d’Ottignies"
+msgid "The civil marriage ceremony involving all the legal stuff"
 msgstr ""
 
 #: .\templates\home.html:180
+msgid "14:00 - 14:30"
+msgstr ""
+
+#: .\templates\home.html:181
+msgid "Hôtel de Ville d’Ottignies"
+msgstr ""
+
+#: .\templates\home.html:182
 msgid "Avenue des Combattants 35, 1340"
 msgstr ""
 
-#: .\templates\home.html:182 .\templates\rsvp.html:31
+#: .\templates\home.html:184 .\templates\rsvp.html:32
 msgid "Reception"
 msgstr ""
 
-#: .\templates\home.html:183
+#: .\templates\home.html:185
 msgid "Drinks, snacks, and congratulations"
 msgstr ""
 
-#: .\templates\home.html:184
+#: .\templates\home.html:186
 msgid "15:00 - 17:00"
 msgstr ""
 
-#: .\templates\home.html:185 .\templates\home.html:191
-#: .\templates\home.html:196
+#: .\templates\home.html:187 .\templates\home.html:193
+#: .\templates\home.html:198
 msgid "Cense d’Almez"
 msgstr ""
 
-#: .\templates\home.html:186
+#: .\templates\home.html:188
 msgid "Rue d’Almez 5, 1325 Corroy-le-Grand"
 msgstr ""
 
-#: .\templates\home.html:188 .\templates\rsvp.html:32
+#: .\templates\home.html:190 .\templates\rsvp.html:33
 msgid "Dinner"
 msgstr ""
 
-#: .\templates\home.html:189
+#: .\templates\home.html:191
 msgid "Sit-down meal and emotional speeches"
 msgstr ""
 
-#: .\templates\home.html:190
+#: .\templates\home.html:192
 msgid "18:00 - 20h30"
 msgstr ""
 
-#: .\templates\home.html:193 .\templates\rsvp.html:33
+#: .\templates\home.html:195 .\templates\rsvp.html:34
 msgid "Party"
 msgstr ""
 
-#: .\templates\home.html:194
+#: .\templates\home.html:196
 msgid "A live concert of our favourite songs followed by dancing all night!"
 msgstr ""
 
-#: .\templates\home.html:195
+#: .\templates\home.html:197
 msgid "21:00 - 03:00"
 msgstr ""
 
-#: .\templates\home.html:215
+#: .\templates\home.html:217
 msgid "Contact us"
 msgstr ""
 
-#: .\templates\home.html:218
+#: .\templates\home.html:221
+#, python-format
 msgid ""
-"Questions? Please have a look at the <a href=\"FAQ.html\">FAQ</a> first!"
+"Questions? Please have a look at the <a href=\"%(faq_url)s\">FAQ</a> first!"
 msgstr ""
 
-#: .\templates\home.html:219
+#: .\templates\home.html:222
 #, python-brace-format
 msgid ""
 "If you cannot find your answer, you can send us an e-mail at : bastien.et."
@@ -731,43 +735,43 @@ msgstr ""
 msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
 msgstr ""
 
-#: .\templates\rsvp.html:23
+#: .\templates\rsvp.html:24
 msgid "Please tell us to which part of the festivities you will be coming."
 msgstr ""
 
-#: .\templates\rsvp.html:29
+#: .\templates\rsvp.html:30
 msgid "Private ceremony"
 msgstr ""
 
-#: .\templates\rsvp.html:30
+#: .\templates\rsvp.html:31
 msgid "Public ceremony"
 msgstr ""
 
-#: .\templates\rsvp.html:71
+#: .\templates\rsvp.html:72
 msgid "How many children menus should we include for the dinner?"
 msgstr ""
 
-#: .\templates\rsvp.html:81
+#: .\templates\rsvp.html:82
 msgid "Are there any dietary restriction we should take into account?"
 msgstr ""
 
-#: .\templates\rsvp.html:91
+#: .\templates\rsvp.html:92
 msgid "Any music you would like to request for the party?"
 msgstr ""
 
-#: .\templates\rsvp.html:101
+#: .\templates\rsvp.html:102
 msgid "Anything else you want to tell us?"
 msgstr ""
 
-#: .\templates\rsvp.html:110 .\templates\rsvp_login.html:19
+#: .\templates\rsvp.html:111 .\templates\rsvp_login.html:20
 msgid "Submit"
 msgstr ""
 
-#: .\templates\rsvp_login.html:13
+#: .\templates\rsvp_login.html:14
 msgid "Reply to invitation"
 msgstr ""
 
-#: .\templates\rsvp_login.html:15
+#: .\templates\rsvp_login.html:16
 msgid ""
 "The invitation you received had a code written on it. Please enter it below "
 "to access the RSVP form."

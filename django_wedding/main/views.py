@@ -21,13 +21,23 @@ class Practical(TemplateView):
 class RSVPLogin(FormView):
     template_name = 'rsvp_login.html'
     form_class = RSVPLoginForm
-    success_url = '/rsvp/'
+    success_url = "/faq/"
+
+    def get(self, request, *args, **kwargs):
+        print(request)
+        return super(RSVPLogin, self).post(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        print(request)
+        return super(RSVPLogin, self).post(request, *args, **kwargs)
 
     def form_valid(self, form):
+        print("Form is valid!")
         if (GuestCode.validate(form.cleaned_data["code"])):
+            print(reverse('rsvp', kwargs={'code': form.cleaned_data["code"].lower()}))
             RSVPLogin.success_url = reverse('rsvp', kwargs={'code': form.cleaned_data["code"].lower()})
         else:
-            RSVPLogin.success_url = '/rsvp/'
+            RSVPLogin.success_url = reverse('rsvp')
         return super(RSVPLogin, self).form_valid(form)
 
 
@@ -73,9 +83,9 @@ class RSVP(TemplateView):
             guest_children.code = code 
             guest_children.save() 
  
-        if comments_form.is_valid(): 
-            guest_comments = comments_form.save(commit=False) 
-            guest_comments.code = code 
-            guest_comments.save()             
+        if comments_form.is_valid():
+            guest_comments = comments_form.save(commit=False)
+            guest_comments.code = code
+            guest_comments.save()
  
         return redirect(reverse('rsvp', kwargs={'code': kwargs["code"].lower()}))
