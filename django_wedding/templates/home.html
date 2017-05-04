@@ -8,20 +8,35 @@
 
 {% block contents %}
 <div class="jumbotron">
-  
-  <h1 class="h1-jumbotron-clip clip-text">&</h1>
-  <h1 class="h1-jumbotron"><span class="jumbotron-name jumbotron-name-left" data-text="Bastien">Bastien</span><span class="jumbotron-name jumbotron-name-right" data-text="Joan">Joan</span></h1>
-
-  <h3 id="countdown">
-    <span id="countdown-days" class="countdown-number"></span>
-    {% trans "days" %}
-    <span id="countdown-hours" class="countdown-number"></span>
-    {% trans "hours" %}
-    <span id="countdown-minutes" class="countdown-number"></span>
-    {% trans "minutes" %}
-    <span id="countdown-seconds" class="countdown-number"></span>
-    {% trans "seconds" %}
-  </h3>   
+  <div class="row vertical-align">
+    <div class="col-md-4 col-md-offset-1 col-lg-3 col-lg-offset-2 col-sm-12">
+      <h1 class="h1-jumbotron jumbotron-name jumbotron-name-left" data-text="Bastien">Bastien</h1>
+    </div>
+    <div class="col-md-3 col-lg-2 col-sm-12">
+      <center>
+        <h1 class="h1-jumbotron-clip clip-text jumbotron-center">&</h1>
+      </center>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12">
+      <h1 class="h1-jumbotron jumbotron-name jumbotron-name-right" data-text="Joan">
+        Joan
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <center>
+    <h3 id="countdown">
+      <span id="countdown-days" class="countdown-number"></span>
+      {% trans "days" %}
+      <span id="countdown-hours" class="countdown-number"></span>
+      {% trans "hours" %}
+      <span id="countdown-minutes" class="countdown-number"></span>
+      {% trans "minutes" %}
+      <span id="countdown-seconds" class="countdown-number"></span>
+      {% trans "seconds" %}
+    </h3>
+    </center>
+  </div>
 </div>
 
 <div class="page-content">
