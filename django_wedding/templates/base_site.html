@@ -22,52 +22,71 @@
 
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col8">
+        <!-- Fixed navbar -->
+        {% block navbar %}
+        <div class="navbar-container navbar-fixed-top container">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
 
-  <!-- Fixed navbar -->
-  {% block navbar %}
-  <div class="navbar-container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+              </div>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-            <li><a href="/#about">{% trans "About Us" %}</a></li>
-            <li><a href="/#wedding">{% trans "The Wedding" %}</a></li>
-            <li><a href="/#contact">{% trans "Contact" %}</a></li>
-            <li><a href="{% url 'practical' %}">{% trans "Practical" %}</a></li>
-            <li><a href="#registry">{% trans "Registry" %}</a></li>
-            <li><a href="{% url 'faq' %}">{% trans "FAQ" %}</a></li>
-            <li><a href="{% url 'rsvp_login' %}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% trans "RSVP" %} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            {% get_current_language as LANGUAGE_CODE %}
-            <li {% if LANGUAGE_CODE == "fr" %}class="active"{% endif %}>
-              <form id="lang_fr" action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                <input name="next" type="hidden" value="{{ redirect_to }}" />
-                <input name="language" type="hidden" value="fr" />
-              </form>
-              <a href="javascript:document.getElementById('lang_fr').submit();">FR</a>
-            </li>
-            <li {% if LANGUAGE_CODE == "en" %}class="active"{% endif %}>
-              <form id="lang_en" action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                <input name="next" type="hidden" value="{{ redirect_to }}" />
-                <input name="language" type="hidden" value="en" />
-              </form>
-              <a href="javascript:document.getElementById('lang_en').submit();">EN</a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li></li>
+                  <li><a href="/#about">{% trans "About Us" %}</a></li>
+                  <li><a href="/#wedding">{% trans "The Wedding" %}</a></li>
+                  <li><a href="/#contact">{% trans "Contact" %}</a></li>
+                  <li><a href="{% url 'practical' %}">{% trans "Practical" %}</a></li>
+                  <li><a href="{% url 'faq' %}">{% trans "FAQ" %}</a></li>
+                  <li><a href="#registry">{% trans "Registry" %}</a></li>
+                  <li><a href="{% url 'rsvp_login' %}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% trans "RSVP" %} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  <li {% if LANGUAGE_CODE == "fr" %}class="active"{% endif %}>
+                    <form id="lang_fr" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <input name="language" type="hidden" value="fr" />
+                    </form>
+                    <a href="javascript:document.getElementById('lang_fr').submit();">FR</a>
+                  </li>
+                  <li {% if LANGUAGE_CODE == "en" %}class="active"{% endif %}>
+                    <form id="lang_en" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <input name="language" type="hidden" value="en" />
+                    </form>
+                    <a href="javascript:document.getElementById('lang_en').submit();">EN</a>
+                  </li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+        </div>
+        {% endblock %}
+
+        {% block contents %}{% endblock %}  
+
+        {% block footer %}
+        <center>
+          <span class="footer">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by Bastien & Joan (2017)</span>
+        </center>
+        {% endblock %}
       </div>
-    </nav>
+      <div class="col-2"></div>
+    </div>
   </div>
-  {% endblock %}
-
-  {% block contents %}{% endblock %}  
-
-  {% block footer %}
-  {% endblock %}
-
 
   {% block extrajs %}
   <!-- Placed at the end of the document so the pages load faster -->
@@ -76,6 +95,7 @@
 
   <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
   <script src="{% static 'js/background-clip-text-polyfill.js' %}"></script>
+  <script src="{% static 'js/css_browser_selector.js' %}"></script>
   {% endblock %}
 </body>
 </html>

@@ -1,5 +1,6 @@
 {% extends "base_site.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block header_includes %}
 {{ block.super }}
@@ -8,7 +9,7 @@
 
 {% block contents %}
     <div class="page-content form-container">
-      <form class="form-signin" action="/rsvp/" method="post">
+      <form class="form-signin" action="{% url 'rsvp_login' %}" method="post">
         {% csrf_token %}
         <h2 class="form-signin-heading">{% trans "Reply to invitation" %}</h2>
         <center>

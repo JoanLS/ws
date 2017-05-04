@@ -1,37 +1,40 @@
-
-
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('../fonts/CaviarDreams.ttf');
-}
+    font-family: 'CaviarDreams';
+    src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-  font-family: 'CaviarDreams';
-  font-weight: bold;
-  src: url('../fonts/CaviarDreams_Bold.ttf');
 }
 
 @font-face {
-  font-family: 'CaviarDreams';
-  font-weight: bold;
-  font-style: italic;
-  src: url('../fonts/CaviarDreams_BoldItalic.ttf');
+    font-family: 'CaviarDreams';
+    src: url('../fonts/caviardreams_bold-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'CaviarDreams';
-  font-style: italic;
-  src: url('../fonts/CaviarDreams_Italic.ttf');
+    font-family: 'CaviarDreams';
+    src: url('../fonts/caviardreams_bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
 }
 
-html {
-    position: relative;
-    min-height: 100%;
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../fonts/caviardreams_italic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
 }
+
 body {
-    /* Margin bottom by footer height */
-    padding-left: 12%;
-    padding-right: 12%;
     background-image: url("../img/bg-big.jpg");
     background-attachment: fixed;
 }
@@ -66,7 +69,7 @@ h1 {
 .section-brackets {
     font-size: 2em;
     background-image : url("../img/bg-title.jpg");
-    background-attachment: fixed;
+    //background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 0.5em;
@@ -189,11 +192,24 @@ ul.mylist li:before {
     border-bottom-right-radius: 25px;
 }
 
+.navbar-header>a {
+  font-size: 1em;
+}
+
 .navbar-container {
-    top: 0;
-    position: fixed;
-    z-index: 10000;
-    width: 76%;
+  padding: 0;
+};
+
+.navbar .navbar-right {
+    margin: 5px;
+}
+
+.nav>li {
+    padding-left: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  border-radius: 25px;
 }
 
 h1.h1-jumbotron {
@@ -282,22 +298,43 @@ h1.h1-jumbotron-clip {
     text-align: center;
     /* Color fallback */
     color: #fff;
-    -webkit-background-clip: text;
+}
 
-    -webkit-text-fill-color: transparent;
+.webkit .clip-text {
+    background-attachment: scroll;
     background-image: url("../img/bg3.png");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-attachment: fixed;
 }
 
+.firefox .clip-text {
+  background-attachment: scroll;
+  background-image: url("../img/bg3.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: scroll;  
+}
+
+.edge .clip-text {
+  background-attachment: scroll;
+  background-image: url("../img/bg3.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: scroll;  
+}
+
+
+
+.ie .clip-text{
+    color: red;
+}
+
 .footer {
-    position: fixed;
-    align-items: center;
-    bottom: 0;
-    width: 76%;
     font-family: CaviarDreams;
-    font-weight: bold;
-    /* Set the fixed height of the footer here */
-    background: rgba(255,255,255,0.8);
+    color: white;
+    padding-bottom: 50px;
+    font-style: italic;
 }
 
 .image-left {
