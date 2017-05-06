@@ -1,39 +1,3 @@
-@font-face {
-    font-family: 'CaviarDreams';
-    src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
-         url('../fonts/caviardreams-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CaviarDreams';
-    src: url('../fonts/caviardreams_bold-webfont.woff2') format('woff2'),
-         url('../fonts/caviardreams_bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CaviarDreams';
-    src: url('../fonts/caviardreams_bolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/caviardreams_bolditalic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: 'CaviarDreams';
-    src: url('../fonts/caviardreams_italic-webfont.woff2') format('woff2'),
-         url('../fonts/caviardreams_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
 body {
     background-image: url("../img/bg-big.jpg");
     background-attachment: fixed;
@@ -45,6 +9,10 @@ h1 {
     font-weight: bold;
 }
 
+.spacer {
+  height: 1.5em;
+}
+
 .vertical-align {
     display: flex;
     align-items: center;
@@ -54,6 +22,10 @@ h1 {
     .row.vertical-align {
         display: block; /* Turn off the flexible box layout */
     }
+}
+
+section.container {
+  padding: 45px;
 }
 
 .section-title-container {
@@ -79,11 +51,15 @@ h1 {
 .section-brackets {
     font-size: 2em;
     background-image : url("../img/bg-title.jpg");
-    //background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    background-attachment: scroll;
+}
+
+.webkit .section-brackets {
+    background-attachment: fixed;
 }
 
 .ie .section-brackets {
@@ -171,9 +147,9 @@ ul.mylist li:before {
     font-weight: bold;
 }
 
-.col-sm-12 {
+/*.col-sm-12 {
     margin-top: 20px;
-}
+}*/
 
 .carousel {
     margin-left: 80px;
@@ -227,137 +203,6 @@ ul.mylist li:before {
   border-radius: 25px;
 }
 
-h1.jumbotron-name {
-    background-image: url("../img/parallax-bg1.jpg");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fff;
-    position: relative;
-    background-attachment: scroll;
-    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.33);
-}
-
-@media (max-width: 767px) {
-    h1.jumbotron-name {
-        font-size: 5em;
-    }
-}
-
-.ie .jumbotron-name {
-  color: #3998b0;
-  background: none;
-}
-
-h1.jumbotron-name:after {
-    background: none;
-    content: attr(data-text);
-    left: 0;
-    position: absolute;
-    text-shadow: 3px 9px 6px rgba(0, 0, 0, 0.20);
-    top: 0;
-    z-index: -1;
-}
-
-h1.h1-jumbotron-clip {
-    text-align: center;
-    font-size: 280px;
-    padding:0;
-    margin: 0;
-    //position: absolute;
-    font-family: CaviarDreams;
-    font-style: italic;
-}
-
-.ie h1.h1-jumbotron-clip {
-  background: none;
-  color: #dbbbca;
-}
-
-.jumbotron-name-left {
-    text-align: center;
-}
-
-.jumbotron-name-right {
-    text-align: center;
-}
-
-.jumbotron-center {
-  text-align: center;
-}
-
-
-.jumbotron-spacer {
-    width: 200px;
-}
-
-.jumbotron {
-    //background: rgba(255,255,255,0.85);
-    //background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #91a9cb));
-    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0));
-    background-size: cover;
-    //color: #ffffff;
-    //text-shadow: 3px 3px 3px #7e7e7e;
-    //text-align: center;
-    margin-bottom: 50px;
-    padding-top: 60px;
-}
-
-.ie .jumbotron {
-  background: rgba(255, 255, 255, 0.75);
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-
-#countdown {
-    margin-top: 80px;
-    text-shadow: 3px 3px 3px #7e7e7e;
-    font-family: 'Merriweather', serif;
-    color: #fff;
-}
-
-.clip-text {
-    font-size: 6em;
-    font-weight: bold;
-    line-height: 1;
-    position: relative;
-    display: inline-block;
-    //margin: .25em;
-    //padding: .5em .75em;
-    text-align: center;
-    /* Color fallback */
-    color: #fff;
-}
-
-.webkit .clip-text {
-    background-attachment: scroll;
-    background-image: url("../img/bg3.png");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-attachment: fixed;
-}
-
-.firefox .clip-text {
-  background-attachment: scroll;
-  background-image: url("../img/bg3.png");
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: scroll;  
-}
-
-.edge .clip-text {
-  background-attachment: scroll;
-  background-image: url("../img/bg3.png");
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: scroll;  
-}
-
-
-
-.ie .clip-text{
-    color: red;
-}
-
 .footer {
     font-family: CaviarDreams;
     color: white;
@@ -365,7 +210,7 @@ h1.h1-jumbotron-clip {
     font-style: italic;
 }
 
-.image-left {
+/*.image-left {
     margin-top: 45px;
     margin-left: 45px;
 }
@@ -373,7 +218,7 @@ h1.h1-jumbotron-clip {
 .image-right {
     margin-top: 45px;
     margin-right: 45px;
-}
+}*/
 
 .parallax-1 {
     background-image: url("../img/parallax-bg1.jpg");
@@ -414,7 +259,6 @@ h1.h1-jumbotron-clip {
 }
 
 .ie .bottom-fade {
-  background: white;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  background: url('../img/jumbobg-end.png');
+  background-repeat: repeat-x;
 }
