@@ -4,112 +4,116 @@
 
 {% block header_includes %}
 {{ block.super }}
-<link href="{% static 'css/rsvp.css' %}" rel="stylesheet" type="text/css">
 <link href="{% static 'css/page.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/rsvp.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block contents %}
 <div class="top-space"></div>
 <div class="page-content">
-  <h1>
-    <span class="section-title-container">
-    <span class="section-brackets">{</span><span class="section-title">{% trans "RSVP" %}</span><span class="section-brackets">}</span>
-    </span>
-  </h1>
-  <form class="form-signin" action="." method="post">
-    {% csrf_token %}
-    <div class="form-content form-rsvp">
+  <section class="container">
+    <h1>
+      <span class="section-title-container">
+      <span class="section-brackets">{</span><span class="section-title">{% trans "RSVP" %}</span><span class="section-brackets">}</span>
+      </span>
+    </h1>
+    <form class="form-rsvp" action="." method="post">
+      {% csrf_token %}
+      <div class="form-content form-rsvp">
 
-      <p>
-        {% blocktrans %}Please tell us to which part of the festivities you will be coming.{% endblocktrans %}
-      </p>
+        <p>
+          {% blocktrans %}Please tell us to which part of the festivities you will be coming.{% endblocktrans %}
+        </p>
 
-      <table>
-        <thead>
-          <th></th>
-          <th>{% trans "Private ceremony" %}</th>
-          <th>{% trans "Public ceremony" %}</th>
-          <th>{% trans "Reception" %}</th>
-          <th>{% trans "Dinner" %}</th>
-          <th>{% trans "Party" %}</th>
-        </thead>
-        <tbody>    
-          {% for guest in guests %}
+        <table>
+          <thead>
+            <th></th>
+            <th>{% trans "Private ceremony" %}</th>
+            <th>{% trans "Public ceremony" %}</th>
+            <th>{% trans "Reception" %}</th>
+            <th>{% trans "Dinner" %}</th>
+            <th>{% trans "Party" %}</th>
+          </thead>
+          <tbody>    
+            {% for guest in guests %}
 
-          <tr>
-            <td>
-              {{ guest.first_name }} {{ guest.last_name }}
-            </td>
-            {% with forloop.counter as i %}
-            {% for guest_form in guest_forms %}
-            {% if i == forloop.counter %}
-            <td>{{ guest_form.coming_private_ceremony }}
-              <label for='{{ guest_form.coming_private_ceremony.id_for_label }}'></label>
-            </td>
-            <td>{{ guest_form.coming_public_ceremony }}
-              <label for='{{ guest_form.coming_public_ceremony.id_for_label }}'></label>
-            </td>
-            <td>{{ guest_form.coming_reception }}
-              <label for='{{ guest_form.coming_reception.id_for_label }}'></label>
-            </td>
-            <td>{{ guest_form.coming_dinner }}
-              <label for='{{ guest_form.coming_dinner.id_for_label }}'></label>
-            </td>
-            <td>{{ guest_form.coming_party }}
-              <label for='{{ guest_form.coming_party.id_for_label }}'></label>
-            </td>
-            {% endif %}
+            <tr>
+              <td>
+                {{ guest.first_name }} {{ guest.last_name }}
+              </td>
+              {% with forloop.counter as i %}
+              {% for guest_form in guest_forms %}
+              {% if i == forloop.counter %}
+              <td>{{ guest_form.coming_private_ceremony }}
+                <label for='{{ guest_form.coming_private_ceremony.id_for_label }}'></label>
+              </td>
+              <td>{{ guest_form.coming_public_ceremony }}
+                <label for='{{ guest_form.coming_public_ceremony.id_for_label }}'></label>
+              </td>
+              <td>{{ guest_form.coming_reception }}
+                <label for='{{ guest_form.coming_reception.id_for_label }}'></label>
+              </td>
+              <td>{{ guest_form.coming_dinner }}
+                <label for='{{ guest_form.coming_dinner.id_for_label }}'></label>
+              </td>
+              <td>{{ guest_form.coming_party }}
+                <label for='{{ guest_form.coming_party.id_for_label }}'></label>
+              </td>
+              {% endif %}
+              {% endfor %}
+              {% endwith %}
+
+            </tr>
             {% endfor %}
-            {% endwith %}
+          </tbody>
+        </table>
 
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+        <div class="comments-field">
+          <p>
+            {% blocktrans %}How many children menus should we include for the dinner?{% endblocktrans %}
+          </p>
 
-      <div class="comments-field">
-        <p>
-          {% blocktrans %}How many children menus should we include for the dinner?{% endblocktrans %}
-        </p>
-
-        <div>
-          {{ children_form.children_menus }}    
+          <div>
+            {{ children_form.children_menus }}    
+          </div>
         </div>
-      </div>
 
-      <div class="comments-field">
-        <p>
-          {% blocktrans %}Are there any dietary restriction we should take into account?{% endblocktrans %}
-        </p>
+        <div class="comments-field">
+          <p>
+            {% blocktrans %}Are there any dietary restriction we should take into account?{% endblocktrans %}
+          </p>
 
-        <div>
-          {{ comments_form.dietary_restrictions }}
+          <div>
+            {{ comments_form.dietary_restrictions }}
+          </div>
         </div>
-      </div>
 
-      <div class="comments-field">
-        <p>
-          {% blocktrans %}Any music you would like to request for the party?{% endblocktrans %}
-        </p>
+        <div class="comments-field">
+          <p>
+            {% blocktrans %}Any music you would like to request for the party?{% endblocktrans %}
+          </p>
 
-        <div>
-          {{ comments_form.music_request }}
+          <div>
+            {{ comments_form.music_request }}
+          </div>
         </div>
-      </div>
 
-      <div class="comments-field">
-        <p>
-          {% blocktrans %}Anything else you want to tell us?{% endblocktrans %}
-        </p>
+        <div class="comments-field">
+          <p>
+            {% blocktrans %}Anything else you want to tell us?{% endblocktrans %}
+          </p>
 
-        <div>
-          {{ comments_form.comments }}
+          <div>
+            {{ comments_form.comments }}
+          </div>
         </div>
-      </div>
 
-    </div>
-    <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">{% trans "Submit" %}</button>
-  </form>
+      </div>
+      <center>
+      <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">{% trans "Submit" %}</button>
+      </center>
+    </form>
+  </section>
 </div>
 <div class="bottom-fade"></div>
 
