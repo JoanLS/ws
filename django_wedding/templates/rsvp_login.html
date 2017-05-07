@@ -8,19 +8,31 @@
 {% endblock %}
 
 {% block contents %}
-    <div class="page-content form-container">
-      <form class="form-signin" action="{% url 'rsvp_login' %}" method="post">
+
+<div class="page-content form-container">
+  <section  id = "rsvp-login" class="form-signin container">
+    <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1>
+        <span class="section-title-container">
+          <span class="section-brackets">{</span><span class="section-title">{% trans "RSVP" %}</span><span class="section-brackets">}</span>
+        </span>
+      </h1>
+
+      <form action="{% url 'rsvp_login' %}" method="post">
         {% csrf_token %}
-        <h2 class="form-signin-heading">{% trans "Reply to invitation" %}</h2>
         <center>
         <p>{% blocktrans %}The invitation you received had a code written on it. Please enter it below to access the RSVP form.{% endblocktrans %}</p>
-          <div class="form-fields">
+           <div class="form-fields">
             {{ form.code }}
           </div>
         <button class="btn btn-lg btn-primary btn-block btn-rounded" type="submit">{% trans "Submit" %}</button>
         </center>
       </form>
-    </div> <!-- /container -->
+    </div>
+    </div>
+  </section>
+</div> <!-- /container -->
 {% endblock %}
 
 {% block footer %}{% endblock %}

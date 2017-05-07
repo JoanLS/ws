@@ -3,22 +3,23 @@ body {
   height: 100%;
 }
 
-.form-signin {
-  flex: 1 1 auto;
-  padding: 55px;
-  margin: 0 auto;
+h1 {
+  margin-top: 0;
+}
+
+section.form-signin:last-of-type {
   background-color: white;
   border-radius: 25px;
-  padding-top: 15px;
-
+  padding-bottom: 45px;
+  position: absolute;
+  top: 25%;
+  min-height: 50%;
+  max-width: 100%;
 }
 
 div.form-container {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
   background-color: transparent;
 }
 
@@ -44,14 +45,16 @@ div.form-container {
 
 .form-signin input[type="text"] {
   text-align: center;
+  min-width: 100px;
+  max-width: 50%;
 }
-
 
 .btn-rounded {
   border-radius: 25px;
   font-family: CaviarDreams;
   font-weight: bold;
-  width: 50%;
+  max-width: 50%;
+  min-width: 100px;
 }
 
 .form-signin p {
@@ -65,4 +68,5 @@ div.form-container {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.5em;
+  min-width: 50px;
 }
