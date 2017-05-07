@@ -21,16 +21,17 @@
             </h1>
           
           <h3>{% trans "What should I do now?" %}</h3>
-          <p>{% blocktrans %}Please RSVP :) ! If you need some more time to decide, that’s fine, but please do send us your answer by <b>mid-July at the latest</b>! If you have questions, please check the list here for an answer, if your question isn’t featured, feel free to <a href="index.html#contact">contact us!</a>{% endblocktrans %}</p>
+          <p>{% blocktrans %}Please RSVP :) ! If you need some more time to decide, that’s fine, but please do send us your answer by <b>mid-July at the latest</b>! If you have questions, please check the list here for an answer, if your question isn’t featured, feel free to <a href="/#contact">contact us!</a>{% endblocktrans %}</p>
 
+          {% url 'practical' as practical_url %}
           <h3>{% trans "How do I get to the venue(s)?" %}</h3>
-          <p>{% blocktrans %}The <a href="practical.html">Practical Info</a> page has indications about getting to all the venue sites by car or by public transport, and from abroad.{% endblocktrans %}</p>
+          <p>{% blocktrans %}The <a href="{{ practical_url }}">Practical Info</a> page has indications about getting to all the venue sites by car or by public transport, and from abroad.{% endblocktrans %}</p>
 
           <h3>{% trans "What time should I arrive?" %}</h3>
           <p>{% blocktrans %}Since there are many things happening on the wedding days, we recommend that our guests arrive <b>at least 15 min</b> early to ensure that each event starts on time. This is especially important for the <b><i>Public Ceremony at 14:00 on the 19th of August</i></b>, as the ceremony only lasts 30 min and there are other timeslots booked after us.{% endblocktrans %} </p>
 
           <h3>{% trans "What time will the ceremony/reception/party end?" %}</h3>
-          <p>{% blocktrans %}For end times, please consult the <a href="index.html#wedding">Wedding Info</a> section.{% endblocktrans %}</p>
+          <p>{% blocktrans %}For end times, please consult the <a href="/#wedding">Wedding Info</a> section.{% endblocktrans %}</p>
 
           <h3>{% trans "Where should I park?" %}</h3>
           <p>{% blocktrans %}There are parking spaces available near all the venues. For the Public Ceremony venue (Hôtel de Ville d’Ottignies), the parking is free for a duration of 3 hours. For the Reception venue (Cense d’Almez), the parking is entirely free.{% endblocktrans %}</p>
@@ -45,20 +46,22 @@
           <p>{% blocktrans %}Unfortunately, due to cost limitations, we cannot allow for extra guests unless directly specified in your invitation. However, feel free to reach out if you would like to discuss your options!{% endblocktrans %}</p>
 
           <h3>{% trans "When is the RSVP deadline?" %}</h3>
-          <p>{% blocktrans %}We would greatly appreciate it if you could send your RSVP information at least one month before the wedding, by <b>mid-July</b>. For any last minute changes, please <a href="index.html#contact">contact us</a> as soon as possible so we can make the necessary arrangements.{% endblocktrans %} </p>
+          <p>{% blocktrans %}We would greatly appreciate it if you could send your RSVP information at least one month before the wedding, by <b>mid-July</b>. For any last minute changes, please <a href="/#contact">contact us</a> as soon as possible so we can make the necessary arrangements.{% endblocktrans %} </p>
 
           <h3>{% trans "What is the private ceremony?" %}</h3>
           <p>{% blocktrans %}We do not have a religious ceremony since neither of us are religious, but we did want another, more meaningful, wedding ceremony besides the civil Public Ceremony at the city hall. Together with close friends, we have organised our own little ceremony in a more intimate setting. This Private Ceremony takes place on the 18th of August, our seven year anniversary :).{% endblocktrans %}</p>
 
           <h3>{% trans "Will there be food at the reception?" %} </h3>
-          <p>{% blocktrans %}The reception will include appetizers and drinks, but not a full meal. Unfortunately, we are not able to invite all our guests to join the sit-down dinner afterwards, but you can find some of our restaurant recommendations on the <a href="practical.html">Practical Info</a> page.{% endblocktrans %} </p>
+          {% url 'practical' as practical_url %}
+          <p>{% blocktrans %}The reception will include appetizers and drinks, but not a full meal. Unfortunately, we are not able to invite all our guests to join the sit-down dinner afterwards, but you can find some of our restaurant recommendations on the <a href="{{ practical_url }}">Practical Info</a> page.{% endblocktrans %} </p>
 
           <h3>{% trans "What kind of food will be served? What if I have a dietary restriction?" %}</h3>
+          {% url 'rsvp_login' as rsvp_url %}
           <p>{% blocktrans %}The reception will have various warm and cold appetizers and the sit-down dinner will feature a starter and a main course. After the concert, desserts and cake will be served to all our guests. As for drinks, there is an open bar at the reception, dinner, and party (soft drinks, beers, and wines).</p>
-          <p>If you have any dietary restrictions, please mention them on your <a href="rsvp.html">RSVP form</a> so we can communicate them to the caterer.{% endblocktrans %} </p>
+          <p>If you have any dietary restrictions, please mention them on your <a href="{{ rsvp_url }}">RSVP form</a> so we can communicate them to the caterer.{% endblocktrans %} </p>
 
           <h3>{% trans "Will there be dancing at the party?" %}</h3>
-          <p>{% blocktrans %}Yes :)! We are currently compiling a playlist with anything from nostalgia-laden 90s pop music to more obscure Japanese math rock for everyone to rock the dancefloor. Don’t forget to add your own song requests in your <a href="rsvp.html">RSVP form</a>!{% endblocktrans %}</p>
+          <p>{% blocktrans %}Yes :)! We are currently compiling a playlist with anything from nostalgia-laden 90s pop music to more obscure Japanese math rock for everyone to rock the dancefloor. Don’t forget to add your own song requests in your <a href="{{ rsvp_url }}">RSVP form</a>!{% endblocktrans %}</p>
           <p>{% blocktrans %}For those who want to enjoy the party with less dancing, we’ll be planning several other activities on the side as well (e.g. video and board games)!{% endblocktrans %}</p>
 
           <h3>{% trans "Can I take pictures?" %}</h3>
@@ -71,7 +74,7 @@
           <p>{% blocktrans %}We will both be keeping our original names after the wedding :){% endblocktrans %}</p>
 
           <h3>{% trans "I have a question not answered here; how do I contact you?" %}</h3>
-          <p>{% blocktrans %}If you have any further questions or comments, please send us an e-mail at: bastien.et.joan {at} gmail {dot} com.{% endblocktrans %}</p>
+          <p>{% blocktrans %}If you have any further questions or comments, please send us an e-mail at: <a href="mailto:bastien.et.joan@gmail.com">bastien.et.joan@gmail.com</a>.{% endblocktrans %}</p>
 
       </div>
       <div class="col-sm-1"></div>
