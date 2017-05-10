@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'django_wedding.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ws_gsmproductions_com',
+        'USER': 'ws_db_user',
+        'PASSWORD': 'Mouse&Tiger',
+        'HOST': 'mysql.ws.gsmproductions.com',
+        'PORT': '3306',
     }
 }
 
