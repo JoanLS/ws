@@ -8,7 +8,7 @@ from django.db import models
 class GuestCode(models.Model):
     code = models.CharField(max_length=6)
 
-    def __str__(self):
+    def __unicode__(self):
         return self.code
 
     @staticmethod
@@ -32,7 +32,7 @@ class Guest(models.Model):
     coming_dinner = models.BooleanField(default=False)
     coming_party = models.BooleanField(default=False)
 
-    def __str__(self):
+    def __unicode__(self):
         return "%s %s" % (self.first_name, self.last_name)
 
 
