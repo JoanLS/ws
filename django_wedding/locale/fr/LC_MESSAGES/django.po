@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 19:22+0200\n"
+"POT-Creation-Date: 2017-05-11 23:32+0200\n"
 "PO-Revision-Date: 2017-05-01 21:01+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,31 +19,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.7.13\n"
 
-#: .\templates\base_site.html:35
+#: .\templates\base_site.html:48
 msgid "About Us"
 msgstr "Notre histoire"
 
-#: .\templates\base_site.html:36
+#: .\templates\base_site.html:49
 msgid "The Wedding"
 msgstr "Le Mariage"
 
-#: .\templates\base_site.html:37
+#: .\templates\base_site.html:50
 msgid "Contact"
 msgstr ""
 
-#: .\templates\base_site.html:38
+#: .\templates\base_site.html:51
 msgid "Practical"
 msgstr "En pratique"
 
-#: .\templates\base_site.html:39
+#: .\templates\base_site.html:52
 msgid "FAQ"
 msgstr ""
 
-#: .\templates\base_site.html:40
+#: .\templates\base_site.html:53
 msgid "Registry"
 msgstr "Liste de mariage"
 
-#: .\templates\base_site.html:41 .\templates\rsvp.html:16
+#: .\templates\base_site.html:54 .\templates\rsvp.html:17
+#: .\templates\rsvp_login.html:18
 msgid "RSVP"
 msgstr ""
 
@@ -56,11 +57,19 @@ msgid "What should I do now?"
 msgstr "Que faire maintenant ?"
 
 #: .\templates\faq.html:24
+#, fuzzy
+#| msgid ""
+#| "Please RSVP :) ! If you need some more time to decide, that’s fine, but "
+#| "please do send us your answer by <b>mid-July at the latest</b>! If you "
+#| "have questions, please check the list here for an answer, if your "
+#| "question isn’t featured, feel free to <a href=\"index.html#contact"
+#| "\">contact us!</a>"
 msgid ""
 "Please RSVP :) ! If you need some more time to decide, that’s fine, but "
 "please do send us your answer by <b>mid-July at the latest</b>! If you have "
 "questions, please check the list here for an answer, if your question isn’t "
-"featured, feel free to <a href=\"index.html#contact\">contact us!</a>"
+"featured, feel free to <a href=\"mailto:bastien.et.joan@gmail.com\">contact "
+"us!</a>"
 msgstr ""
 "Merci de nous envoyer votre RSVP :) ! Si vous avez besoin de plus de temps "
 "pour décider, pas de soucis! Par contre, veuillez nous renvoyer votre "
@@ -68,27 +77,50 @@ msgstr ""
 "la liste ci-dessous. Si vous ne trouvez pas votre réponse, n’hésitez pas à "
 "nous contacter!"
 
-#: .\templates\faq.html:26
+#: .\templates\faq.html:27
+msgid ""
+"What is the CD that came with the invitation ? What do these songs mean ?"
+msgstr ""
+
+#: .\templates\faq.html:28
+msgid ""
+"The CD contains songs that both of us selected to capture some of the "
+"important moments of our relationship. The first song by Olafur Arnalds "
+"reflects the early times of our budding friendship, and refers to an e-mail "
+"exchange 80+(!) messages long, while the last song comes from a hauntingly "
+"beautiful video game called Journey that we played together. Each row "
+"corresponds roughly to each year of our relationship. Some rows have two "
+"songs, and those represent instances where we have had to be apart when one "
+"of us went abroad for work. We hope that you’ll enjoy this little musical "
+"interlude :) !"
+msgstr ""
+
+#: .\templates\faq.html:31
 msgid "How do I get to the venue(s)?"
 msgstr "Comment se rendre aux lieux de cérémonie et de réception ?"
 
-#: .\templates\faq.html:27
+#: .\templates\faq.html:32
+#, fuzzy, python-format
+#| msgid ""
+#| "The <a href=\"practical.html\">Practical Info</a> page has indications "
+#| "about getting to all the venue sites by car or by public transport, and "
+#| "from abroad."
 msgid ""
-"The <a href=\"practical.html\">Practical Info</a> page has indications about"
-" getting to all the venue sites by car or by public transport, and from "
+"The <a href=\"%(practical_url)s\">Practical Info</a> page has indications "
+"about getting to all the venue sites by car or by public transport, and from "
 "abroad."
 msgstr ""
 "La page Infos Pratiques donne des indications pour l’accès aux lieux en "
 "voiture ou en transports en commun, et à partir de l’étranger. "
 
-#: .\templates\faq.html:29
+#: .\templates\faq.html:34
 msgid "What time should I arrive?"
 msgstr "Quand devons-nous arriver ?"
 
-#: .\templates\faq.html:30
+#: .\templates\faq.html:35
 msgid ""
-"Since there are many things happening on the wedding days, we recommend that"
-" our guests arrive <b>at least 15 min</b> early to ensure that each event "
+"Since there are many things happening on the wedding days, we recommend that "
+"our guests arrive <b>at least 15 min</b> early to ensure that each event "
 "starts on time. This is especially important for the <b><i>Public Ceremony "
 "at 14:00 on the 19th of August</i></b>, as the ceremony only lasts 30 min "
 "and there are other timeslots booked after us."
@@ -100,37 +132,41 @@ msgstr ""
 "cérémonie ne dure que 30 min et il y a des plages horaires réservées après "
 "nous. "
 
-#: .\templates\faq.html:32
+#: .\templates\faq.html:37
 msgid "What time will the ceremony/reception/party end?"
 msgstr "À quelle heure se termine la cérémonie/réception/soirée?"
 
-#: .\templates\faq.html:33
+#: .\templates\faq.html:38
+#, fuzzy
+#| msgid ""
+#| "For end times, please consult the <a href=\"index.html#wedding\">Wedding "
+#| "Info</a> section."
 msgid ""
-"For end times, please consult the <a href=\"index.html#wedding\">Wedding "
-"Info</a> section."
+"For end times, please consult the <a href=\"/#wedding\">Wedding Info</a> "
+"section."
 msgstr "Pour les heures de fin, veuillez consulter la page Le Mariage."
 
-#: .\templates\faq.html:35
+#: .\templates\faq.html:40
 msgid "Where should I park?"
 msgstr "Où garer sa voiture ? "
 
-#: .\templates\faq.html:36
+#: .\templates\faq.html:41
 msgid ""
 "There are parking spaces available near all the venues. For the Public "
 "Ceremony venue (Hôtel de Ville d’Ottignies), the parking is free for a "
-"duration of 3 hours. For the Reception venue (Cense d’Almez), the parking is"
-" entirely free."
+"duration of 3 hours. For the Reception venue (Cense d’Almez), the parking is "
+"entirely free."
 msgstr ""
 "Des places de stationnement sont disponibles à chaque lieu. Pour la "
 "cérémonie publique à l’hôtel de ville d’Ottignies, le parking est gratuit "
 "pendant 3 heures. Pour la salle de réception à la Cense d’Almez, le parking "
 "est entièrement gratuit. "
 
-#: .\templates\faq.html:38
+#: .\templates\faq.html:43
 msgid "What should I wear?"
 msgstr "Y a-t-il un dress code ?"
 
-#: .\templates\faq.html:39
+#: .\templates\faq.html:44
 msgid ""
 "Formal or cocktail attire is traditional for weddings, but the most "
 "important for us is to have a happy relaxed atmosphere, so anything that is "
@@ -139,9 +175,9 @@ msgid ""
 "for some bright sunny weather, we do recommend to bring a light coat and an "
 "umbrella just in case (there will be coat racks at the Reception Venue "
 "should they end up unnecessary). For those who are sensitive to cold, "
-"layering is a good idea. As for shoes, please consider that there is still a"
-" lot of traditional cobblestone at the venues, so high-heeled stilettos "
-"might not be the most practical."
+"layering is a good idea. As for shoes, please consider that there is still a "
+"lot of traditional cobblestone at the venues, so high-heeled stilettos might "
+"not be the most practical."
 msgstr ""
 "Traditionnellement, les invités sont en tenue formelle ou de cocktail au "
 "mariage. Cependant, notre priorité est d’avoir à notre mariage une ambiance "
@@ -150,16 +186,16 @@ msgstr ""
 "météo belge peut être capricieuse en été, donc malgré les doigts croisés "
 "pour du beau temps, nous conseillons à nos invités d’apporter une veste "
 "légère et un parapluie au cas où… (la salle de réception est dotée d’un "
-"vestiaire pour les y déposer s’ils ne s’avèraient pas nécessaires). Pour les"
-" plus frileux, le mieux est de prévoir plusieurs couches. En ce qui concerne"
-" les chaussures, et plus particulièrement les talons pointus, sachez que le "
+"vestiaire pour les y déposer s’ils ne s’avèraient pas nécessaires). Pour les "
+"plus frileux, le mieux est de prévoir plusieurs couches. En ce qui concerne "
+"les chaussures, et plus particulièrement les talons pointus, sachez que le "
 "lieu de réception comporte cours pavées et sols en graviers."
 
-#: .\templates\faq.html:41
+#: .\templates\faq.html:46
 msgid "Are kids welcome?"
 msgstr "Pouvons-nous amener nos enfants ?"
 
-#: .\templates\faq.html:42
+#: .\templates\faq.html:47
 msgid ""
 "We welcome children to celebrate with us at the Public Ceremony and the "
 "Reception, however, we would kindly to ask the parents to take care that "
@@ -170,11 +206,11 @@ msgstr ""
 "Par contre, vu l’heure tardive et le niveau sonore de la soirée, la soirée "
 "nous paraît peu adaptée pour vos plus jeunes enfants. "
 
-#: .\templates\faq.html:44
+#: .\templates\faq.html:49
 msgid "Can I bring a date?"
 msgstr "Puis-je venir accompagné(e) même si ce n’était pas prévu au départ ?"
 
-#: .\templates\faq.html:45
+#: .\templates\faq.html:50
 msgid ""
 "Unfortunately, due to cost limitations, we cannot allow for extra guests "
 "unless directly specified in your invitation. However, feel free to reach "
@@ -185,27 +221,33 @@ msgstr ""
 "invitation. Cependant, n’hésitez pas à nous contacter si vous voulez en "
 "discuter. "
 
-#: .\templates\faq.html:47
+#: .\templates\faq.html:52
 msgid "When is the RSVP deadline?"
 msgstr "Quelle est la date limite pour le RSVP ?"
 
-#: .\templates\faq.html:48
+#: .\templates\faq.html:53
+#, fuzzy
+#| msgid ""
+#| "We would greatly appreciate it if you could send your RSVP information at "
+#| "least one month before the wedding, by <b>mid-July</b>. For any last "
+#| "minute changes, please <a href=\"index.html#contact\">contact us</a> as "
+#| "soon as possible so we can make the necessary arrangements."
 msgid ""
 "We would greatly appreciate it if you could send your RSVP information at "
 "least one month before the wedding, by <b>mid-July</b>. For any last minute "
-"changes, please <a href=\"index.html#contact\">contact us</a> as soon as "
-"possible so we can make the necessary arrangements."
+"changes, please <a href=\"/#contact\">contact us</a> as soon as possible so "
+"we can make the necessary arrangements."
 msgstr ""
 "Nous serions reconnaissants de recevoir votre réponse au minimum un mois "
 "avant le mariage, pour mi-juillet. Pour tout changement de dernière minute, "
 "veuillez nous contacter dès que possible pour que nous puissions nous "
 "organiser en fonction."
 
-#: .\templates\faq.html:50
+#: .\templates\faq.html:55
 msgid "What is the private ceremony?"
 msgstr "En quoi consistera la cérémonie privée ?"
 
-#: .\templates\faq.html:51
+#: .\templates\faq.html:56
 msgid ""
 "We do not have a religious ceremony since neither of us are religious, but "
 "we did want another, more meaningful, wedding ceremony besides the civil "
@@ -214,59 +256,90 @@ msgid ""
 "Ceremony takes place on the 18th of August, our seven year anniversary :)."
 msgstr ""
 "Nous ne célébrons pas de cérémonie religieuse car nous ne sommes pas "
-"croyants. Néanmoins, nous souhaitions célébrer une cérémonie de mariage avec"
-" un sens plus profond, en plus de la cérémonie civile publique à l’hôtel de "
+"croyants. Néanmoins, nous souhaitions célébrer une cérémonie de mariage avec "
+"un sens plus profond, en plus de la cérémonie civile publique à l’hôtel de "
 "ville. Nous avons donc organisé une petite cérémonie dans un cadre plus "
-"intime avec nos amis et parents proches. Cette cérémonie privée aura lieu le"
-" 18 août, le jour de notre anniversaire de 7 ans de relation :). "
+"intime avec nos amis et parents proches. Cette cérémonie privée aura lieu le "
+"18 août, le jour de notre anniversaire de 7 ans de relation :). "
 
-#: .\templates\faq.html:53
+#: .\templates\faq.html:58
 msgid "Will there be food at the reception?"
 msgstr "Y aura-t-il de la nourriture à la réception ? "
 
-#: .\templates\faq.html:54
+#: .\templates\faq.html:60
+#, fuzzy, python-format
+#| msgid ""
+#| "The reception will include appetizers and drinks, but not a full meal. "
+#| "Unfortunately, we are not able to invite all our guests to join the sit-"
+#| "down dinner afterwards, but you can find some of our restaurant "
+#| "recommendations on the <a href=\"practical.html\">Practical Info</a> page."
 msgid ""
 "The reception will include appetizers and drinks, but not a full meal. "
-"Unfortunately, we are not able to invite all our guests to join the sit-down"
-" dinner afterwards, but you can find some of our restaurant recommendations "
-"on the <a href=\"practical.html\">Practical Info</a> page."
+"Unfortunately, we are not able to invite all our guests to join the sit-down "
+"dinner afterwards, but you can find some of our restaurant recommendations "
+"on the <a href=\"%(practical_url)s\">Practical Info</a> page."
 msgstr ""
 "Des hors-d’oeuvres et boissons y seront proposés. Malheureusement, nous ne "
-"pouvons pas accueillir tous nos invités au dîner qui suivra la réception. La"
-" page Infos Pratique donne quelques-unes de nos recommandations pour des "
+"pouvons pas accueillir tous nos invités au dîner qui suivra la réception. La "
+"page Infos Pratique donne quelques-unes de nos recommandations pour des "
 "restaurants à proximité de la salle de réception."
 
-#: .\templates\faq.html:56
-msgid ""
-"What kind of food will be served? What if I have a dietary restriction?"
+#: .\templates\faq.html:62
+msgid "What kind of food will be served? What if I have a dietary restriction?"
 msgstr ""
 "Quelle genre de nourriture servirez-vous ? Que faire en cas de restrictions "
 "alimentaires ?"
 
-#: .\templates\faq.html:57
+#: .\templates\faq.html:64
+#, fuzzy, python-format
+#| msgid ""
+#| "The reception will have various warm and cold appetizers and the sit-down "
+#| "dinner will feature a starter and a main course. After the concert, "
+#| "desserts and cake will be served to all our guests. As for drinks, there "
+#| "is an open bar at the reception, dinner, and party (soft drinks, beers, "
+#| "and wines).</p>\n"
+#| "          <p>If you have any dietary restrictions, please mention them on "
+#| "your <a href=\"rsvp.html\">RSVP form</a> so we can communicate them to "
+#| "the caterer."
 msgid ""
-"The reception will have various warm and cold appetizers and the sit-down dinner will feature a starter and a main course. After the concert, desserts and cake will be served to all our guests. As for drinks, there is an open bar at the reception, dinner, and party (soft drinks, beers, and wines).</p>\n"
-"          <p>If you have any dietary restrictions, please mention them on your <a href=\"rsvp.html\">RSVP form</a> so we can communicate them to the caterer."
+"The reception will have various warm and cold appetizers and the sit-down "
+"dinner will feature a starter and a main course. After the concert, desserts "
+"and cake will be served to all our guests. As for drinks, there is an open "
+"bar at the reception, dinner, and party (soft drinks, beers, and wines).</"
+"p>\n"
+"          <p>If you have any dietary restrictions, please mention them on "
+"your <a href=\"%(rsvp_url)s\">RSVP form</a> so we can communicate them to "
+"the caterer."
 msgstr ""
-"Nous servirons des zakouskis chauds et froids à la réception, et une entrée et un plat au dîner. Après le concert, il y aura des desserts et du gâteau pour tous nos invités. Quant aux boissons, il y aura un open bar à la réception, au dîner, et à la soirée (softs, bières et vins). \n"
-"Si vous avez des restrictions alimentaires, merci de les indiquer sur votre formulaire RSVP pour que nous puissions les communiquer au traiteur."
+"Nous servirons des zakouskis chauds et froids à la réception, et une entrée "
+"et un plat au dîner. Après le concert, il y aura des desserts et du gâteau "
+"pour tous nos invités. Quant aux boissons, il y aura un open bar à la "
+"réception, au dîner, et à la soirée (softs, bières et vins). \n"
+"Si vous avez des restrictions alimentaires, merci de les indiquer sur votre "
+"formulaire RSVP pour que nous puissions les communiquer au traiteur."
 
-#: .\templates\faq.html:60
+#: .\templates\faq.html:67
 msgid "Will there be dancing at the party?"
 msgstr "Qu’avez-vous prévu pour la soirée ?"
 
-#: .\templates\faq.html:61
+#: .\templates\faq.html:68
+#, fuzzy, python-format
+#| msgid ""
+#| "Yes :)! We are currently compiling a playlist with anything from "
+#| "nostalgia-laden 90s pop music to more obscure Japanese math rock for "
+#| "everyone to rock the dancefloor. Don’t forget to add your own song "
+#| "requests in your <a href=\"rsvp.html\">RSVP form</a>!"
 msgid ""
 "Yes :)! We are currently compiling a playlist with anything from nostalgia-"
 "laden 90s pop music to more obscure Japanese math rock for everyone to rock "
-"the dancefloor. Don’t forget to add your own song requests in your <a "
-"href=\"rsvp.html\">RSVP form</a>!"
+"the dancefloor. Don’t forget to add your own song requests in your <a href="
+"\"%(rsvp_url)s\">RSVP form</a>!"
 msgstr ""
-"A priori, ce sera une soirée dansante, nous compilons actuellement une liste"
-" de musique pour que tout le monde puisse se lâcher sur la piste de danse! "
+"A priori, ce sera une soirée dansante, nous compilons actuellement une liste "
+"de musique pour que tout le monde puisse se lâcher sur la piste de danse! "
 "N’oubliez pas d’ajouter vos demandes de chansons dans le formulaire RSVP!"
 
-#: .\templates\faq.html:62
+#: .\templates\faq.html:69
 msgid ""
 "For those who want to enjoy the party with less dancing, we’ll be planning "
 "several other activities on the side as well (e.g. video and board games)!"
@@ -275,11 +348,11 @@ msgstr ""
 "organiser d’autres activités sur le côté (cf. jeux vidéos et jeux de "
 "société)."
 
-#: .\templates\faq.html:64
+#: .\templates\faq.html:71
 msgid "Can I take pictures?"
 msgstr "Pouvons-nous prendre des photos ?"
 
-#: .\templates\faq.html:65
+#: .\templates\faq.html:72
 msgid ""
 "Feel free to take pictures! But please try to be considerate and not "
 "interfere with the professional photographer we hired for the day."
@@ -288,62 +361,79 @@ msgstr ""
 "attentifs à ne pas interférer avec le photographe professionnel que nous "
 "avons engagé pour la journée."
 
-#: .\templates\faq.html:67
+#: .\templates\faq.html:74
+msgid "Can I make a speech at the wedding?"
+msgstr ""
+
+#: .\templates\faq.html:75
+msgid ""
+"We hope our wedding day will be full of laughter and happy tears, so we "
+"would very much appreciate your contribution! However, there are many things "
+"that need to happen on schedule, so it would be best if you could contact "
+"Bastien’s sister, <a href=\"mailto:pascale.gorissen@gmail.com\">Pascale</a>, "
+"in advance so your speech can be coordinated within the available timeslots. "
+"Note that while timing is limited during the dinner but there are more "
+"opportunities at the party to take the microphone."
+msgstr ""
+
+#: .\templates\faq.html:78
 msgid "Is there a gifts registry?"
 msgstr "Y a-t-il une liste de mariage?"
 
-#: .\templates\faq.html:68
+#: .\templates\faq.html:79
 msgid "Please check the <a href=\"registry.html\">Gifts Registry</a> page!"
 msgstr "Oui, vous pouvez le consulter sur la page Liste de Mariage!"
 
-#: .\templates\faq.html:70
+#: .\templates\faq.html:81
 msgid "Will last names be changing after the wedding?"
 msgstr "Changerez-vous vos noms de famille après le mariage?"
 
-#: .\templates\faq.html:71
+#: .\templates\faq.html:82
 msgid "We will both be keeping our original names after the wedding :)"
 msgstr "Non, nous garderons tous les deux nos noms actuels :)."
 
-#: .\templates\faq.html:73
+#: .\templates\faq.html:84
 msgid "I have a question not answered here; how do I contact you?"
 msgstr ""
 "Ma question n’est pas dans cette liste, je souhaite d’autres informations."
 
-#: .\templates\faq.html:74
-#, python-brace-format
+#: .\templates\faq.html:85
+#, fuzzy
+#| msgid ""
+#| "If you have any further questions or comments, please send us an e-mail "
+#| "at: bastien.et.joan {at} gmail {dot} com."
 msgid ""
 "If you have any further questions or comments, please send us an e-mail at: "
-"bastien.et.joan {at} gmail {dot} com."
+"<a href=\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>."
 msgstr ""
 "Si vous avez d’autres questions ou commentaires, merci de nous envoyer un "
 "mail à l’adresse suivante :bastien.et.joan[arobase]gmail[point]com"
 
-#: .\templates\home.html:15
+#: .\templates\home.html:32
 msgid "days"
 msgstr "jours"
 
-#: .\templates\home.html:17
+#: .\templates\home.html:34
 msgid "hours"
 msgstr "heures"
 
-#: .\templates\home.html:19
+#: .\templates\home.html:36
 msgid "minutes"
 msgstr "minutes"
 
-#: .\templates\home.html:21
+#: .\templates\home.html:38
 msgid "seconds"
 msgstr "secondes"
 
-#: .\templates\home.html:36
-#| msgid "About Us"
+#: .\templates\home.html:56
 msgid "About us"
 msgstr "Notre histoire"
 
-#: .\templates\home.html:39
+#: .\templates\home.html:59
 msgid ""
 "They say you meet the most important people in university but for us, even "
-"though we’d been orbiting each other through our circles of friends for some"
-" time, it was only towards the end of our student years that we truly met. "
+"though we’d been orbiting each other through our circles of friends for some "
+"time, it was only towards the end of our student years that we truly met. "
 "What started as animated discussions between new acquaintances soon "
 "developed into 80 messages long email conversations and impromptu visits… "
 "And just when friends and family began questioning our relationship through "
@@ -351,222 +441,232 @@ msgid ""
 "August 2010."
 msgstr ""
 
-#: .\templates\home.html:40
+#: .\templates\home.html:61
+#, python-format
 msgid ""
-"Since then, we have lived many memorable moments together, here they are "
-"summarised in arbitrary yet meaningful units :"
+"Since then, we have lived many memorable moments together, some of which are "
+"outlined as musical anecdotes on the <a href=\"%(faq_url)s#CD\">invitation "
+"CD</a> and others that are are summarised here in arbitrary yet meaningful "
+"units :"
 msgstr ""
 
-#: .\templates\home.html:131
+#: .\templates\home.html:69
 msgid "2 theses"
 msgstr "2 thèses"
 
-#: .\templates\home.html:132
+#: .\templates\home.html:70
 msgid "2 cats"
 msgstr "2 chats"
 
-#: .\templates\home.html:133
+#: .\templates\home.html:71
 msgid "2 apartments"
 msgstr "2 appartements"
 
-#: .\templates\home.html:134
+#: .\templates\home.html:72
 msgid "15 months apart"
 msgstr "15 mois loin de l'autre"
 
-#: .\templates\home.html:135
+#: .\templates\home.html:73
 msgid "1 new bookcase"
 msgstr "1 nouvelle bibliothèque"
 
-#: .\templates\home.html:136
+#: .\templates\home.html:74
 msgid "9 countries visited"
 msgstr "9 pays visités"
 
-#: .\templates\home.html:137
+#: .\templates\home.html:75
 msgid "1 very slow turtle"
 msgstr "1 tortue très lente"
 
-#: .\templates\home.html:138
+#: .\templates\home.html:76
 msgid "5 Magic the Gathering pre-release game events"
 msgstr "5 événements de pre-release Magic the Gathering"
 
-#: .\templates\home.html:139
+#: .\templates\home.html:77
 msgid "1 freak hurricane"
 msgstr "1 ouragan surprise"
 
-#: .\templates\home.html:140
+#: .\templates\home.html:78
 msgid "A ton of post-rock concerts"
 msgstr "Une tonne de concerts post-rock"
 
-#: .\templates\home.html:141
+#: .\templates\home.html:79
 msgid "5 New Year’s cheese fondues"
 msgstr "5 fondues de Nouvel-An"
 
-#: .\templates\home.html:142
+#: .\templates\home.html:80
 msgid "Many weekends spent cracking video games"
 msgstr "Beaucoup de weekends passés devants des jeux vidéos"
 
-#: .\templates\home.html:143
+#: .\templates\home.html:81
 msgid "1 alarming message about hospitals"
 msgstr "1 message pas du tout stressant à propros d'hôpitaux"
 
-#: .\templates\home.html:144
+#: .\templates\home.html:82
 msgid "A million (and counting) decorative birbs"
 msgstr "Un million (et plus) d'oiseaux décoratifs"
 
-#: .\templates\home.html:145
+#: .\templates\home.html:83
 msgid "Too many stupid nicknames to count"
 msgstr "Trop de surnoms débiles à dénombrer"
 
-#: .\templates\home.html:146
+#: .\templates\home.html:84
 msgid "A (un)reasonable number of newly acquired musical instruments"
 msgstr "Un nombre (dé)raisonnable de nouveaux instruments de musique"
 
-#: .\templates\home.html:147
+#: .\templates\home.html:85
 msgid "A thousand evenings wondering what to eat for dinner"
 msgstr "Mille soirées à se demander quoi manger ce soir"
 
-#: .\templates\home.html:151
+#: .\templates\home.html:88
 msgid "1 very important question"
 msgstr "1 question très importante"
 
-#: .\templates\home.html:154
+#: .\templates\home.html:180
 msgid ""
-"...and in August 2017, we will celebrate 7 years of joy and happiness and of"
-" all the future years to come :)."
+"...and in August 2017, we will celebrate 7 years of joy and happiness and of "
+"all the future years to come :)."
 msgstr ""
 
-#: .\templates\home.html:161
+#: .\templates\home.html:195
 msgid "Wedding Info"
 msgstr "Le Mariage"
 
-#: .\templates\home.html:166
+#: .\templates\home.html:200
 #, python-format
 msgid ""
 "For more information on how to get to the venue sites or travelling from "
-"abroad, please see the <a href=\"%(practical_url)s\">Practical Info</a> "
-"page."
+"abroad, please see the <a href=\"%(practical_url)s\">Practical Info</a> page."
 msgstr ""
 "Pour plus d’informations concernant l’accès aux lieux en Belgique ou depuis "
 "l’étranger, vous pouvez consulter la page  <a href=\"%(practical_url)s\">En "
 "pratique</a>."
 
-#: .\templates\home.html:168
+#: .\templates\home.html:202
 #, python-format
-msgid "Check the <a href=\"%(faq_url)s\">FAQ</a> if you have any other questions!"
+msgid ""
+"Check the <a href=\"%(faq_url)s\">FAQ</a> if you have any other questions!"
 msgstr ""
 "Si vous avez d’autres questions, merci de jeter un coup d’oeil à notre FAQ !"
 
-#: .\templates\home.html:170
+#: .\templates\home.html:204
 msgid "Friday 18 August 2017"
 msgstr "Vendredi 18 Août 2017"
 
-#: .\templates\home.html:171
+#: .\templates\home.html:205
 msgid "Private wedding ceremony"
 msgstr "Cérémonie de mariage privée"
 
-#: .\templates\home.html:172
+#: .\templates\home.html:206
 msgid "An intimate personal ceremony"
 msgstr "Une cérémonie intime et personnelle"
 
-#: .\templates\home.html:173
+#: .\templates\home.html:207
 msgid "19:00"
 msgstr ""
 
-#: .\templates\home.html:174
+#: .\templates\home.html:208
 msgid "Chapelle de Profondsart"
 msgstr ""
 
-#: .\templates\home.html:175
+#: .\templates\home.html:209
 msgid "Rue de Grandsart 13, 1300 Limal"
 msgstr ""
 
-#: .\templates\home.html:177
+#: .\templates\home.html:211
 msgid "Saturday 19 August 2017"
 msgstr "Samedi 19 Août 2017"
 
-#: .\templates\home.html:178
+#: .\templates\home.html:212
 msgid "Public wedding ceremony"
 msgstr "Cérémonie de mariage publique"
 
-#: .\templates\home.html:179
+#: .\templates\home.html:213
 msgid "The civil marriage ceremony involving all the legal stuff"
 msgstr "La cérémonie de mariage civile, avec signature des documents légaux"
 
-#: .\templates\home.html:180
+#: .\templates\home.html:214
 msgid "14:00 - 14:30"
 msgstr ""
 
-#: .\templates\home.html:181
+#: .\templates\home.html:215
 msgid "Hôtel de Ville d’Ottignies"
 msgstr ""
 
-#: .\templates\home.html:182
+#: .\templates\home.html:216
 msgid "Avenue des Combattants 35, 1340"
 msgstr ""
 
-#: .\templates\home.html:184 .\templates\rsvp.html:32
+#: .\templates\home.html:218
 msgid "Reception"
 msgstr "Réception"
 
-#: .\templates\home.html:185
+#: .\templates\home.html:219
 msgid "Drinks, snacks, and congratulations"
 msgstr "Des bulles, des hors-d’oeuvres et des félicitations"
 
-#: .\templates\home.html:186
+#: .\templates\home.html:220
 msgid "15:00 - 17:00"
 msgstr ""
 
-#: .\templates\home.html:187 .\templates\home.html:193
-#: .\templates\home.html:198
+#: .\templates\home.html:221 .\templates\home.html:227
+#: .\templates\home.html:232
 msgid "Cense d’Almez"
 msgstr ""
 
-#: .\templates\home.html:188
+#: .\templates\home.html:222
 msgid "Rue d’Almez 5, 1325 Corroy-le-Grand"
 msgstr ""
 
-#: .\templates\home.html:190 .\templates\rsvp.html:33
+#: .\templates\home.html:224
 msgid "Dinner"
 msgstr "Repas"
 
-#: .\templates\home.html:191
+#: .\templates\home.html:225
 msgid "Sit-down meal and emotional speeches"
 msgstr "Un repas assis entrecoupé de discours pleins d’émotion"
 
-#: .\templates\home.html:192
+#: .\templates\home.html:226
 msgid "18:00 - 20h30"
 msgstr ""
 
-#: .\templates\home.html:195 .\templates\rsvp.html:34
+#: .\templates\home.html:229
 msgid "Party"
 msgstr "Soirée"
 
-#: .\templates\home.html:196
+#: .\templates\home.html:230
 msgid "A live concert of our favourite songs followed by dancing all night!"
 msgstr ""
 "Un concert live avec nos chansons favorites suivi d'une soirée dansante !"
 
-#: .\templates\home.html:197
+#: .\templates\home.html:231
 msgid "21:00 - 03:00"
 msgstr ""
 
-#: .\templates\home.html:217
+#: .\templates\home.html:248
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: .\templates\home.html:221
-#, python-format
+#: .\templates\home.html:253
+#, fuzzy, python-format
+#| msgid ""
+#| "Questions? Please have a look at the <a href=\"%(faq_url)s\">FAQ</a> "
+#| "first!"
 msgid ""
-"Questions? Please have a look at the <a href=\"%(faq_url)s\">FAQ</a> first!"
+"Questions? Please have a look at the <a href=\"%(practical_url)s\">Practical "
+"Info</a> and the <a href=\"%(faq_url)s\">FAQ</a> first!"
 msgstr ""
 "Si vous avez des questions, vérifiez d’abord si votre réponse ne figure pas "
 "sur la page Infos Pratiques ou la page FAQ. "
 
-#: .\templates\home.html:222
-#, python-brace-format
+#: .\templates\home.html:254
+#, fuzzy
+#| msgid ""
+#| "If you cannot find your answer, you can send us an e-mail at : bastien.et."
+#| "joan {at} gmail {dot} com"
 msgid ""
-"If you cannot find your answer, you can send us an e-mail at : "
-"bastien.et.joan {at} gmail {dot} com"
+"If you cannot find your answer, you can send us an e-mail at : <a href="
+"\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>"
 msgstr ""
 "Dans le cas contraire, n’hésitez pas à nous envoyer un e-mail à l’adresse "
 "bastien.et.joan[arobase]gmail[point]com !"
@@ -577,8 +677,7 @@ msgstr "En Pratique"
 
 #: .\templates\practical.html:25
 msgid ""
-"Click on the icon on the left to expand descriptions of the important "
-"venues."
+"Click on the icon on the left to expand descriptions of the important venues."
 msgstr ""
 "Cliquez sur l'icône à gauche pour étendre les descriptions des lieux de "
 "mariage"
@@ -605,8 +704,8 @@ msgstr ""
 "Bruxelles, la capitale de la Belgique. Nous recommandons à nos invités "
 "étrangers de loger à Bruxelles car il y a beaucoup plus d’options en termes "
 "de logement (hotels, hostels, airBnB…), ainsi que d’activités touristiques "
-"pour ceux qui souhaitent faire un peu de tourisme avant ou après le mariage."
-" Les lieux de cérémonie et de réception se trouvent à proximité d’arrêts de "
+"pour ceux qui souhaitent faire un peu de tourisme avant ou après le mariage. "
+"Les lieux de cérémonie et de réception se trouvent à proximité d’arrêts de "
 "bus et de gares de train, et il est également possible d’organiser du "
 "covoiturage. "
 
@@ -620,22 +719,22 @@ msgstr "Lieu de cérémonie privée - Chapelle de Profondsart : "
 
 #: .\templates\practical.html:34
 msgid ""
-"By car : E411, exit 5 towards Rixensart, free parking is available along the"
-" street"
+"By car : E411, exit 5 towards Rixensart, free parking is available along the "
+"street"
 msgstr ""
-"En voiture : E411, sortie 5 vers Rixensart, stationnement gratuit le long de"
-" la rue "
+"En voiture : E411, sortie 5 vers Rixensart, stationnement gratuit le long de "
+"la rue "
 
 #: .\templates\practical.html:35
 msgid ""
-"By train from Brussels : stop at Profondsart station on the Brussels - Namur"
-" line (S8 omnibus, departing from all Brussels stations), from there it is a"
-" 8 minute walk until the chapel or we can pick you by car at the station"
+"By train from Brussels : stop at Profondsart station on the Brussels - Namur "
+"line (S8 omnibus, departing from all Brussels stations), from there it is a "
+"8 minute walk until the chapel or we can pick you by car at the station"
 msgstr ""
 "En train de Bruxelles : descendre à la station de Profondsart sur la ligne "
-"Bruxelles - Namur (S8 omnibus, partant de toutes les gares de Bruxelles). La"
-" chapelle se trouve à 8 min à pied de la gare. En cas de besoin, nous "
-"pouvons éventuellement venir vous chercher en voiture à la gare. "
+"Bruxelles - Namur (S8 omnibus, partant de toutes les gares de Bruxelles). La "
+"chapelle se trouve à 8 min à pied de la gare. En cas de besoin, nous pouvons "
+"éventuellement venir vous chercher en voiture à la gare. "
 
 #: .\templates\practical.html:38
 msgid "Public ceremony venue - Hôtel de Vill d’Ottignies : "
@@ -654,8 +753,8 @@ msgid ""
 "By train from Brussels : stop at the Ottignies station on the Brussels - "
 "Namur line (S8 omnibus, departing from all Brussels stations, or IC direct, "
 "departing from the main Brussels stations), from there it is a 15 min walk "
-"to the city hall. Alternatively, it is possible to take a bus from Ottignies"
-" station to the city hall (Ottignies Eglise stop on lines 19, 28, 29, 30, "
+"to the city hall. Alternatively, it is possible to take a bus from Ottignies "
+"station to the city hall (Ottignies Eglise stop on lines 19, 28, 29, 30, "
 "please consult <a href=\"http://www.infotec.be\">Info Tec site</a> for "
 "specific schedules)."
 msgstr ""
@@ -680,13 +779,13 @@ msgstr ""
 
 #: .\templates\practical.html:47
 msgid ""
-"By bus from Brussels : stop at the Ottignies station on the Brussels - Namur"
-" line (S8 omnibus, departing from all Brussels stations, or IC direct, "
+"By bus from Brussels : stop at the Ottignies station on the Brussels - Namur "
+"line (S8 omnibus, departing from all Brussels stations, or IC direct, "
 "departing from the main Brussels stations), from there take bus line 33 "
 "heading to Eghezée - Perwez. The venue is near the stop Almez Vicinal. Note "
 "that this bus line also departs from the Louvain-la-Neuve campus, with a "
-"stop at the Esplanade shopping center and a stop at the bus station (Parking"
-" Leclercq)."
+"stop at the Esplanade shopping center and a stop at the bus station (Parking "
+"Leclercq)."
 msgstr ""
 "En train de Bruxelles : descendre à la gare d’Ottignies sur la ligne "
 "Bruxelles - Namur (S8 omnibus, partant de toutes les gares de Bruxelles, ou "
@@ -708,15 +807,15 @@ msgstr ""
 #: .\templates\practical.html:49
 msgid ""
 "By taxi : transport to and from the reception venue can also be arranged by "
-"taxi, especially during the early hours after the party. The AZ Taxi company"
-" offers 4 to 6 people taxis in the region that can be reserved in advance "
+"taxi, especially during the early hours after the party. The AZ Taxi company "
+"offers 4 to 6 people taxis in the region that can be reserved in advance "
 "(see their <a href=\"http://aztaxi.be\">website</a>). For reference, a ride "
 "to Brussels costs around 60€."
 msgstr ""
 "En taxi : le transport vers et à partir de la salle de réception peut aussi "
 "être arrangé en taxi, pratique surtout aux petites heures après la soirée. "
-"La compagnie AZ Taxi propose des taxis de 4 à 6 personnes dans la région qui"
-" peuvent être réservés à l’avance (voir leur site web : http://aztaxi.be/). "
+"La compagnie AZ Taxi propose des taxis de 4 à 6 personnes dans la région qui "
+"peuvent être réservés à l’avance (voir leur site web : http://aztaxi.be/). "
 "Pour référence, un trajet jusqu’à Bruxelles coûte environ 60€. "
 
 #: .\templates\practical.html:51
@@ -724,8 +823,8 @@ msgid ""
 "Note that for if you came to the Public Ceremony via public transport, car-"
 "sharing can be arranged to take you to the reception venue!"
 msgstr ""
-"Si vous êtes venu(e) à la cérémonie publique en transports en commun, il est"
-" possible d’arranger un covoiturage jusqu’à la salle de réception."
+"Si vous êtes venu(e) à la cérémonie publique en transports en commun, il est "
+"possible d’arranger un covoiturage jusqu’à la salle de réception."
 
 #: .\templates\practical.html:53
 msgid "Restaurants near the reception venue"
@@ -734,15 +833,15 @@ msgstr "Restaurants près de la salle de réception "
 #: .\templates\practical.html:54
 msgid ""
 "Though we would have loved to have all our guests to join us at all the "
-"events of the wedding day, we are unfortunately limited by costs and are not"
-" able to invite everyone to the sit-down dinner between the reception and "
-"the party. There are several restaurants in the vicinity of the reception "
-"venue where you can enjoy a nice meal, here are some of our recommendations."
+"events of the wedding day, we are unfortunately limited by costs and are not "
+"able to invite everyone to the sit-down dinner between the reception and the "
+"party. There are several restaurants in the vicinity of the reception venue "
+"where you can enjoy a nice meal, here are some of our recommendations."
 msgstr ""
 "Bien que nous aurions souhaité accueillir tous nos invités à l’entièreté du "
 "mariage, nous sommes malheureusement limités financièrement et ne pouvons "
-"pas inviter tout le monde au diner entre la réception et la soirée dansante."
-" Il y a plusieurs restaurants à proximité de la salle de réception où vous "
+"pas inviter tout le monde au diner entre la réception et la soirée dansante. "
+"Il y a plusieurs restaurants à proximité de la salle de réception où vous "
 "pourriez dîner, voici ci-dessous quelques unes de nos recommandations."
 
 #: .\templates\practical.html:57
@@ -750,8 +849,8 @@ msgid ""
 "<a href=\"www.beirutplaza.be\">Beirut Plaza</a> : Lebanese cuisine that can "
 "be enjoyed either tapas-style or with main courses (quite copious amounts!)"
 msgstr ""
-"Beirut Plaza (www.beirutplaza.be) : cuisine libanaise à déguster style tapas"
-" ou en plats principaux (quantités copieuses!)"
+"Beirut Plaza (www.beirutplaza.be) : cuisine libanaise à déguster style tapas "
+"ou en plats principaux (quantités copieuses!)"
 
 #: .\templates\practical.html:58
 msgid ""
@@ -760,13 +859,13 @@ msgid ""
 "decadent carbonara"
 msgstr ""
 "Luppia (www.ristoranteluppia.be) : restaurant italien servant des pizzas "
-"traditionnelles au four et autres plats classiques, dont des pâtes carbonara"
-" très décadentes "
+"traditionnelles au four et autres plats classiques, dont des pâtes carbonara "
+"très décadentes "
 
 #: .\templates\practical.html:59
 msgid ""
-"<a href=\"www.gangnam.be\">Gangnam</a> : Korean dishes in a cozy atmosphere,"
-" with delicious marinated BBQ meats"
+"<a href=\"www.gangnam.be\">Gangnam</a> : Korean dishes in a cozy atmosphere, "
+"with delicious marinated BBQ meats"
 msgstr ""
 "Gangnam (www.gangnam.be) : plats coréens dans une ambiance chaleureuse, les "
 "viandes de BBQ marinées sont à essayer à tout prix!"
@@ -776,8 +875,8 @@ msgid ""
 "<a href=\"www.lapeniche.be\">La Péniche</a> : fresh fish and seafood to be "
 "enjoyed in an actual boat(!)"
 msgstr ""
-"La Péniche (www.lapeniche.be/) : poissons et fruits de mer frais, à déguster"
-" dans un vrai bateau(!)"
+"La Péniche (www.lapeniche.be/) : poissons et fruits de mer frais, à déguster "
+"dans un vrai bateau(!)"
 
 #: .\templates\practical.html:61
 msgid ""
@@ -789,8 +888,8 @@ msgstr ""
 
 #: .\templates\practical.html:66
 msgid ""
-"<a href=\"https://www.facebook.com/La-Galoute-61403954249/\">La Galoute</a> "
-": brasserie-style food in an original decor and homey atmosphere"
+"<a href=\"https://www.facebook.com/La-Galoute-61403954249/\">La Galoute</"
+"a> : brasserie-style food in an original decor and homey atmosphere"
 msgstr ""
 "La Galoute (https://www.facebook.com/La-Galoute-61403954249/) : plats de "
 "brasserie dans un décor original et ambiance détendue"
@@ -809,16 +908,16 @@ msgstr "Tourisme en Belgique"
 
 #: .\templates\practical.html:71
 msgid ""
-"For our guests from abroad who wish to discover Belgium, here are some handy"
-" resources as well as some of our own favourite spots! Additionally, "
-"neighbouring countries are also all very easily accessible from Brussels via"
-" high-speed trains (Thalys, Eurostar), so you can enjoy the opportunity to "
+"For our guests from abroad who wish to discover Belgium, here are some handy "
+"resources as well as some of our own favourite spots! Additionally, "
+"neighbouring countries are also all very easily accessible from Brussels via "
+"high-speed trains (Thalys, Eurostar), so you can enjoy the opportunity to "
 "plan some city-trips to Paris, Amsterdam, Cologne, or London."
 msgstr ""
 "Pour nos invités étrangers qui souhaitent découvrir la Belgique, voici "
 "quelques ressources pratique ainsi que nos recommandations. Par ailleurs, "
-"les pays limitrophes sont aussi facilement accessibles à partir de Bruxelles"
-" en train (Thalys, Eurostar). Vous pourriez en profiter pour faire un petit "
+"les pays limitrophes sont aussi facilement accessibles à partir de Bruxelles "
+"en train (Thalys, Eurostar). Vous pourriez en profiter pour faire un petit "
 "city-trip à Paris, Amsterdam, Cologne ou Londres!"
 
 #: .\templates\practical.html:72
@@ -831,21 +930,21 @@ msgstr "Agence de tourisme officielle de Belgique"
 
 #: .\templates\practical.html:75
 msgid ""
-"<a href=\"https://visit.brussels/\">Brussels</a> : the Grand-Place is a "
-"must-see and the new pedestrian version of the Anspach Boulevard makes for a"
-" very nice stroll in the summer months. There is also the <a "
-"href=\"bsf.be/en\">Brussels Summer Festival</a> with concerts until the 15th"
-" of August for the music lovers."
+"<a href=\"https://visit.brussels/\">Brussels</a> : the Grand-Place is a must-"
+"see and the new pedestrian version of the Anspach Boulevard makes for a very "
+"nice stroll in the summer months. There is also the <a href=\"bsf.be/en"
+"\">Brussels Summer Festival</a> with concerts until the 15th of August for "
+"the music lovers."
 msgstr ""
 "la Grand-Place est un must et le nouveau Boulevard Anspach piétonnier est "
-"extrêmement agréable pendant les mois d’été. Pour les mélomanes, le Brussels"
-" Summer Festival a également lieu jusqu’au 15 août (bsf.be/en)."
+"extrêmement agréable pendant les mois d’été. Pour les mélomanes, le Brussels "
+"Summer Festival a également lieu jusqu’au 15 août (bsf.be/en)."
 
 #: .\templates\practical.html:76
 msgid ""
 "<a href=\"www.wallonia.be/en/visit\">Wallonia</a> : visit real medieval "
-"castles in <a href=\"www.bouillon-tourisme.be/en\">Bouillon</a> and tour the"
-" famous trappist brewery in <a href=\"chimay.com/en/\">Chimay</a>."
+"castles in <a href=\"www.bouillon-tourisme.be/en\">Bouillon</a> and tour the "
+"famous trappist brewery in <a href=\"chimay.com/en/\">Chimay</a>."
 msgstr ""
 "www.wallonia.be/en/visit : visitez d’authentiques châteaux médiévaux à "
 "Bouillon (www.bouillon-tourisme.be/en) et profitez d’une dégustation à la "
@@ -854,8 +953,8 @@ msgstr ""
 #: .\templates\practical.html:77
 msgid ""
 "<a href=\"www.visitflanders.com/\">Flanders</a> : take a relaxing sight-"
-"seeing walk in <a href=\"https://www.visitbruges.be/en\">Bruges</a>, rightly"
-" called the Venice of the North."
+"seeing walk in <a href=\"https://www.visitbruges.be/en\">Bruges</a>, rightly "
+"called the Venice of the North."
 msgstr ""
 "www.visitflanders.com/ : faites une promenade relaxante à Bruges, aussi "
 "appelée la Venise du nord. "
@@ -870,8 +969,8 @@ msgstr "Thalys"
 
 #: .\templates\practical.html:82
 msgid ""
-"<a href=\"https://www.izy.com/en/homepage\">Low-cost trains between Brussels"
-" & Paris</a>"
+"<a href=\"https://www.izy.com/en/homepage\">Low-cost trains between Brussels "
+"& Paris</a>"
 msgstr "Tickets low-cost entre Bruxelles - Paris"
 
 #: .\templates\practical.html:83
@@ -882,46 +981,77 @@ msgstr "Eurostar"
 msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
 msgstr "Si vous avez d’autres questions, consultez notre FAQ!"
 
-#: .\templates\rsvp.html:24
-msgid "Please tell us to which part of the festivities you will be coming."
+#: .\templates\rsvp.html:25
+msgid ""
+"Please tell us which part of the festivities you will be attending. Note "
+"that you can bookmark this page and return directly to this RSVP form !"
 msgstr ""
 
-#: .\templates\rsvp.html:30
-msgid "Private ceremony"
+#: .\templates\rsvp.html:28
+msgid ""
+"If you’ve changed your mind, you can come back to this page until <b>July "
+"15st</b> to change your answers. After this time, your answers will be "
+"locked. Should you have any last-minute changes to your RSVP after this "
+"deadline, please send us an e-mail at <a href=\"mailto:bastien.et.joan@gmail."
+"com\">bastien.et.joan@gmail.com</a>."
 msgstr ""
 
-#: .\templates\rsvp.html:31
-msgid "Public ceremony"
+#: .\templates\rsvp.html:32
+msgid ""
+"Please arrive at least <b>15 min</b> before the starting time of each event "
+"to make sure there are no delays !"
 msgstr ""
 
-#: .\templates\rsvp.html:72
+#: .\templates\rsvp.html:38
+msgid "Private ceremony <br>(18/08 - 19:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:39
+msgid "Public ceremony <br>(19/08 - 14:00-14:30)"
+msgstr ""
+
+#: .\templates\rsvp.html:40
+msgid "Reception <br>(19/08 - 15:00-17:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:41
+msgid "Dinner <br>(19/08 - 18:00-20:30)"
+msgstr ""
+
+#: .\templates\rsvp.html:42
+msgid "Party <br>(19/08 - 21:00-03:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:80
 msgid "How many children menus should we include for the dinner?"
 msgstr "Combien de menus enfants devons-nous inclure pour le repas ?"
 
-#: .\templates\rsvp.html:82
+#: .\templates\rsvp.html:90
 msgid "Are there any dietary restriction we should take into account?"
 msgstr "Avez-vous des restrictions alimentaires ?"
 
-#: .\templates\rsvp.html:92
+#: .\templates\rsvp.html:100
 msgid "Any music you would like to request for the party?"
 msgstr "Des recommandations pour la musique pour la soirées ?"
 
-#: .\templates\rsvp.html:102
+#: .\templates\rsvp.html:110
 msgid "Anything else you want to tell us?"
 msgstr "Autres commentaires "
 
-#: .\templates\rsvp.html:111 .\templates\rsvp_login.html:20
+#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:29
 msgid "Submit"
 msgstr "Envoyer"
 
-#: .\templates\rsvp_login.html:14
-msgid "Reply to invitation"
-msgstr "Répondre à l'invitation"
-
-#: .\templates\rsvp_login.html:16
-msgid ""
-"The invitation you received had a code written on it. Please enter it below "
-"to access the RSVP form."
+#: .\templates\rsvp_login.html:25
+msgid "Please enter the code that you received on your invitation. "
 msgstr ""
-"Veuillez entrer le code RSVP qui se trouve sur votre invitation pour accéder"
-" au formulaire de réponse."
+
+#~ msgid "Reply to invitation"
+#~ msgstr "Répondre à l'invitation"
+
+#~ msgid ""
+#~ "The invitation you received had a code written on it. Please enter it "
+#~ "below to access the RSVP form."
+#~ msgstr ""
+#~ "Veuillez entrer le code RSVP qui se trouve sur votre invitation pour "
+#~ "accéder au formulaire de réponse."

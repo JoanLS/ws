@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 19:22+0200\n"
+"POT-Creation-Date: 2017-05-11 23:32+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,31 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.13\n"
 
-#: .\templates\base_site.html:35
+#: .\templates\base_site.html:48
 msgid "About Us"
 msgstr ""
 
-#: .\templates\base_site.html:36
+#: .\templates\base_site.html:49
 msgid "The Wedding"
 msgstr ""
 
-#: .\templates\base_site.html:37
+#: .\templates\base_site.html:50
 msgid "Contact"
 msgstr ""
 
-#: .\templates\base_site.html:38
+#: .\templates\base_site.html:51
 msgid "Practical"
 msgstr ""
 
-#: .\templates\base_site.html:39
+#: .\templates\base_site.html:52
 msgid "FAQ"
 msgstr ""
 
-#: .\templates\base_site.html:40
+#: .\templates\base_site.html:53
 msgid "Registry"
 msgstr ""
 
-#: .\templates\base_site.html:41 .\templates\rsvp.html:16
+#: .\templates\base_site.html:54 .\templates\rsvp.html:17
+#: .\templates\rsvp_login.html:18
 msgid "RSVP"
 msgstr ""
 
@@ -59,25 +60,45 @@ msgid ""
 "Please RSVP :) ! If you need some more time to decide, that’s fine, but "
 "please do send us your answer by <b>mid-July at the latest</b>! If you have "
 "questions, please check the list here for an answer, if your question isn’t "
-"featured, feel free to <a href=\"index.html#contact\">contact us!</a>"
-msgstr ""
-
-#: .\templates\faq.html:26
-msgid "How do I get to the venue(s)?"
+"featured, feel free to <a href=\"mailto:bastien.et.joan@gmail.com\">contact "
+"us!</a>"
 msgstr ""
 
 #: .\templates\faq.html:27
 msgid ""
-"The <a href=\"practical.html\">Practical Info</a> page has indications about "
-"getting to all the venue sites by car or by public transport, and from "
+"What is the CD that came with the invitation ? What do these songs mean ?"
+msgstr ""
+
+#: .\templates\faq.html:28
+msgid ""
+"The CD contains songs that both of us selected to capture some of the "
+"important moments of our relationship. The first song by Olafur Arnalds "
+"reflects the early times of our budding friendship, and refers to an e-mail "
+"exchange 80+(!) messages long, while the last song comes from a hauntingly "
+"beautiful video game called Journey that we played together. Each row "
+"corresponds roughly to each year of our relationship. Some rows have two "
+"songs, and those represent instances where we have had to be apart when one "
+"of us went abroad for work. We hope that you’ll enjoy this little musical "
+"interlude :) !"
+msgstr ""
+
+#: .\templates\faq.html:31
+msgid "How do I get to the venue(s)?"
+msgstr ""
+
+#: .\templates\faq.html:32
+#, python-format
+msgid ""
+"The <a href=\"%(practical_url)s\">Practical Info</a> page has indications "
+"about getting to all the venue sites by car or by public transport, and from "
 "abroad."
 msgstr ""
 
-#: .\templates\faq.html:29
+#: .\templates\faq.html:34
 msgid "What time should I arrive?"
 msgstr ""
 
-#: .\templates\faq.html:30
+#: .\templates\faq.html:35
 msgid ""
 "Since there are many things happening on the wedding days, we recommend that "
 "our guests arrive <b>at least 15 min</b> early to ensure that each event "
@@ -86,21 +107,21 @@ msgid ""
 "and there are other timeslots booked after us."
 msgstr ""
 
-#: .\templates\faq.html:32
+#: .\templates\faq.html:37
 msgid "What time will the ceremony/reception/party end?"
 msgstr ""
 
-#: .\templates\faq.html:33
+#: .\templates\faq.html:38
 msgid ""
-"For end times, please consult the <a href=\"index.html#wedding\">Wedding "
-"Info</a> section."
+"For end times, please consult the <a href=\"/#wedding\">Wedding Info</a> "
+"section."
 msgstr ""
 
-#: .\templates\faq.html:35
+#: .\templates\faq.html:40
 msgid "Where should I park?"
 msgstr ""
 
-#: .\templates\faq.html:36
+#: .\templates\faq.html:41
 msgid ""
 "There are parking spaces available near all the venues. For the Public "
 "Ceremony venue (Hôtel de Ville d’Ottignies), the parking is free for a "
@@ -108,11 +129,11 @@ msgid ""
 "entirely free."
 msgstr ""
 
-#: .\templates\faq.html:38
+#: .\templates\faq.html:43
 msgid "What should I wear?"
 msgstr ""
 
-#: .\templates\faq.html:39
+#: .\templates\faq.html:44
 msgid ""
 "Formal or cocktail attire is traditional for weddings, but the most "
 "important for us is to have a happy relaxed atmosphere, so anything that is "
@@ -126,11 +147,11 @@ msgid ""
 "not be the most practical."
 msgstr ""
 
-#: .\templates\faq.html:41
+#: .\templates\faq.html:46
 msgid "Are kids welcome?"
 msgstr ""
 
-#: .\templates\faq.html:42
+#: .\templates\faq.html:47
 msgid ""
 "We welcome children to celebrate with us at the Public Ceremony and the "
 "Reception, however, we would kindly to ask the parents to take care that "
@@ -138,34 +159,34 @@ msgid ""
 "be quite loud and would not be a suitable event for children to attend."
 msgstr ""
 
-#: .\templates\faq.html:44
+#: .\templates\faq.html:49
 msgid "Can I bring a date?"
 msgstr ""
 
-#: .\templates\faq.html:45
+#: .\templates\faq.html:50
 msgid ""
 "Unfortunately, due to cost limitations, we cannot allow for extra guests "
 "unless directly specified in your invitation. However, feel free to reach "
 "out if you would like to discuss your options!"
 msgstr ""
 
-#: .\templates\faq.html:47
+#: .\templates\faq.html:52
 msgid "When is the RSVP deadline?"
 msgstr ""
 
-#: .\templates\faq.html:48
+#: .\templates\faq.html:53
 msgid ""
 "We would greatly appreciate it if you could send your RSVP information at "
 "least one month before the wedding, by <b>mid-July</b>. For any last minute "
-"changes, please <a href=\"index.html#contact\">contact us</a> as soon as "
-"possible so we can make the necessary arrangements."
+"changes, please <a href=\"/#contact\">contact us</a> as soon as possible so "
+"we can make the necessary arrangements."
 msgstr ""
 
-#: .\templates\faq.html:50
+#: .\templates\faq.html:55
 msgid "What is the private ceremony?"
 msgstr ""
 
-#: .\templates\faq.html:51
+#: .\templates\faq.html:56
 msgid ""
 "We do not have a religious ceremony since neither of us are religious, but "
 "we did want another, more meaningful, wedding ceremony besides the civil "
@@ -174,23 +195,25 @@ msgid ""
 "Ceremony takes place on the 18th of August, our seven year anniversary :)."
 msgstr ""
 
-#: .\templates\faq.html:53
+#: .\templates\faq.html:58
 msgid "Will there be food at the reception?"
 msgstr ""
 
-#: .\templates\faq.html:54
+#: .\templates\faq.html:60
+#, python-format
 msgid ""
 "The reception will include appetizers and drinks, but not a full meal. "
 "Unfortunately, we are not able to invite all our guests to join the sit-down "
 "dinner afterwards, but you can find some of our restaurant recommendations "
-"on the <a href=\"practical.html\">Practical Info</a> page."
+"on the <a href=\"%(practical_url)s\">Practical Info</a> page."
 msgstr ""
 
-#: .\templates\faq.html:56
+#: .\templates\faq.html:62
 msgid "What kind of food will be served? What if I have a dietary restriction?"
 msgstr ""
 
-#: .\templates\faq.html:57
+#: .\templates\faq.html:64
+#, python-format
 msgid ""
 "The reception will have various warm and cold appetizers and the sit-down "
 "dinner will feature a starter and a main course. After the concert, desserts "
@@ -198,86 +221,101 @@ msgid ""
 "bar at the reception, dinner, and party (soft drinks, beers, and wines).</"
 "p>\n"
 "          <p>If you have any dietary restrictions, please mention them on "
-"your <a href=\"rsvp.html\">RSVP form</a> so we can communicate them to the "
-"caterer."
+"your <a href=\"%(rsvp_url)s\">RSVP form</a> so we can communicate them to "
+"the caterer."
 msgstr ""
 
-#: .\templates\faq.html:60
+#: .\templates\faq.html:67
 msgid "Will there be dancing at the party?"
 msgstr ""
 
-#: .\templates\faq.html:61
+#: .\templates\faq.html:68
+#, python-format
 msgid ""
 "Yes :)! We are currently compiling a playlist with anything from nostalgia-"
 "laden 90s pop music to more obscure Japanese math rock for everyone to rock "
 "the dancefloor. Don’t forget to add your own song requests in your <a href="
-"\"rsvp.html\">RSVP form</a>!"
+"\"%(rsvp_url)s\">RSVP form</a>!"
 msgstr ""
 
-#: .\templates\faq.html:62
+#: .\templates\faq.html:69
 msgid ""
 "For those who want to enjoy the party with less dancing, we’ll be planning "
 "several other activities on the side as well (e.g. video and board games)!"
 msgstr ""
 
-#: .\templates\faq.html:64
+#: .\templates\faq.html:71
 msgid "Can I take pictures?"
 msgstr ""
 
-#: .\templates\faq.html:65
+#: .\templates\faq.html:72
 msgid ""
 "Feel free to take pictures! But please try to be considerate and not "
 "interfere with the professional photographer we hired for the day."
 msgstr ""
 
-#: .\templates\faq.html:67
+#: .\templates\faq.html:74
+msgid "Can I make a speech at the wedding?"
+msgstr ""
+
+#: .\templates\faq.html:75
+msgid ""
+"We hope our wedding day will be full of laughter and happy tears, so we "
+"would very much appreciate your contribution! However, there are many things "
+"that need to happen on schedule, so it would be best if you could contact "
+"Bastien’s sister, <a href=\"mailto:pascale.gorissen@gmail.com\">Pascale</a>, "
+"in advance so your speech can be coordinated within the available timeslots. "
+"Note that while timing is limited during the dinner but there are more "
+"opportunities at the party to take the microphone."
+msgstr ""
+
+#: .\templates\faq.html:78
 msgid "Is there a gifts registry?"
 msgstr ""
 
-#: .\templates\faq.html:68
+#: .\templates\faq.html:79
 msgid "Please check the <a href=\"registry.html\">Gifts Registry</a> page!"
 msgstr ""
 
-#: .\templates\faq.html:70
+#: .\templates\faq.html:81
 msgid "Will last names be changing after the wedding?"
 msgstr ""
 
-#: .\templates\faq.html:71
+#: .\templates\faq.html:82
 msgid "We will both be keeping our original names after the wedding :)"
 msgstr ""
 
-#: .\templates\faq.html:73
+#: .\templates\faq.html:84
 msgid "I have a question not answered here; how do I contact you?"
 msgstr ""
 
-#: .\templates\faq.html:74
-#, python-brace-format
+#: .\templates\faq.html:85
 msgid ""
 "If you have any further questions or comments, please send us an e-mail at: "
-"bastien.et.joan {at} gmail {dot} com."
+"<a href=\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>."
 msgstr ""
 
-#: .\templates\home.html:15
+#: .\templates\home.html:32
 msgid "days"
 msgstr ""
 
-#: .\templates\home.html:17
+#: .\templates\home.html:34
 msgid "hours"
 msgstr ""
 
-#: .\templates\home.html:19
+#: .\templates\home.html:36
 msgid "minutes"
 msgstr ""
 
-#: .\templates\home.html:21
+#: .\templates\home.html:38
 msgid "seconds"
 msgstr ""
 
-#: .\templates\home.html:36
+#: .\templates\home.html:56
 msgid "About us"
 msgstr ""
 
-#: .\templates\home.html:39
+#: .\templates\home.html:59
 msgid ""
 "They say you meet the most important people in university but for us, even "
 "though we’d been orbiting each other through our circles of friends for some "
@@ -289,215 +327,218 @@ msgid ""
 "August 2010."
 msgstr ""
 
-#: .\templates\home.html:40
+#: .\templates\home.html:61
+#, python-format
 msgid ""
-"Since then, we have lived many memorable moments together, here they are "
-"summarised in arbitrary yet meaningful units :"
+"Since then, we have lived many memorable moments together, some of which are "
+"outlined as musical anecdotes on the <a href=\"%(faq_url)s#CD\">invitation "
+"CD</a> and others that are are summarised here in arbitrary yet meaningful "
+"units :"
 msgstr ""
 
-#: .\templates\home.html:131
+#: .\templates\home.html:69
 msgid "2 theses"
 msgstr ""
 
-#: .\templates\home.html:132
+#: .\templates\home.html:70
 msgid "2 cats"
 msgstr ""
 
-#: .\templates\home.html:133
+#: .\templates\home.html:71
 msgid "2 apartments"
 msgstr ""
 
-#: .\templates\home.html:134
+#: .\templates\home.html:72
 msgid "15 months apart"
 msgstr ""
 
-#: .\templates\home.html:135
+#: .\templates\home.html:73
 msgid "1 new bookcase"
 msgstr ""
 
-#: .\templates\home.html:136
+#: .\templates\home.html:74
 msgid "9 countries visited"
 msgstr ""
 
-#: .\templates\home.html:137
+#: .\templates\home.html:75
 msgid "1 very slow turtle"
 msgstr ""
 
-#: .\templates\home.html:138
+#: .\templates\home.html:76
 msgid "5 Magic the Gathering pre-release game events"
 msgstr ""
 
-#: .\templates\home.html:139
+#: .\templates\home.html:77
 msgid "1 freak hurricane"
 msgstr ""
 
-#: .\templates\home.html:140
+#: .\templates\home.html:78
 msgid "A ton of post-rock concerts"
 msgstr ""
 
-#: .\templates\home.html:141
+#: .\templates\home.html:79
 msgid "5 New Year’s cheese fondues"
 msgstr ""
 
-#: .\templates\home.html:142
+#: .\templates\home.html:80
 msgid "Many weekends spent cracking video games"
 msgstr ""
 
-#: .\templates\home.html:143
+#: .\templates\home.html:81
 msgid "1 alarming message about hospitals"
 msgstr ""
 
-#: .\templates\home.html:144
+#: .\templates\home.html:82
 msgid "A million (and counting) decorative birbs"
 msgstr ""
 
-#: .\templates\home.html:145
+#: .\templates\home.html:83
 msgid "Too many stupid nicknames to count"
 msgstr ""
 
-#: .\templates\home.html:146
+#: .\templates\home.html:84
 msgid "A (un)reasonable number of newly acquired musical instruments"
 msgstr ""
 
-#: .\templates\home.html:147
+#: .\templates\home.html:85
 msgid "A thousand evenings wondering what to eat for dinner"
 msgstr ""
 
-#: .\templates\home.html:151
+#: .\templates\home.html:88
 msgid "1 very important question"
 msgstr ""
 
-#: .\templates\home.html:154
+#: .\templates\home.html:180
 msgid ""
 "...and in August 2017, we will celebrate 7 years of joy and happiness and of "
 "all the future years to come :)."
 msgstr ""
 
-#: .\templates\home.html:161
+#: .\templates\home.html:195
 msgid "Wedding Info"
 msgstr ""
 
-#: .\templates\home.html:166
+#: .\templates\home.html:200
 #, python-format
 msgid ""
 "For more information on how to get to the venue sites or travelling from "
 "abroad, please see the <a href=\"%(practical_url)s\">Practical Info</a> page."
 msgstr ""
 
-#: .\templates\home.html:168
+#: .\templates\home.html:202
 #, python-format
 msgid ""
 "Check the <a href=\"%(faq_url)s\">FAQ</a> if you have any other questions!"
 msgstr ""
 
-#: .\templates\home.html:170
+#: .\templates\home.html:204
 msgid "Friday 18 August 2017"
 msgstr ""
 
-#: .\templates\home.html:171
+#: .\templates\home.html:205
 msgid "Private wedding ceremony"
 msgstr ""
 
-#: .\templates\home.html:172
+#: .\templates\home.html:206
 msgid "An intimate personal ceremony"
 msgstr ""
 
-#: .\templates\home.html:173
+#: .\templates\home.html:207
 msgid "19:00"
 msgstr ""
 
-#: .\templates\home.html:174
+#: .\templates\home.html:208
 msgid "Chapelle de Profondsart"
 msgstr ""
 
-#: .\templates\home.html:175
+#: .\templates\home.html:209
 msgid "Rue de Grandsart 13, 1300 Limal"
 msgstr ""
 
-#: .\templates\home.html:177
+#: .\templates\home.html:211
 msgid "Saturday 19 August 2017"
 msgstr ""
 
-#: .\templates\home.html:178
+#: .\templates\home.html:212
 msgid "Public wedding ceremony"
 msgstr ""
 
-#: .\templates\home.html:179
+#: .\templates\home.html:213
 msgid "The civil marriage ceremony involving all the legal stuff"
 msgstr ""
 
-#: .\templates\home.html:180
+#: .\templates\home.html:214
 msgid "14:00 - 14:30"
 msgstr ""
 
-#: .\templates\home.html:181
+#: .\templates\home.html:215
 msgid "Hôtel de Ville d’Ottignies"
 msgstr ""
 
-#: .\templates\home.html:182
+#: .\templates\home.html:216
 msgid "Avenue des Combattants 35, 1340"
 msgstr ""
 
-#: .\templates\home.html:184 .\templates\rsvp.html:32
+#: .\templates\home.html:218
 msgid "Reception"
 msgstr ""
 
-#: .\templates\home.html:185
+#: .\templates\home.html:219
 msgid "Drinks, snacks, and congratulations"
 msgstr ""
 
-#: .\templates\home.html:186
+#: .\templates\home.html:220
 msgid "15:00 - 17:00"
 msgstr ""
 
-#: .\templates\home.html:187 .\templates\home.html:193
-#: .\templates\home.html:198
+#: .\templates\home.html:221 .\templates\home.html:227
+#: .\templates\home.html:232
 msgid "Cense d’Almez"
 msgstr ""
 
-#: .\templates\home.html:188
+#: .\templates\home.html:222
 msgid "Rue d’Almez 5, 1325 Corroy-le-Grand"
 msgstr ""
 
-#: .\templates\home.html:190 .\templates\rsvp.html:33
+#: .\templates\home.html:224
 msgid "Dinner"
 msgstr ""
 
-#: .\templates\home.html:191
+#: .\templates\home.html:225
 msgid "Sit-down meal and emotional speeches"
 msgstr ""
 
-#: .\templates\home.html:192
+#: .\templates\home.html:226
 msgid "18:00 - 20h30"
 msgstr ""
 
-#: .\templates\home.html:195 .\templates\rsvp.html:34
+#: .\templates\home.html:229
 msgid "Party"
 msgstr ""
 
-#: .\templates\home.html:196
+#: .\templates\home.html:230
 msgid "A live concert of our favourite songs followed by dancing all night!"
 msgstr ""
 
-#: .\templates\home.html:197
+#: .\templates\home.html:231
 msgid "21:00 - 03:00"
 msgstr ""
 
-#: .\templates\home.html:217
+#: .\templates\home.html:248
 msgid "Contact us"
 msgstr ""
 
-#: .\templates\home.html:221
+#: .\templates\home.html:253
 #, python-format
 msgid ""
-"Questions? Please have a look at the <a href=\"%(faq_url)s\">FAQ</a> first!"
+"Questions? Please have a look at the <a href=\"%(practical_url)s\">Practical "
+"Info</a> and the <a href=\"%(faq_url)s\">FAQ</a> first!"
 msgstr ""
 
-#: .\templates\home.html:222
-#, python-brace-format
+#: .\templates\home.html:254
 msgid ""
-"If you cannot find your answer, you can send us an e-mail at : bastien.et."
-"joan {at} gmail {dot} com"
+"If you cannot find your answer, you can send us an e-mail at : <a href="
+"\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>"
 msgstr ""
 
 #: .\templates\practical.html:19
@@ -735,44 +776,67 @@ msgstr ""
 msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
 msgstr ""
 
-#: .\templates\rsvp.html:24
-msgid "Please tell us to which part of the festivities you will be coming."
+#: .\templates\rsvp.html:25
+msgid ""
+"Please tell us which part of the festivities you will be attending. Note "
+"that you can bookmark this page and return directly to this RSVP form !"
 msgstr ""
 
-#: .\templates\rsvp.html:30
-msgid "Private ceremony"
+#: .\templates\rsvp.html:28
+msgid ""
+"If you’ve changed your mind, you can come back to this page until <b>July "
+"15st</b> to change your answers. After this time, your answers will be "
+"locked. Should you have any last-minute changes to your RSVP after this "
+"deadline, please send us an e-mail at <a href=\"mailto:bastien.et.joan@gmail."
+"com\">bastien.et.joan@gmail.com</a>."
 msgstr ""
 
-#: .\templates\rsvp.html:31
-msgid "Public ceremony"
+#: .\templates\rsvp.html:32
+msgid ""
+"Please arrive at least <b>15 min</b> before the starting time of each event "
+"to make sure there are no delays !"
 msgstr ""
 
-#: .\templates\rsvp.html:72
+#: .\templates\rsvp.html:38
+msgid "Private ceremony <br>(18/08 - 19:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:39
+msgid "Public ceremony <br>(19/08 - 14:00-14:30)"
+msgstr ""
+
+#: .\templates\rsvp.html:40
+msgid "Reception <br>(19/08 - 15:00-17:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:41
+msgid "Dinner <br>(19/08 - 18:00-20:30)"
+msgstr ""
+
+#: .\templates\rsvp.html:42
+msgid "Party <br>(19/08 - 21:00-03:00)"
+msgstr ""
+
+#: .\templates\rsvp.html:80
 msgid "How many children menus should we include for the dinner?"
 msgstr ""
 
-#: .\templates\rsvp.html:82
+#: .\templates\rsvp.html:90
 msgid "Are there any dietary restriction we should take into account?"
 msgstr ""
 
-#: .\templates\rsvp.html:92
+#: .\templates\rsvp.html:100
 msgid "Any music you would like to request for the party?"
 msgstr ""
 
-#: .\templates\rsvp.html:102
+#: .\templates\rsvp.html:110
 msgid "Anything else you want to tell us?"
 msgstr ""
 
-#: .\templates\rsvp.html:111 .\templates\rsvp_login.html:20
+#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:29
 msgid "Submit"
 msgstr ""
 
-#: .\templates\rsvp_login.html:14
-msgid "Reply to invitation"
-msgstr ""
-
-#: .\templates\rsvp_login.html:16
-msgid ""
-"The invitation you received had a code written on it. Please enter it below "
-"to access the RSVP form."
+#: .\templates\rsvp_login.html:25
+msgid "Please enter the code that you received on your invitation. "
 msgstr ""
