@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-11 23:32+0200\n"
+"POT-Creation-Date: 2017-05-12 00:22+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,8 +65,7 @@ msgid ""
 msgstr ""
 
 #: .\templates\faq.html:27
-msgid ""
-"What is the CD that came with the invitation ? What do these songs mean ?"
+msgid "What is the CD that came with the invitation? What do these songs mean?"
 msgstr ""
 
 #: .\templates\faq.html:28
@@ -509,7 +508,7 @@ msgid "Sit-down meal and emotional speeches"
 msgstr ""
 
 #: .\templates\home.html:226
-msgid "18:00 - 20h30"
+msgid "18:00 - 20:30"
 msgstr ""
 
 #: .\templates\home.html:229

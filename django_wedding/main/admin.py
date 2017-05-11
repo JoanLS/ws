@@ -33,7 +33,8 @@ class GuestCommentsInlineAdmin(admin.StackedInline):
 class GuestCodeAdmin(admin.ModelAdmin):
     inlines = (GuestAdminInline, GuestChildrenAdminInline,
                GuestCommentsInlineAdmin)
-
+    list_display = ('code', 'responded')
+    list_filter = ('responded',)
 
 class GuestCommentsAdmin(admin.ModelAdmin):
     list_display = ('code', 'dietary_restrictions', 'music_request',

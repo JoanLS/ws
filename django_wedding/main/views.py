@@ -88,4 +88,6 @@ class RSVP(TemplateView):
             guest_comments.code = code
             guest_comments.save()
  
+        code.responded = True
+        code.save()
         return redirect(reverse('rsvp', kwargs={'code': kwargs["code"].lower()}))
