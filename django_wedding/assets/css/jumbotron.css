@@ -3,7 +3,6 @@
     background-size: cover;
     margin-bottom: 50px;
     padding-top: 60px;
-    z-index: 0;
 }
 
 .ie .jumbotron {
@@ -17,33 +16,65 @@
 
 /* ------------------- NAMES ------------------- */
 
-h1.jumbotron-name {
-    background-image: url("../img/parallax-bg1.jpg");
+/*h1.jumbotron-name {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     //color: #fff;
     position: relative;
+    //z-index: 1;
     background-attachment: scroll;
+}*/
+
+  h1.jumbotron-name {
+    position: relative;
+    text-align: center;
+  }
+
+  h1.jumbotron-name div {
+    //background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background-image: url("../img/parallax-bg1.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute; 
+    width: 100%;
 }
 
+.ie h1.jumbotron-name div {
+  color: #3998b0;
+  background: none;
+}
+
+h1.jumbotron-name:after {
+    text-shadow: 5px 5px 6px rgba(150, 150, 150, 0.4);
+    color: transparent;
+    content: attr(data-text);
+  }
+
+/*
 h1.jumbotron-name:after {
     background: #f00;
     content: attr(data-text);
     left: 50%;
     position: absolute;
-    text-shadow: 3px 9px 6px #7e7e7e;
+    //text-shadow: 3px 3px 6px #7e7e7e;
     top: 0;
     z-index: -1;
 }
+*/
 
-.welp:before {
-    position: absolute;
-    z-index:1;
+/*.jumbotron-name-shadow {
+    position: relative;
+    z-index: 1;
+
+}*/
+
+/*.jumbotron-name-shadow {
     content: attr(data-text);
-    text-shadow: 3px 9px 6px #7e7e7e;
+    background: #0f0;
+    text-shadow: 3px 3px 6px #7e7e7e;
 
 }
-
+*/
 @media (max-width: 767px) {
     h1.jumbotron-name {
         font-size: 5em;
