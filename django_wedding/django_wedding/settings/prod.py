@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(
 SECRET_KEY = '2p32(9qr+t0ah$sfp0myuo4-@s1x%a4sj6xb-8#w@a8s3ztkes'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1', 'localhost', 'ws.gsmproductions.com', 'bastien-joan.ninja',
