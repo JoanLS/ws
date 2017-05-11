@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-11 23:32+0200\n"
-"PO-Revision-Date: 2017-05-11 23:55+0000\n"
-"Last-Translator:   <xnauthiz@gmail.com>\n"
+"POT-Creation-Date: 2017-05-12 00:22+0200\n"
+"PO-Revision-Date: 2017-05-12 00:57+0000\n"
+"Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -57,11 +57,6 @@ msgid "What should I do now?"
 msgstr "Que faire maintenant ?"
 
 #: .\templates\faq.html:24
-#| msgid ""
-#| "Please RSVP :) ! If you need some more time to decide, that’s fine, but "
-#| "please do send us your answer by <b>mid-July at the latest</b>! If you have "
-#| "questions, please check the list here for an answer, if your question isn’t "
-#| "featured, feel free to <a href=\"index.html#contact\">contact us!</a>"
 msgid ""
 "Please RSVP :) ! If you need some more time to decide, that’s fine, but "
 "please do send us your answer by <b>mid-July at the latest</b>! If you have "
@@ -78,8 +73,10 @@ msgstr ""
 
 #: .\templates\faq.html:27
 msgid ""
-"What is the CD that came with the invitation ? What do these songs mean ?"
+"What is the CD that came with the invitation? What do these songs mean?"
 msgstr ""
+"Pourquoi l'invitation était-elle accompagnée d'un CD ? Que représentent les "
+"chansons qui y figurent ?"
 
 #: .\templates\faq.html:28
 msgid ""
@@ -93,6 +90,16 @@ msgid ""
 "of us went abroad for work. We hope that you’ll enjoy this little musical "
 "interlude :) !"
 msgstr ""
+"Le CD comprend des morceaux que nous avons sélectionnés car ils représentent"
+" des moments ou des aspects importants de notre relation. Le premier "
+"morceau, par Ólafur Arnalds, est lié au début de notre amitié, et faisait "
+"partie d'un échange de plus de 80(!) emails. L'album se conclut par une "
+"pièce issue d'un jeu vidéo extrêmement poétique, Journey, auquel nous avons "
+"joué ensemble. Chaque ligne de la pochette correspond plus ou moins à une "
+"année de notre relation. Certaines lignes comportent deux chansons, "
+"reflétant ces moments que nous avons dû passé séparés lorsque l'autre était "
+"à l'étranger pour le travail. Nous espérons que vous apprécierez ce petit "
+"interlude musical :) !"
 
 #: .\templates\faq.html:31
 msgid "How do I get to the venue(s)?"
@@ -100,10 +107,6 @@ msgstr "Comment se rendre aux lieux de cérémonie et de réception ?"
 
 #: .\templates\faq.html:32
 #, python-format
-#| msgid ""
-#| "The <a href=\"practical.html\">Practical Info</a> page has indications about"
-#| " getting to all the venue sites by car or by public transport, and from "
-#| "abroad."
 msgid ""
 "The <a href=\"%(practical_url)s\">Practical Info</a> page has indications "
 "about getting to all the venue sites by car or by public transport, and from"
@@ -137,9 +140,6 @@ msgid "What time will the ceremony/reception/party end?"
 msgstr "À quelle heure se termine la cérémonie/réception/soirée?"
 
 #: .\templates\faq.html:38
-#| msgid ""
-#| "For end times, please consult the <a href=\"index.html#wedding\">Wedding "
-#| "Info</a> section."
 msgid ""
 "For end times, please consult the <a href=\"/#wedding\">Wedding Info</a> "
 "section."
@@ -227,11 +227,6 @@ msgid "When is the RSVP deadline?"
 msgstr "Quelle est la date limite pour le RSVP ?"
 
 #: .\templates\faq.html:53
-#| msgid ""
-#| "We would greatly appreciate it if you could send your RSVP information at "
-#| "least one month before the wedding, by <b>mid-July</b>. For any last minute "
-#| "changes, please <a href=\"index.html#contact\">contact us</a> as soon as "
-#| "possible so we can make the necessary arrangements."
 msgid ""
 "We would greatly appreciate it if you could send your RSVP information at "
 "least one month before the wedding, by <b>mid-July</b>. For any last minute "
@@ -268,11 +263,6 @@ msgstr "Y aura-t-il de la nourriture à la réception ? "
 
 #: .\templates\faq.html:60
 #, python-format
-#| msgid ""
-#| "The reception will include appetizers and drinks, but not a full meal. "
-#| "Unfortunately, we are not able to invite all our guests to join the sit-down"
-#| " dinner afterwards, but you can find some of our restaurant recommendations "
-#| "on the <a href=\"practical.html\">Practical Info</a> page."
 msgid ""
 "The reception will include appetizers and drinks, but not a full meal. "
 "Unfortunately, we are not able to invite all our guests to join the sit-down"
@@ -294,9 +284,6 @@ msgstr ""
 
 #: .\templates\faq.html:64
 #, python-format
-#| msgid ""
-#| "The reception will have various warm and cold appetizers and the sit-down dinner will feature a starter and a main course. After the concert, desserts and cake will be served to all our guests. As for drinks, there is an open bar at the reception, dinner, and party (soft drinks, beers, and wines).</p>\n"
-#| "          <p>If you have any dietary restrictions, please mention them on your <a href=\"rsvp.html\">RSVP form</a> so we can communicate them to the caterer."
 msgid ""
 "The reception will have various warm and cold appetizers and the sit-down dinner will feature a starter and a main course. After the concert, desserts and cake will be served to all our guests. As for drinks, there is an open bar at the reception, dinner, and party (soft drinks, beers, and wines).</p>\n"
 "          <p>If you have any dietary restrictions, please mention them on your <a href=\"%(rsvp_url)s\">RSVP form</a> so we can communicate them to the caterer."
@@ -310,11 +297,6 @@ msgstr "Qu’avez-vous prévu pour la soirée ?"
 
 #: .\templates\faq.html:68
 #, python-format
-#| msgid ""
-#| "Yes :)! We are currently compiling a playlist with anything from nostalgia-"
-#| "laden 90s pop music to more obscure Japanese math rock for everyone to rock "
-#| "the dancefloor. Don’t forget to add your own song requests in your <a "
-#| "href=\"rsvp.html\">RSVP form</a>!"
 msgid ""
 "Yes :)! We are currently compiling a playlist with anything from nostalgia-"
 "laden 90s pop music to more obscure Japanese math rock for everyone to rock "
@@ -350,7 +332,7 @@ msgstr ""
 
 #: .\templates\faq.html:74
 msgid "Can I make a speech at the wedding?"
-msgstr ""
+msgstr "Puis-je faire un discours lors du mariage ?"
 
 #: .\templates\faq.html:75
 msgid ""
@@ -362,6 +344,8 @@ msgid ""
 "timeslots. Note that while timing is limited during the dinner but there are"
 " more opportunities at the party to take the microphone."
 msgstr ""
+"Nous espérons que le grand jour sera empli de rires et de larmes de bonheur, et nous serions ravis de compter sur votre contribution !\n"
+"Cependant, la journée étant chargée, il serait préférable que vous contactiez <a href=\"mailto:pascale.gorissen@gmail.com\">Pascale</a>, la soeur de Bastien, à l'avance. Ainsi, votre discours pourra être intégré dans le déroulement des opérations. Et bien que le temps disponible durant le repas soit limité, il y aura d'autres opportunités de prendre le micro durant la soirée."
 
 #: .\templates\faq.html:78
 msgid "Is there a gifts registry?"
@@ -385,9 +369,6 @@ msgstr ""
 "Ma question n’est pas dans cette liste, je souhaite d’autres informations."
 
 #: .\templates\faq.html:85
-#| msgid ""
-#| "If you have any further questions or comments, please send us an e-mail at: "
-#| "bastien.et.joan {at} gmail {dot} com."
 msgid ""
 "If you have any further questions or comments, please send us an e-mail at: "
 "<a href=\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>."
@@ -427,6 +408,15 @@ msgid ""
 "knowing smiles, we finally confirmed their (and our own) suspicions in "
 "August 2010."
 msgstr ""
+"On dit souvent que les rencontres les plus importantes surviennent durant "
+"les études. Dans notre cas, il aura fallu attendre la toute fin de nos "
+"cursus respectifs, malgré que nos cercles d'amis respectifs nous aient "
+"amenés à nous fréquenter avant que nous ne nous rencontrions vraiment. Les "
+"discussions animées entres deux nouvelles connaissances devinrent bientôt "
+"des conversations de plus de 80 emails ponctuées de visites à "
+"l'improviste... Et alors qu'amis et familles commençaient à se douter de "
+"quelque chose et à échanger des sourires entendus, nous avons confirmé leurs"
+" (et nos propres) suspicions en Août 2010."
 
 #: .\templates\home.html:61
 #, python-format
@@ -436,6 +426,10 @@ msgid ""
 "CD</a> and others that are are summarised here in arbitrary yet meaningful "
 "units :"
 msgstr ""
+"Depuis, nous avons vécu nombre de moments mémorables ensemble. Certains sont"
+" illustrés par les plages du <a href=\"%(faq_url)s#CD\">CD accompagnant les "
+"invitations</a>, tandis que d'autres sont résumés ci-dessous en termes "
+"d'unités aussi arbitraires que significatives :"
 
 #: .\templates\home.html:69
 msgid "2 theses"
@@ -514,6 +508,8 @@ msgid ""
 "...and in August 2017, we will celebrate 7 years of joy and happiness and of"
 " all the future years to come :)."
 msgstr ""
+"...et en Août 2017, nous célèbrerons 7 années de joie et de bonheur, ainsi "
+"que toutes celles à venir :)."
 
 #: .\templates\home.html:195
 msgid "Wedding Info"
@@ -534,7 +530,8 @@ msgstr ""
 #, python-format
 msgid "Check the <a href=\"%(faq_url)s\">FAQ</a> if you have any other questions!"
 msgstr ""
-"Si vous avez d’autres questions, merci de jeter un coup d’oeil à notre FAQ !"
+"Si vous avez d’autres questions, merci de jeter un coup d’oeil à notre <a "
+"href=\"%(faq_url)s\">FAQ</a>!"
 
 #: .\templates\home.html:204
 msgid "Friday 18 August 2017"
@@ -614,7 +611,7 @@ msgid "Sit-down meal and emotional speeches"
 msgstr "Un repas assis entrecoupé de discours pleins d’émotion"
 
 #: .\templates\home.html:226
-msgid "18:00 - 20h30"
+msgid "18:00 - 20:30"
 msgstr ""
 
 #: .\templates\home.html:229
@@ -636,8 +633,6 @@ msgstr "Contactez-nous"
 
 #: .\templates\home.html:253
 #, python-format
-#| msgid ""
-#| "Questions? Please have a look at the <a href=\"%(faq_url)s\">FAQ</a> first!"
 msgid ""
 "Questions? Please have a look at the <a href=\"%(practical_url)s\">Practical"
 " Info</a> and the <a href=\"%(faq_url)s\">FAQ</a> first!"
@@ -647,9 +642,6 @@ msgstr ""
 "href=\"%(faq_url)s\">FAQ</a> !"
 
 #: .\templates\home.html:254
-#| msgid ""
-#| "If you cannot find your answer, you can send us an e-mail at : "
-#| "bastien.et.joan {at} gmail {dot} com"
 msgid ""
 "If you cannot find your answer, you can send us an e-mail at : <a "
 "href=\"mailto:bastien.et.joan@gmail.com\">bastien.et.joan@gmail.com</a>"
@@ -966,7 +958,9 @@ msgstr "Eurostar"
 
 #: .\templates\practical.html:86
 msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
-msgstr "Si vous avez d’autres questions, consultez notre FAQ!"
+msgstr ""
+"Si vous avez d’autres questions, consultez notre <a "
+"href=\"FAQ.html\">FAQ</a>!"
 
 #: .\templates\rsvp.html:25
 msgid ""
