@@ -57,7 +57,8 @@
           </span>
         </h1>
         <p class="block-text">{% blocktrans %}They say you meet the most important people in university but for us, even though we’d been orbiting each other through our circles of friends for some time, it was only towards the end of our student years that we truly met. What started as animated discussions between new acquaintances soon developed into 80 messages long email conversations and impromptu visits… And just when friends and family began questioning our relationship through knowing smiles, we finally confirmed their (and our own) suspicions in August 2010.{% endblocktrans %}</p>
-        <p class="block-text">{% blocktrans %}Since then, we have lived many memorable moments together, here they are summarised in arbitrary yet meaningful units :{% endblocktrans %}</p>
+        {% url 'faq' as faq_url %}
+        <p class="block-text">{% blocktrans %}Since then, we have lived many memorable moments together, some of which are outlined as musical anecdotes on the <a href="{{ faq_url }}#CD">invitation CD</a> and others that are are summarised here in arbitrary yet meaningful units :{% endblocktrans %}</p>
         <div class="spacer"></div>
       </div>
     </div>
@@ -248,7 +249,8 @@
           </span>
         </h1>
         {% url 'faq' as faq_url %}
-        <p>{% blocktrans %}Questions? Please have a look at the <a href="{{ faq_url }}">FAQ</a> first!{% endblocktrans %}</p>
+        {% url 'practical' as practical_url %}
+        <p>{% blocktrans %}Questions? Please have a look at the <a href="{{ practical_url }}">Practical Info</a> and the <a href="{{ faq_url }}">FAQ</a> first!{% endblocktrans %}</p>
         <p>{% blocktrans %}If you cannot find your answer, you can send us an e-mail at : <a href="mailto:bastien.et.joan@gmail.com">bastien.et.joan@gmail.com</a>{% endblocktrans %}</p>
 
       </div>

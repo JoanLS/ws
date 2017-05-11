@@ -22,7 +22,7 @@
       <form action="{% url 'rsvp_login' %}" method="post">
         {% csrf_token %}
         <center>
-        <p>{% blocktrans %}The invitation you received had a code written on it. Please enter it below to access the RSVP form.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Please enter the code that you received on your invitation. {% endblocktrans %}</p>
            <div class="form-fields">
             {{ form.code }}
           </div>
