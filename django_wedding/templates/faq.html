@@ -21,7 +21,11 @@
             </h1>
           
           <h3>{% trans "What should I do now?" %}</h3>
-          <p>{% blocktrans %}Please RSVP :) ! If you need some more time to decide, that’s fine, but please do send us your answer by <b>mid-July at the latest</b>! If you have questions, please check the list here for an answer, if your question isn’t featured, feel free to <a href="/#contact">contact us!</a>{% endblocktrans %}</p>
+          <p><span id="CD"></span>{% blocktrans %}Please RSVP :) ! If you need some more time to decide, that’s fine, but please do send us your answer by <b>mid-July at the latest</b>! If you have questions, please check the list here for an answer, if your question isn’t featured, feel free to <a href="mailto:bastien.et.joan@gmail.com">contact us!</a>{% endblocktrans %} 
+          </p>
+
+          <h3>{% trans "What is the CD that came with the invitation ? What do these songs mean ?" %}</h3>
+          <p>{% blocktrans %}The CD contains songs that both of us selected to capture some of the important moments of our relationship. The first song by Olafur Arnalds reflects the early times of our budding friendship, and refers to an e-mail exchange 80+(!) messages long, while the last song comes from a hauntingly beautiful video game called Journey that we played together. Each row corresponds roughly to each year of our relationship. Some rows have two songs, and those represent instances where we have had to be apart when one of us went abroad for work. We hope that you’ll enjoy this little musical interlude :) !{% endblocktrans %}</p>
 
           {% url 'practical' as practical_url %}
           <h3>{% trans "How do I get to the venue(s)?" %}</h3>
@@ -66,6 +70,10 @@
 
           <h3>{% trans "Can I take pictures?" %}</h3>
           <p>{% blocktrans %}Feel free to take pictures! But please try to be considerate and not interfere with the professional photographer we hired for the day.{% endblocktrans %} </p>
+
+          <h3>{% trans "Can I make a speech at the wedding?" %}</h3>
+          <p>{% blocktrans %}We hope our wedding day will be full of laughter and happy tears, so we would very much appreciate your contribution! However, there are many things that need to happen on schedule, so it would be best if you could contact Bastien’s sister, <a href="mailto:pascale.gorissen@gmail.com">Pascale</a>, in advance so your speech can be coordinated within the available timeslots. Note that while timing is limited during the dinner but there are more opportunities at the party to take the microphone.{% endblocktrans %} </p>
+
 
           <h3>{% trans "Is there a gifts registry?" %}</h3>
           <p>{% blocktrans %}Please check the <a href="registry.html">Gifts Registry</a> page!{% endblocktrans %} </p>

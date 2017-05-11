@@ -22,17 +22,24 @@
       <div class="form-content form-rsvp">
 
         <p>
-          {% blocktrans %}Please tell us to which part of the festivities you will be coming.{% endblocktrans %}
+          {% blocktrans %}Please tell us which part of the festivities you will be attending. Note that you can bookmark this page and return directly to this RSVP form !{% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}If you’ve changed your mind, you can come back to this page until <b>July 15st</b> to change your answers. After this time, your answers will be locked. Should you have any last-minute changes to your RSVP after this deadline, please send us an e-mail at <a href="mailto:bastien.et.joan@gmail.com">bastien.et.joan@gmail.com</a>.{% endblocktrans %}
+        </p>
+
+         <p>
+          {% blocktrans %}Please arrive at least <b>15 min</b> before the starting time of each event to make sure there are no delays !{% endblocktrans %}
         </p>
 
         <table>
           <thead>
             <th></th>
-            <th>{% trans "Private ceremony" %}</th>
-            <th>{% trans "Public ceremony" %}</th>
-            <th>{% trans "Reception" %}</th>
-            <th>{% trans "Dinner" %}</th>
-            <th>{% trans "Party" %}</th>
+            <th>{% trans "Private ceremony <br>(18/08 - 19:00)" %}</th>
+            <th>{% trans "Public ceremony <br>(19/08 - 14:00-14:30)" %}</th>
+            <th>{% trans "Reception <br>(19/08 - 15:00-17:00)" %}</th>
+            <th>{% trans "Dinner <br>(19/08 - 18:00-20:30)" %}</th>
+            <th>{% trans "Party <br>(19/08 - 21:00-03:00)" %}</th>
           </thead>
           <tbody>    
             {% for guest in guests %}
