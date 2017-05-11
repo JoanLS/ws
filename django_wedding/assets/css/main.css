@@ -301,6 +301,6 @@ ul.mylist li:before {
 }
 
 .map-iframe {
-  max-width: 100%;
+  max-width: 90%;
   border: 0;
 }
