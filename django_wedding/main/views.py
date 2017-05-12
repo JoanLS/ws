@@ -12,32 +12,31 @@ from main.models import GuestCode
 class Homepage(TemplateView):
     template_name = "home.html"
 
+
 class FAQ(TemplateView):
     template_name = "faq.html"
 
+
 class Practical(TemplateView):
     template_name = "practical.html"
+
+
+class ThankYou(TemplateView):
+    template_name = "thanks.html"
+
 
 class RSVPLogin(FormView):
     template_name = 'rsvp_login.html'
     form_class = RSVPLoginForm
     success_url = "/faq/"
 
-    def get(self, request, *args, **kwargs):
-        print(request)
-        return super(RSVPLogin, self).post(request, *args, **kwargs)
-
-    def post(self, request, *args, **kwargs):
-        print(request)
-        return super(RSVPLogin, self).post(request, *args, **kwargs)
-
     def form_valid(self, form):
         print("Form is valid!")
         if (GuestCode.validate(form.cleaned_data["code"])):
-            print(reverse('rsvp', kwargs={'code': form.cleaned_data["code"].lower()}))
-            RSVPLogin.success_url = reverse('rsvp', kwargs={'code': form.cleaned_data["code"].lower()})
+            RSVPLogin.success_url = reverse(
+                'rsvp', kwargs={'code': form.cleaned_data["code"].lower()})
         else:
-            RSVPLogin.success_url = reverse('rsvp')
+            RSVPLogin.success_url = reverse('rsvp_login')
         return super(RSVPLogin, self).form_valid(form)
 
 
@@ -47,7 +46,7 @@ class RSVP(TemplateView):
     def get(self, request, *args, **kwargs):
         print(kwargs["code"])
 
-        code = GuestCode.objects.get(code=kwargs["code"])
+        code = GuestCode.objects.get(code__iexact=kwargs["code"])
         print("Code : %s (%s)" % (code, type(code)))
         print(code.guests.all())
 
@@ -55,39 +54,44 @@ class RSVP(TemplateView):
         guests = []
         for guest in code.guests.all():
             guests.append(guest)
-            guest_forms.append(GuestRSVPForm(instance=guest, prefix="guest"+str(guest.id))) 
+            guest_forms.append(
+                GuestRSVPForm(instance=guest, prefix="guest" + str(guest.id)))
 
         context = self.get_context_data(**kwargs)
         context['guests'] = guests
         context['guest_forms'] = guest_forms
-        context['comments_form'] = GuestCommentsForm(instance=code.comments.first(), prefix="comments") 
-        context['children_form'] = GuestChildrenForm(instance=code.children.first(), prefix="children") 
-
+        context['comments_form'] = GuestCommentsForm(
+            instance=code.comments.first(), prefix="comments")
+        context['children_form'] = GuestChildrenForm(
+            instance=code.children.first(), prefix="children")
 
         return self.render_to_response(context)
 
-    def post(self, request, *args, **kwargs): 
-        code = GuestCode.objects.get(code=kwargs["code"]) 
- 
-        guest_forms = [] 
-        guests = [] 
-        for guest in code.guests.all(): 
-            guest_form = GuestRSVPForm(request.POST, instance=guest, prefix="guest"+str(guest.id)) 
-            if guest_form.is_valid(): 
-                guest_form.save() 
- 
-        comments_form = GuestCommentsForm(request.POST, instance=code.comments.first(), prefix="comments") 
-        children_form = GuestChildrenForm(request.POST, instance=code.children.first(), prefix="children") 
-        if children_form.is_valid(): 
-            guest_children = children_form.save(commit=False) 
-            guest_children.code = code 
-            guest_children.save() 
- 
+    def post(self, request, *args, **kwargs):
+        code = GuestCode.objects.get(code=kwargs["code"])
+
+        guest_forms = []
+        guests = []
+        for guest in code.guests.all():
+            guest_form = GuestRSVPForm(
+                request.POST, instance=guest, prefix="guest" + str(guest.id))
+            if guest_form.is_valid():
+                guest_form.save()
+
+        comments_form = GuestCommentsForm(
+            request.POST, instance=code.comments.first(), prefix="comments")
+        children_form = GuestChildrenForm(
+            request.POST, instance=code.children.first(), prefix="children")
+        if children_form.is_valid():
+            guest_children = children_form.save(commit=False)
+            guest_children.code = code
+            guest_children.save()
+
         if comments_form.is_valid():
             guest_comments = comments_form.save(commit=False)
             guest_comments.code = code
             guest_comments.save()
- 
+
         code.responded = True
         code.save()
-        return redirect(reverse('rsvp', kwargs={'code': kwargs["code"].lower()}))
+        return redirect(reverse('thankyou'))

@@ -14,8 +14,7 @@ class GuestCode(models.Model):
 
     @staticmethod
     def validate(code):
-        code = code.lower()
-        return GuestCode.objects.filter(code=code).count() > 0
+        return GuestCode.objects.filter(code__iexact=code).count() > 0
 
 
 class Guest(models.Model):
