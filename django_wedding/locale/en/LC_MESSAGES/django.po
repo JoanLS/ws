@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 10:51+0200\n"
+"POT-Creation-Date: 2017-05-12 11:40+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -775,8 +775,9 @@ msgstr ""
 msgid "<a href=\"https://www.eurostar.com\">Eurostar</a>"
 msgstr ""
 
-#: .\templates\practical.html:86
-msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
+#: .\templates\practical.html:87
+#, python-format
+msgid "If you have other questions, check the <a href=\"%(faq_url)s\">FAQ</a>!"
 msgstr ""
 
 #: .\templates\rsvp.html:25
@@ -824,19 +825,19 @@ msgstr ""
 msgid "How many children menus should we include for the dinner?"
 msgstr ""
 
-#: .\templates\rsvp.html:90
+#: .\templates\rsvp.html:92
 msgid "Are there any dietary restriction we should take into account?"
 msgstr ""
 
-#: .\templates\rsvp.html:100
+#: .\templates\rsvp.html:104
 msgid "Any music you would like to request for the party?"
 msgstr ""
 
-#: .\templates\rsvp.html:110
+#: .\templates\rsvp.html:115
 msgid "Anything else you want to tell us?"
 msgstr ""
 
-#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:32
+#: .\templates\rsvp.html:125 .\templates\rsvp_login.html:32
 msgid "Submit"
 msgstr ""
 

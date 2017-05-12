@@ -83,7 +83,8 @@
                 <li>{% blocktrans %}<a href="https://www.eurostar.com">Eurostar</a>{% endblocktrans %}</li>
             </ul>
 
-            <p class="block-text">{% blocktrans %}If you have other questions, check the <a href="FAQ.html">FAQ</a>!{% endblocktrans %}</p>
+            {% url 'faq' as faq_url %}
+            <p class="block-text">{% blocktrans %}If you have other questions, check the <a href="{{ faq_url }}">FAQ</a>!{% endblocktrans %}</p>
       </div>
       <div class="col-sm-1"></div>
     </section>

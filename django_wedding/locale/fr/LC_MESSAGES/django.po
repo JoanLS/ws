@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 10:51+0200\n"
-"PO-Revision-Date: 2017-05-12 11:06+0000\n"
+"POT-Creation-Date: 2017-05-12 11:40+0200\n"
+"PO-Revision-Date: 2017-05-12 11:41+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -960,11 +960,14 @@ msgstr "Tickets low-cost entre Bruxelles - Paris"
 msgid "<a href=\"https://www.eurostar.com\">Eurostar</a>"
 msgstr "Eurostar"
 
-#: .\templates\practical.html:86
-msgid "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
+#: .\templates\practical.html:87
+#, python-format
+#| msgid ""
+#| "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
+msgid "If you have other questions, check the <a href=\"%(faq_url)s\">FAQ</a>!"
 msgstr ""
 "Si vous avez d’autres questions, consultez notre <a "
-"href=\"FAQ.html\">FAQ</a>!"
+"href=\"%(faq_url)s\">FAQ</a> !"
 
 #: .\templates\rsvp.html:25
 msgid ""
@@ -1021,21 +1024,21 @@ msgstr "Soirée <br>(19/08 - 21:00-03:00)"
 msgid "How many children menus should we include for the dinner?"
 msgstr "Combien de menus enfants devons-nous inclure pour le repas ?"
 
-#: .\templates\rsvp.html:90
+#: .\templates\rsvp.html:92
 msgid "Are there any dietary restriction we should take into account?"
 msgstr "Avez-vous des restrictions alimentaires ?"
 
-#: .\templates\rsvp.html:100
+#: .\templates\rsvp.html:104
 msgid "Any music you would like to request for the party?"
 msgstr ""
 "Avez-vous des morceaux en particulier sur lesquels vous aimeriez danser lors"
 " de la soirée ?"
 
-#: .\templates\rsvp.html:110
+#: .\templates\rsvp.html:115
 msgid "Anything else you want to tell us?"
 msgstr "Avez-vous autre chose à nous dire ?"
 
-#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:32
+#: .\templates\rsvp.html:125 .\templates\rsvp_login.html:32
 msgid "Submit"
 msgstr "Envoyer"
 
