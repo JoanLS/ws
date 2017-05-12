@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 00:22+0200\n"
-"PO-Revision-Date: 2017-05-12 00:57+0000\n"
+"POT-Creation-Date: 2017-05-12 10:34+0200\n"
+"PO-Revision-Date: 2017-05-12 10:35+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1036,6 +1036,22 @@ msgstr "Envoyer"
 #: .\templates\rsvp_login.html:25
 msgid "Please enter the code that you received on your invitation. "
 msgstr "Merci d'entrer le code qui se trouve sur votre invitation."
+
+#: .\templates\thanks.html:18
+msgid "Thank you!"
+msgstr "Merci !"
+
+#: .\templates\thanks.html:25
+msgid ""
+"Thank you so much for your reply! Please feel free to come back and edit "
+"your replies if need be!"
+msgstr ""
+"Merci infiniment pour votre réponse ! N'hésitez pas à revenir pour modifier "
+"les informations en cas de changement !"
+
+#: .\templates\thanks.html:27
+msgid "Back to the website"
+msgstr "Retour vers le site"
 
 #~ msgid "Reply to invitation"
 #~ msgstr "Répondre à l'invitation"
