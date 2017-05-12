@@ -35,15 +35,14 @@
         <table>
           <thead>
             <th></th>
-            <th>{% trans "Private ceremony <br>(18/08 - 19:00)" %}</th>
-            <th>{% trans "Public ceremony <br>(19/08 - 14:00-14:30)" %}</th>
-            <th>{% trans "Reception <br>(19/08 - 15:00-17:00)" %}</th>
-            <th>{% trans "Dinner <br>(19/08 - 18:00-20:30)" %}</th>
-            <th>{% trans "Party <br>(19/08 - 21:00-03:00)" %}</th>
+            {% if private_ceremony %}<th>{% trans "Private ceremony <br>(18/08 - 19:00)" %}</th>{% endif %}
+            {% if public_ceremony %}<th>{% trans "Public ceremony <br>(19/08 - 14:00-14:30)" %}</th>{% endif %}
+            {% if reception %}<th>{% trans "Reception <br>(19/08 - 15:00-17:00)" %}</th>{% endif %}
+            {% if dinner %}<th>{% trans "Dinner <br>(19/08 - 18:00-20:30)" %}</th>{% endif %}
+            {% if party %}<th>{% trans "Party <br>(19/08 - 21:00-03:00)" %}</th>{% endif %}
           </thead>
           <tbody>    
             {% for guest in guests %}
-
             <tr>
               <td>
                 {{ guest.first_name }} {{ guest.last_name }}
@@ -51,21 +50,21 @@
               {% with forloop.counter as i %}
               {% for guest_form in guest_forms %}
               {% if i == forloop.counter %}
-              <td>{{ guest_form.coming_private_ceremony }}
+              {% if private_ceremony %}<td>{{ guest_form.coming_private_ceremony }}
                 <label for='{{ guest_form.coming_private_ceremony.id_for_label }}'></label>
-              </td>
-              <td>{{ guest_form.coming_public_ceremony }}
+              </td>{% endif %}
+              {% if public_ceremony %}<td>{{ guest_form.coming_public_ceremony }}
                 <label for='{{ guest_form.coming_public_ceremony.id_for_label }}'></label>
-              </td>
-              <td>{{ guest_form.coming_reception }}
+              </td>{% endif %}
+              {% if reception %}<td>{{ guest_form.coming_reception }}
                 <label for='{{ guest_form.coming_reception.id_for_label }}'></label>
-              </td>
-              <td>{{ guest_form.coming_dinner }}
+              </td>{% endif %}
+              {% if dinner %}<td>{{ guest_form.coming_dinner }}
                 <label for='{{ guest_form.coming_dinner.id_for_label }}'></label>
-              </td>
-              <td>{{ guest_form.coming_party }}
+              </td>{% endif %}
+              {% if party %}<td>{{ guest_form.coming_party }}
                 <label for='{{ guest_form.coming_party.id_for_label }}'></label>
-              </td>
+              </td>{% endif %}
               {% endif %}
               {% endfor %}
               {% endwith %}
@@ -75,6 +74,7 @@
           </tbody>
         </table>
 
+        {% if dinner %}
         <div class="comments-field">
           <p>
             {% blocktrans %}How many children menus should we include for the dinner?{% endblocktrans %}
@@ -84,7 +84,9 @@
             {{ children_form.children_menus }}    
           </div>
         </div>
+        {% endif %}
 
+        {% if reception or dinner or party %}
         <div class="comments-field">
           <p>
             {% blocktrans %}Are there any dietary restriction we should take into account?{% endblocktrans %}
@@ -94,7 +96,9 @@
             {{ comments_form.dietary_restrictions }}
           </div>
         </div>
+        {% endif %}
 
+        {% if party %}
         <div class="comments-field">
           <p>
             {% blocktrans %}Any music you would like to request for the party?{% endblocktrans %}
@@ -104,6 +108,7 @@
             {{ comments_form.music_request }}
           </div>
         </div>
+        {% endif %}
 
         <div class="comments-field">
           <p>

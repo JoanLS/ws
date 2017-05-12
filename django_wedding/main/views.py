@@ -54,16 +54,41 @@ class RSVP(TemplateView):
 
         guest_forms = []
         guests = []
+
+        private_ceremony = False
+        public_ceremony = False
+        reception = False
+        dinner = False
+        party = False
+
         for guest in code.guests.all():
+            if guest.invited_private_ceremony:
+                private_ceremony = True
+            if guest.invited_public_ceremony:
+                public_ceremony = True
+            if guest.invited_reception:
+                reception = True
+            if guest.invited_dinner:
+                dinner = True
+            if guest.invited_party:
+                party = True
+
             guests.append(guest)
             guest_forms.append(
                 GuestRSVPForm(instance=guest, prefix="guest" + str(guest.id)))
 
         context = self.get_context_data(**kwargs)
         context['guests'] = guests
+        context['private_ceremony'] = private_ceremony
+        context['public_ceremony'] = public_ceremony
+        context['reception'] = reception
+        context['dinner'] = dinner
+        context['party'] = party
         context['guest_forms'] = guest_forms
+
         context['comments_form'] = GuestCommentsForm(
             instance=code.comments.first(), prefix="comments")
+
         context['children_form'] = GuestChildrenForm(
             instance=code.children.first(), prefix="children")
 

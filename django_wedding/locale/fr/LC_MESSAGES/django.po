@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-12 10:51+0200\n"
-"PO-Revision-Date: 2017-05-12 10:52+0000\n"
+"PO-Revision-Date: 2017-05-12 11:06+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1027,11 +1027,13 @@ msgstr "Avez-vous des restrictions alimentaires ?"
 
 #: .\templates\rsvp.html:100
 msgid "Any music you would like to request for the party?"
-msgstr "Des recommandations pour la musique pour la soirées ?"
+msgstr ""
+"Avez-vous des morceaux en particulier sur lesquels vous aimeriez danser lors"
+" de la soirée ?"
 
 #: .\templates\rsvp.html:110
 msgid "Anything else you want to tell us?"
-msgstr "Autres commentaires "
+msgstr "Avez-vous autre chose à nous dire ?"
 
 #: .\templates\rsvp.html:120 .\templates\rsvp_login.html:32
 msgid "Submit"
