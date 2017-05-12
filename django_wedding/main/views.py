@@ -7,6 +7,7 @@ from django.views.generic.edit import FormView
 from main.forms import RSVPLoginForm, GuestRSVPForm, GuestCommentsForm, GuestChildrenForm
 from django.urls import reverse
 from main.models import GuestCode
+from django.utils.translation import ugettext as _
 
 
 class Homepage(TemplateView):
@@ -36,7 +37,8 @@ class RSVPLogin(FormView):
             RSVPLogin.success_url = reverse(
                 'rsvp', kwargs={'code': form.cleaned_data["code"].lower()})
         else:
-            RSVPLogin.success_url = reverse('rsvp_login')
+            form.add_error(None, _("Sorry, the code you entered is invalid."))
+            return super(RSVPLogin, self).form_invalid(form)
         return super(RSVPLogin, self).form_valid(form)
 
 

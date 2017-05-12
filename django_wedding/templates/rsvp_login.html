@@ -23,6 +23,9 @@
         {% csrf_token %}
         <center>
         <p>{% blocktrans %}Please enter the code that you received on your invitation. {% endblocktrans %}</p>
+        {% if not form.is_valid %}
+        <div class="text-danger">{{ form.non_field_errors }}</div>
+        {% endif %}
            <div class="form-fields">
             {{ form.code }}
           </div>

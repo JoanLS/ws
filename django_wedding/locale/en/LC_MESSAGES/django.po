@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 10:34+0200\n"
+"POT-Creation-Date: 2017-05-12 10:51+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.13\n"
+
+#: .\main\views.py:40
+msgid "Sorry, the code you entered is invalid."
+msgstr ""
 
 #: .\templates\base_site.html:48
 msgid "About Us"
@@ -832,7 +836,7 @@ msgstr ""
 msgid "Anything else you want to tell us?"
 msgstr ""
 
-#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:29
+#: .\templates\rsvp.html:120 .\templates\rsvp_login.html:32
 msgid "Submit"
 msgstr ""
 
