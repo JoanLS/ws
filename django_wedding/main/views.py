@@ -68,7 +68,7 @@ class RSVP(TemplateView):
         return self.render_to_response(context)
 
     def post(self, request, *args, **kwargs):
-        code = GuestCode.objects.get(code=kwargs["code"])
+        code = GuestCode.objects.get(code__iexact=kwargs["code"])
 
         guest_forms = []
         guests = []

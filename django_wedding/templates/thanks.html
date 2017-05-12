@@ -1,0 +1,36 @@
+{% extends "base_site.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block header_includes %}
+{{ block.super }}
+<link href="{% static 'css/signin.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block contents %}
+
+<div class="page-content form-container">
+  <section  id = "rsvp-login" class="form-signin container">
+    <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1>
+        <span class="section-title-container">
+          <span class="section-brackets">{</span><span class="section-title">{% trans "Thank you!" %}</span><span class="section-brackets">}</span>
+        </span>
+      </h1>
+
+      <form action="{% url 'rsvp_login' %}" method="post">
+        <center>
+        <p class="spacer"></p>
+        <p>{% blocktrans %}Thank you so much for your reply! Please feel free to come back and edit your replies if need be!{% endblocktrans %}</p>
+        <p class="spacer"></p>
+        <a href="/" class="btn btn-lg btn-primary btn-block btn-rounded">{% trans "Back to the website" %}</a>
+        </center>
+      </form>
+    </div>
+    </div>
+  </section>
+</div> <!-- /container -->
+{% endblock %}
+
+{% block footer %}{% endblock %}
