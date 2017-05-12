@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 11:40+0200\n"
-"PO-Revision-Date: 2017-05-12 11:41+0000\n"
+"POT-Creation-Date: 2017-05-12 15:21+0200\n"
+"PO-Revision-Date: 2017-05-12 15:23+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -356,8 +356,14 @@ msgid "Is there a gifts registry?"
 msgstr "Y a-t-il une liste de mariage?"
 
 #: .\templates\faq.html:79
-msgid "Please check the <a href=\"registry.html\">Gifts Registry</a> page!"
-msgstr "Oui, vous pouvez le consulter sur la page Liste de Mariage!"
+#| msgid ""
+#| "Please check the <a href=\"registry.html\">Gifts Registry</a> page!"
+msgid ""
+"Please check the <a href=\"http://www.bastien-joan.zankyou.com\" "
+"target=\"_blank\">Gifts Registry</a> page!"
+msgstr ""
+"Oui, vous pouvez le consulter sur la page <a href=\"http://www.bastien-"
+"joan.zankyou.com\" target=\"_blank\">Liste de mariage</a> !"
 
 #: .\templates\faq.html:81
 msgid "Will last names be changing after the wedding?"
@@ -962,8 +968,6 @@ msgstr "Eurostar"
 
 #: .\templates\practical.html:87
 #, python-format
-#| msgid ""
-#| "If you have other questions, check the <a href=\"FAQ.html\">FAQ</a>!"
 msgid "If you have other questions, check the <a href=\"%(faq_url)s\">FAQ</a>!"
 msgstr ""
 "Si vous avez d’autres questions, consultez notre <a "
