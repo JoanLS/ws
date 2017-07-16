@@ -26,6 +26,10 @@ class ThankYou(TemplateView):
     template_name = "thanks.html"
 
 
+class RSVPClosed(TemplateView):
+    template_name = "rsvp_closed.html"
+
+
 class RSVPLogin(FormView):
     template_name = 'rsvp_login.html'
     form_class = RSVPLoginForm

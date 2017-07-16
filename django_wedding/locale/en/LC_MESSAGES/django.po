@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-12 15:21+0200\n"
+"POT-Creation-Date: 2017-07-16 22:16+0200\n"
 "PO-Revision-Date: 2017-05-01 16:58+0000\n"
 "Last-Translator:   <kadomony@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Translated-Using: django-rosetta 0.7.13\n"
 
-#: .\main\views.py:40
+#: .\main\views.py:44
 msgid "Sorry, the code you entered is invalid."
 msgstr ""
 
@@ -841,6 +841,35 @@ msgstr ""
 
 #: .\templates\rsvp.html:125 .\templates\rsvp_login.html:32
 msgid "Submit"
+msgstr ""
+
+#: .\templates\rsvp_closed.html:19
+msgid "Thank you for your answers!"
+msgstr ""
+
+#: .\templates\rsvp_closed.html:25
+#, python-format
+msgid ""
+"Thank you for replying to our invitation! If you still have questions, "
+"please check the <a href=\"%(faq_url)s\">FAQ</a> for an answer, if your "
+"question isn’t featured, feel free to <a href=\"mailto:bastien.et.joan@gmail."
+"com\">contact us!</a>"
+msgstr ""
+
+#: .\templates\rsvp_closed.html:27
+msgid "Wait, I need to change something!"
+msgstr ""
+
+#: .\templates\rsvp_closed.html:28
+msgid ""
+"We understand that circumstances may change, and that you might need to "
+"revise your answer. If that is the case, please <a href=\"mailto:bastien.et."
+"joan@gmail.com\">contact us</a> as soon as possible since it will be "
+"complicated to adjust plans the closer we get to the date."
+msgstr ""
+
+#: .\templates\rsvp_closed.html:30
+msgid "We look forward to seeing you on the big day!"
 msgstr ""
 
 #: .\templates\rsvp_login.html:25

@@ -1,0 +1,41 @@
+{% extends "base_site.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block header_includes %}
+{{ block.super }}
+<link href="{% static 'css/page.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block contents %}
+<div class="top-space"></div>
+<div class="page-content">
+
+   <section  id = "RSVP-closed" class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+          <h1>
+                <span class="section-title-container">
+                <span class="section-brackets">{</span><span class="section-title">{% trans "Thank you for your answers!" %}</span><span class="section-brackets">}</span>
+                </span>
+            </h1>
+          
+
+          {% url 'faq' as faq_url %}
+          <p><span></span>{% blocktrans %}Thank you for replying to our invitation! If you still have questions, please check the <a href="{{ faq_url }}">FAQ</a> for an answer, if your question isn’t featured, feel free to <a href="mailto:bastien.et.joan@gmail.com">contact us!</a>{% endblocktrans %} 
+          </p>
+          <h3>{% trans "Wait, I need to change something!" %}</h3>
+          <p><span></span>{% blocktrans %}We understand that circumstances may change, and that you might need to revise your answer. If that is the case, please <a href="mailto:bastien.et.joan@gmail.com">contact us</a> as soon as possible since it will be complicated to adjust plans the closer we get to the date.{% endblocktrans %} 
+          </p>
+          <p><span></span>{% blocktrans %}We look forward to seeing you on the big day!{% endblocktrans %} 
+          </p>
+
+
+      </div>
+      <div class="col-sm-1"></div>
+    </section>
+
+</div>
+
+<div class="bottom-fade"></div>
+{% endblock %}
